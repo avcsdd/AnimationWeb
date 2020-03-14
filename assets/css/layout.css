@@ -57,11 +57,13 @@ ul.navbar-nav {
 li.nav-item {
     width: 100%;
     text-align: center;
+    transition: transform .2s;
 }
 
 li.nav-item:hover {
     background-image: linear-gradient(to right, orange, yellow);
     cursor: pointer;
+    transform: scale(1.2);
 }
 
 .nav-link {
