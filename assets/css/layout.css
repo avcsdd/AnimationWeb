@@ -26,23 +26,23 @@ body {
 
 @font-face {
     font-family: 'RobotoCondensed-Bold';
-    src: url('/assets/font/RobotoCondensed-Bold.ttf');
+    src: url('../../assets/font/RobotoCondensed-Bold.ttf');
     /* IE9 Compat Modes */
-    src: url('/assets/font/RobotoCondensed-Bold.ttf') format('embedded-opentype'), /* IE6-IE8 */
-    url('/assets/font/RobotoCondensed-Bold.ttf') format('woff'), /* Modern Browsers */
-    url('/assets/font/RobotoCondensed-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('/assets/font/RobotoCondensed-Bold.ttf') format('svg');
+    src: url('../../assets/font/RobotoCondensed-Bold.ttf') format('embedded-opentype'), /* IE6-IE8 */
+    url('../../assets/font/RobotoCondensed-Bold.ttf') format('woff'), /* Modern Browsers */
+    url('../../assets/font/RobotoCondensed-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../../assets/font/RobotoCondensed-Bold.ttf') format('svg');
     /* Legacy iOS */
 }
 
 @font-face {
     font-family: 'Roboto-Black';
-    src: url('/assets/font/Roboto-Black.ttf');
+    src: url('../../assets/font/Roboto-Black.ttf');
     /* IE9 Compat Modes */
-    src: url('/assets/font/Roboto-Black.ttf') format('embedded-opentype'), /* IE6-IE8 */
-    url('/assets/font/Roboto-Black.ttf') format('woff'), /* Modern Browsers */
-    url('/assets/font/Roboto-Black.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('/assets/font/Roboto-Black.ttf') format('svg');
+    src: url('../../assets/font/Roboto-Black.ttf') format('embedded-opentype'), /* IE6-IE8 */
+    url('../../assets/font/Roboto-Black.ttf') format('woff'), /* Modern Browsers */
+    url('../../assets/font/Roboto-Black.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../../assets/font/Roboto-Black.ttf') format('svg');
     /* Legacy iOS */
 }
 
