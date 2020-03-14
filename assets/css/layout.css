@@ -1,0 +1,76 @@
+#main-wrapper{
+    width: 1230px;
+    height: 860px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+    background: #0d4a8a;
+    border:1px solid #0d4a8a;
+}
+.fixed-on-top{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    padding: 0rem 0rem !important;
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'navFont';
+    src: url('/assets/font/RobotoCondensed-Bold.ttf'); /* IE9 Compat Modes */
+    src: url('/assets/font/RobotoCondensed-Bold.ttf') format('embedded-opentype'), /* IE6-IE8 */
+         url('/assets/font/RobotoCondensed-Bold.ttf') format('woff'), /* Modern Browsers */
+         url('/assets/font/RobotoCondensed-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('/assets/font/RobotoCondensed-Bold.ttf') format('svg'); /* Legacy iOS */
+  }
+ul.navbar-nav {
+    font-family: 'navFont',Fallback, sans-serif; 
+    width: 100%;
+    border-top: 0.05px white solid;
+    border-bottom: 0.05px white solid;
+    background-image: linear-gradient(to right,#63bceb , #6f82b8);
+}
+li.nav-item {
+    width: 100%;
+    text-align: center;
+}
+li.nav-item:hover {
+    background-image: linear-gradient(to right, orange , yellow);
+    cursor: pointer;
+}
+.nav-link{
+    color:white
+}
+.nav-link:hover{
+    color:white
+}
+#banner{
+    width: 100%;
+    height: 150px;
+    position: relative;
+    background-color: white;
+}
+#banner-upper{
+    width: 100%;
+    height: 90px;
+}
+#banner-lower{
+    width: 100%;
+    height: 60px;
+    background-color:#2067a4;
+}
+.has-border{
+    border-right: 0.05px white solid;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+padding-right: 0rem !important;
+padding-left: 0rem !important;
+line-height: 1;
+}
+.collapse.navbar-collapse {
+    border-top: 0.05px white solid;
+    border-bottom: 0.05px white solid;
+}

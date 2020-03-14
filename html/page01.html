@@ -1,0 +1,626 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>ELM - Industrial Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Damion|Source+Sans+Pro:300,300i,400,400i,600,600i,900,900i|Roboto+Condensed:400,700|Roboto:400,700&amp;subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div id="siteWrapper">
+        <nav class="navbar fixed-top navbar-expand-lg" id="topNav">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item active" data-target="#siteSlider" data-slide-to="0">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item" data-target="#siteSlider" data-slide-to="2">
+                        <a class="nav-link" href="#">The role of<br>Industrial Designs</a>
+                    </li>
+                    <li class="nav-item" data-target="#siteSlider" data-slide-to="3">
+                        <a class="nav-link" href="#">What are Industrial<br>Designs?</a>
+                    </li>
+                    <li class="nav-item" data-target="#siteSlider" data-slide-to="4">
+                        <a class="nav-link" href="#">Protect Industrial<br>Designs in SEA</a>
+                    </li>
+                    <li class="nav-item" data-target="#siteSlider" data-slide-to="5">
+                        <a class="nav-link" href="#">Enforcement</a>
+                    </li>
+                    <li class="nav-item" data-target="#siteSlider" data-slide-to="6">
+                        <a class="nav-link" href="#">Quiz</a>
+                    </li>
+                    <li class="nav-item" data-target="#siteSlider" data-slide-to="7">
+                        <a class="nav-link" href="#">Take-away message</a>
+                    </li>
+                    <li class="nav-item" data-target="#siteSlider" data-slide-to="8">
+                        <a class="nav-link" href="#">Related<br>Links</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="siteSlider" class="carousel carousel-fade" data-ride="carousel" data-interval="0" data-wrap="false">
+            <div class="carousel-inner">
+                <div class="carousel-item site-slider-item active" id="siteSlide1">
+                    <div class="preload" id="s1Bg" data-src="images/s1-bg.png"></div>
+                    <div class="preload" id="s1Cloud1" data-src="images/s1-cloud-1.png"></div>
+                    <div class="preload" id="s1Cloud2" data-src="images/s1-cloud-2.png"></div>
+                    <div class="preload" id="s1Cloud3" data-src="images/s1-cloud-3.png"></div>
+                    <div class="preload" id="s1Cloud4" data-src="images/s1-cloud-4.png"></div>
+                    <div class="preload" id="s1Cloud5" data-src="images/s1-cloud-5.png"></div>
+                    <div class="preload" id="s1Machine1" data-src="images/s1-machine-1.png"></div>
+                    <div class="preload" id="s1Box1" data-src="images/s1-box-1.png"></div>
+                    <div class="preload" id="s1Machine2" data-src="images/s1-machine-2.png"></div>
+                    <div class="preload" id="s1Industrial" data-src="images/s1-industrial.png"></div>
+                    <div class="preload" id="s1Design" data-src="images/s1-design.png"></div>
+                    <div class="preload" id="s1Machine3" data-src="images/s1-machine-3.png"></div>
+                    <div class="preload" id="s1Box4" data-src="images/s1-box-4.png"></div>
+                    <div class="preload" id="s1Machine4" data-src="images/s1-machine-4.png"></div>
+                </div>
+                <div class="carousel-item site-slider-item" id="siteSlide2">
+                    <div class="preload" data-src="images/s2-slide.png"></div>
+                    <div id="s2Lady">
+                        <div class="preload" id="s2LadyHand" data-src="images/s2-lady-hand.png"></div>
+                        <div class="preload" id="s2Chair" data-src="images/s2-chair.png"></div>
+                        <div class="preload" id="s2LadyBody" data-src="images/s2-lady-body.png"></div>
+                        <div class="preload" id="s2LadyEye" data-src="images/s2-lady-eye.png"></div>
+                        <div class="preload" id="s2LadySad" data-src="images/s2-lady-sad.png"></div>
+                    </div>
+                    <div class="preload" id="s2Table" data-src="images/s2-table.png"></div>
+                    <div id="s2Slide">
+                        <div class="preload" id="s2SlideChart" data-src="images/s2-chart.png"></div>
+                        <div class="preload" id="s2SlidePie" data-src="images/s2-pie.png"></div>
+                    </div>
+                    <div id="s2Man">
+                        <div class="preload" id="s2ManBody" data-src="images/s2-man-body.png"></div>
+                        <div class="preload" id="s2ManHand" data-src="images/s2-man-hand.png"></div>
+                        <div class="preload" id="s2ManEye" data-src="images/s2-man-eye.png"></div>
+                    </div>
+                    <div class="slide2Bubble" id="slide2Bubble1">
+                        <div class="preload" id="slide2Bubble1Bg" data-src="images/s2-bubble-1.png"></div>
+                        <div class="slide2BubbleText" id="slide2Bubble1Text">
+                            Hi, my name is Lisa. I am the CEO of a German company – a manufacture of electrical isolators in Singapore. I am afraid that our designs may be stolen. How should I do?
+                        </div>
+                    </div>
+                    <div class="slide2Bubble" id="slide2Bubble2">
+                        <div class="preload" id="slide2Bubble2Bg" data-src="images/s2-bubble-2.png"></div>
+                        <div class="slide2BubbleText" id="slide2Bubble2Text">
+                            Hello, I am Mark, IP Expert from the South-East Asia IPR SME Helpdesk.
+                            <p id="slide2Bubble2Text2">No worries, Lisa. I will help you to draw up a protection strategy for your industrial designs!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item site-slider-item" id="siteSlide3">
+                    <div class="preload" id="s3Bg1" data-src="images/s3-bg-1.png"></div>
+                    <div class="preload" id="s3Bg2" data-src="images/s3-bg-2.png"></div>
+                    <div class="preload" id="s3Bg3" data-src="images/s3-bg-3.png"></div>
+                    <div class="preload" id="s3Bg4" data-src="images/s3-bg-4.png"></div>
+                    <div class="preload" id="s3Bg5" data-src="images/s3-bg-5.png"></div>
+                    <div class="preload" id="s3Meeting" data-src="images/s3-meeting.png"></div>
+                    <div class="preload" id="s3Demo1" data-src="images/s3-demo-1.png"></div>
+                    <div class="preload" id="s3Demo2" data-src="images/s3-demo-2.png"></div>
+                    <div id="slide3Text">
+                        <p id="slide3Text1">Above are two popular examples of registered industrial designs. The success of a product is usually influenced by its <strong>visual appearance</strong>, where aesthetic appeal is one of the critical factors influencing consumer decisions.</p>
+                        <p id="slide3Text2"><img src="images/s3-arrows.png" alt="" id="slide3Text2Img"> It is important for owners of industrial designs to draw up a <strong>protection strategy</strong> which coheres with the business strategy for the product in question. </p>
+                    </div>
+                </div>
+                <div class="carousel-item site-slider-item" id="siteSlide4">
+                    <div class="preload" id="s4Class" data-src="images/s4-class.png"></div>
+                    <div class="preload" id="s4Board" data-src="images/s4-board.png"></div>
+                    <div id="s4Speaker">
+                        <div class="preload" id="s4SpeakerBody" data-src="images/s4-speaker-body.png"></div>
+                        <div class="preload" id="s4SpeakerEye" data-src="images/s4-speaker-eye.png"></div>
+                    </div>
+                    <div id="s4Text1">
+                        <div id="s4Text1Inner">
+                            <div class="preload" id="s4Text1InnerBg" data-src="images/s4-text1-inner-bg.png"></div>
+                            <p id="s4Text1P">To improve your understanding on the importance of Industrial Designs for your business, try to reply to the questions below!</p>
+                            <a class="btn" id="btnS4Start" role="button"><img src="images/s4-btn-start.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div id="s4Text2">
+                        <ul class="list-unstyled" id="s4Text2Questions">
+                            <li><span class="s4Text2Number high">1.</span>Who grants the registration of an industrial design?</li>
+                            <li><span class="s4Text2Number">2.</span>What is the duration of protection?</li>
+                            <li><span class="s4Text2Number">3.</span>What right is it?</li>
+                            <li><span class="s4Text2Number">4.</span>Who are the stakeholders involved?</li>
+                            <li><span class="s4Text2Number high">5.</span>What are the common requirements for industrial design protection to be granted?</li>
+                            <li><span class="s4Text2Number">6.</span>Is there a global industrial design?</li>
+                        </ul>
+                        <div id="s4Text2Right">
+                            <div class="preload" data-src="images/s4-text2-bubble.png"></div>
+                            <div id="s4Text2Info"><strong>Click on the question to see the answer!</strong></div>
+                            <ul class="list-unstyled" id="s4Text2Answers">
+                                <li><strong>The Registry Designs unit</strong> within the individual country’s IP Office</li>
+                                <li>At least <strong>10 years</strong> or sometimes longer</li>
+                                <li><strong>A legal monopoly</strong></li>
+                                <li class="high">Government, IP Office, Industrial Design agent, designer, registered designed owner, assignee, licensee, members of the public</li>
+                                <li><strong>Novelty</strong>, Industrially applied onto an article</li>
+                                <li class="high">No, there is no global industrial design and the right is territorial in nature. However, there is an <strong>"international application"</strong> via the Hague System</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item site-slider-item" id="siteSlide5">
+                    <div id="s5Text1">
+                        <div class="preload" data-src="images/s5-bg.png"></div>
+                        <div id="s5Text2">
+                            <div class="preload" data-src="images/s5-bg-2.png"></div>
+                            <ul class="list-unstyled" id="s5Content">
+                                <li id="s5Content1">
+                                    <div class="s5ContentBg" id="s5Content1Bg">
+                                        <div class="preload" id="s5Content1Bg1" data-src="images/s5-content-1-bg-1.png"></div>
+                                        <div class="preload" id="s5Content1Bg2" data-src="images/s5-content-1-bg-2.png"></div>
+                                        <div class="preload" id="s5Content1Bg3" data-src="images/s5-content-1-bg-1.png"></div>
+                                        <div class="preload" id="s5Content1Bg4" data-src="images/s5-content-1-bg-2.png"></div>
+                                        <div class="preload" id="s5Content1Wheel1" data-src="images/s5-content-1-wheel-1.png"></div>
+                                        <div class="preload" id="s5Content1Wheel2" data-src="images/s5-content-1-wheel-2.png"></div>
+                                        <div class="preload" data-src="images/s5-content-1-bg.png"></div>
+                                    </div>
+                                    <div class="s5ContentDetails">
+                                        A registered design may be obtained to protect the features of shape, configuration, pattern or ornament applied to an article by an industrial process. This is subject to some exceptions. You will obtain an exclusive right to use the design by registering it. <strong>Prior Searches</strong> are strongly recommended.
+                                    </div>
+                                </li>
+                                <li id="s5Content2">
+                                    <div class="s5ContentBg" id="s5Content2Bg">
+                                        <div class="preload" data-src="images/s5-content-2-bg.png"></div>
+                                        <div class="preload" id="s5Content2Bg3" data-src="images/s5-content-2-bg-3.png"></div>
+                                        <div class="preload" id="s5Content2Bg1" data-src="images/s5-content-2-bg-1.png"></div>
+                                        <div class="preload" id="s5Content2Bg2" data-src="images/s5-content-2-bg-2.png"></div>
+                                    </div>
+                                    <div class="s5ContentDetails">
+                                        Once a design is created, it must not be disclosed in order to preserve the novelty, since failing to do so, would expose you to the risk that their design may then be considered as non-novel and incapable of registration. <strong>Applications shall be filed as soon as possible and NDAs shall be signed if disclosure is really necessary.</strong>
+                                    </div>
+                                </li>
+                                <li id="s5Content3">
+                                    <div class="s5ContentBg" id="s5Content3Bg">
+                                        <div class="preload" data-src="images/s5-content-3-bg.png"></div>
+                                        <div class="preload" id="s5Content3Bg1" data-src="images/s5-content-3-bg-1.png"></div>
+                                        <div class="preload" id="s5Content3Eye1" data-src="images/s5-content-3-eye-1.png"></div>
+                                        <div class="preload" id="s5Content3Eye2" data-src="images/s5-content-3-eye-2.png"></div>
+                                    </div>
+                                    <div class="s5ContentDetails">
+                                        <p>The procedure and process for an <strong>industrial design application differs between the 10 SEA countries.</strong></p>
+                                        <p class="justify">Each country may require a slightly different list of documents upon their discretion, therefore you shall check with your entrusted agent or lawyer when preparing for filing. </p>
+                                    </div>
+                                </li>
+                                <li id="s5Content4">
+                                    <div class="s5Content4Block active" id="s5Content4Block1">
+                                        <div class="s5ContentBg">
+                                            <div class="preload" id="s5Content4Bg" data-src="images/s5-content-4-bg.png"></div>
+                                            <div class="preload" data-src="images/s5-content-4-bg-1.png"></div>
+                                            <div class="preload" id="s5Content4Bg2" data-src="images/s5-content-4-bg-2.png"></div>
+                                            <div class="preload" id="s5Content4Bg3" data-src="images/s5-content-4-bg-3.png"></div>
+                                        </div>
+                                        <div class="s5ContentDetails">
+                                            While only Brunei, Cambodia and Singapore are contracting states in the Hague System as of June 2017 in the SEA Region, you may still consider the <strong>use of the Hague System</strong> to make applications in signatory countries of interest including various EU countries.
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="s5Content4Block" id="s5Content4Block2">
+                                        <div class="s5ContentDetails">
+                                            <div class="s5ContentHeading">Advantages of the Hague System</div>
+                                            <div>
+                                                <p>Cost-savings on filing <strong>only one application, and paying one set of fees to one office, and in one language.</strong></p>
+                                                <p>Changes to the application, such as address and renewal of the term, can be made via one application to the International Bureau of the World Intellectual Property Organisation (WIPO).</p>
+                                                <p>Administrative convenience in not needing to monitor the progress of individual applications proceeding throughout the countries of interest.</p>
+                                                <p>&nbsp;</p>
+                                            </div>
+                                            <div class="s5ContentHeading">Disadvantages of the Hague System</div>
+                                            <div>
+                                                <p><strong>The local rules and legal formalities requirements in the designated countries still apply.</strong> Potential for increased preparation costs as you might have to submit an application that adapt to the formalities of each country. </p>
+                                                <p>There are relatively few participating SEA countries.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="btn" id="btnS5Next2" role="button"><img src="images/s5-btn-next.png" alt=""></a>
+                                </li>
+                                <li id="s5Content5">
+                                    <div class="s5ContentDetails">
+                                        <ul class="list-unstyled" id="s5Content5Steps">
+                                            <li id="s5Content5Steps1">
+                                                <div class="preload s5Content5StepsBg" data-src="images/s5-content-5-steps-bg-1.png"></div>
+                                                <div class="s5Content5StepsText">Researches</div>
+                                            </li>
+                                            <li id="s5Content5Steps2">
+                                                <div class="preload s5Content5StepsBg" data-src="images/s5-content-5-steps-bg-2.png"></div>
+                                                <div class="s5Content5StepsText">Documentation Checklist</div>
+                                            </li>
+                                            <li id="s5Content5Steps3">
+                                                <div class="preload s5Content5StepsBg" data-src="images/s5-content-5-steps-bg-3.png"></div>
+                                                <div class="s5Content5StepsText">What makes up an industrial design?</div>
+                                            </li>
+                                            <li id="s5Content5Steps4">
+                                                <div class="preload s5Content5StepsBg" data-src="images/s5-content-5-steps-bg-4.png"></div>
+                                                <div class="s5Content5StepsText">Goods and Services Classification (Locarno Classification)</div>
+                                            </li>
+                                            <li id="s5Content5Steps5">
+                                                <div class="preload s5Content5StepsBg" data-src="images/s5-content-5-steps-bg-5.png"></div>
+                                                <div class="s5Content5StepsText">Priority Right (Paris Convention)</div>
+                                            </li>
+                                            <li id="s5Content5Steps6">
+                                                <div class="preload s5Content5StepsBg" data-src="images/s5-content-5-steps-bg-6.png"></div>
+                                                <div class="s5Content5StepsText">Who can register?</div>
+                                            </li>
+                                            <li id="s5Content5Steps7">
+                                                <div class="preload s5Content5StepsBg" data-src="images/s5-content-5-steps-bg-7.png"></div>
+                                                <div class="s5Content5StepsText">Industrial Designs Formal Examination</div>
+                                            </li>
+                                            <li id="s5Content5Steps8">
+                                                <div class="preload s5Content5StepsBg" data-src="images/s5-content-5-steps-bg-8.png"></div>
+                                                <div class="s5Content5StepsText">Obtaining the Registration Certificate</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li id="s5Content6">
+                                    <div class="s5ContentDetails">
+                                        <div class="s5Content6Text active" id="s5Content6Text1">
+                                            <div class="s5ContentHeading">Researches</div>
+                                            <div class="s5ContentText">
+                                                <p>It is important to conduct searches for existing industrial designs <strong>to ensure the novelty of a proposed design to be registered or to avoid any potential infringement.</strong></p>
+                                            </div>
+                                            <div class="s5ContentHeading">ASEAN Designview</div>
+                                            <div class="s5ContentText">
+                                                <ul>
+                                                    <li>Information platform of the ASEAN Member States</li>
+                                                    <li>An online tool to consult on publicly available data on industrial design</li>
+                                                    <li>Free of charge online access to information on industrial design registrations and published industrial design applications.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="s5Content6Text" id="s5Content6Text2">
+                                            <div class="s5ContentHeading">Checklist</div>
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="table-content" scope="col">Items/documents required for registration</th>
+                                                        <th scope="col">Checklist</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="table-content">Application Form</td>
+                                                        <td><span class="oi oi-check"></span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table-content">Application Fee</td>
+                                                        <td><span class="oi oi-check"></span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table-content">English Translation</td>
+                                                        <td><span class="oi oi-check"></span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table-content">Power of Attorney/Form to appoint a local agent (if not domicile or real business operations in the country)</td>
+                                                        <td><span class="oi oi-check"></span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table-content">Priority right claim (if any)</td>
+                                                        <td><span class="oi oi-check"></span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table-content">Statement of novelty/Description of design</td>
+                                                        <td><span class="oi oi-check"></span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table-content">Representations of design</td>
+                                                        <td><span class="oi oi-check"></span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table-content">Representations applied to each article in a set (if any)</td>
+                                                        <td><span class="oi oi-check"></span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="s5Content6Text overflow" id="s5Content6Text3">
+                                            <div class="s5ContentHeading">What makes up an industrial design?</div>
+                                            <div class="s5ContentText">
+                                                <ul>
+                                                    <li>A representation of the design as part of the registration formalities</li>
+                                                    <li>A physical sample of the article embodying the industrial design, where the design is two dimensional (depending on the country)</li>
+                                                    <li>Details on the articles which the design is to be applied or provide a clear description of what the design claims a monopoly over (depending on the country)</li>
+                                                </ul>
+                                            </div>
+                                            <div class="s5ContentHeading">Goods and Services Classification</div>
+                                            <div class="s5ContentText">
+                                                <ul>
+                                                    <li>You need to identify the class for registration. Use The Locarno Classification (established by the Locarno Agreement in 1968)</li>
+                                                    <li>32 classes: “Tool and Hardware”, “Musical Instruments”, etc.</li>
+                                                </ul>
+                                            </div>
+                                            <div class="s5ContentHeading">Priority Right</div>
+                                            <div class="s5ContentText">
+                                                <p>An applicant has filed an earlier corresponding design application in a Paris Convention country or a WTO member country can claim priority from the first-filed provided that the subsequent application is made within six (6) months of the date of the first filing. </p>
+                                            </div>
+                                        </div>
+                                        <div class="s5Content6Text" id="s5Content6Text4">
+                                            <div class="s5ContentHeading">Who can register?</div>
+                                            <div class="s5ContentText">
+                                                <span>Depending on the country</span>
+                                                <ul>
+                                                    <li>The owner of the design: designer, commissioning party, or employer</li>
+                                                    <li>The designer, commissioning party and employer where the design was created by the employee in the course of employment </li>
+                                                </ul>
+                                            </div>
+                                            <div class="s5ContentHeading">Requirements for Registration</div>
+                                            <div class="s5ContentText">
+                                                <span>Generally, in order to register a design, it must meet the following requirements:</span>
+                                                <ul>
+                                                    <li>1. It must be novel; and</li>
+                                                    <li>2. It must be applied industrially.</li>
+                                                </ul>
+                                                <p>It is recommended to consult with <strong>local lawyers or agents</strong> who can help you to understand if your design meets the requirements for registration or if you could protect the goods with some other form of IP in that country.</p>
+                                            </div>
+                                        </div>
+                                        <div class="s5Content6Text overflow" id="s5Content6Text5">
+                                            <div class="s5ContentHeading">Term of Protection</div>
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="table-content" scope="col">SEA Country</th>
+                                                        <th scope="col">Period of Protection</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="table-content">Brunei</td>
+                                                        <td>Initial period of 5 years, and extendable for 2 periods of 15 years from the filling date.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table-content">Cambodia</td>
+                                                        <td>Initial period of 5 years, and extendable for 2 periods of 15 years from the filling date.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table-content">Indonesia</td>
+                                                        <td>10 years from filing date.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table-content">Laos</td>
+                                                        <td>Initial period of 5 years, and extendable for 2 periods of 5 years each, up to a maximum of 15 years from the filing date.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table-content">Malaysia</td>
+                                                        <td>Initial period of 5 years, and extendable for 4 periods of 5 years each, up to a maximum of 25 years from the filing date.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table-content">Myanmar</td>
+                                                        <td>As of November 2017, there is presently no functioning system of protection for industrial designs. However, the draft legislation for industrial designs was published in 2015 and is awaiting deliberation in Parliament.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table-content">The Philippines</td>
+                                                        <td>Initial period of 5 years, and extendable for 2 periods of 5 years each, up to a maximum of 15 years from the filing date.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table-content">Singapore</td>
+                                                        <td>Initial period of 5 years, and extendable for 2 periods of 5 years each, up to a maximum of 15 years from the filing date.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table-content">Thailand</td>
+                                                        <td>10 years from filing date.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table-content">Vietnam</td>
+                                                        <td>Initial period of 5 years, and extendable for 2 periods of 5 years each, up to a maximum of 15 years from the filing date.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="s5Content6Text" id="s5Content6Text6">
+                                            <div class="s5ContentBg">
+                                                <div class="preload" id="s5Content6Bg" data-src="images/s5-content-6-bg.png"></div>
+                                                <div class="preload" id="s5Content6Bg7" data-src="images/s5-content-6-bg-7.png"></div>
+                                                <div class="preload" id="s5Content6Bg6" data-src="images/s5-content-6-bg-6.png"></div>
+                                                <div class="preload" id="s5Content6Bg5" data-src="images/s5-content-6-bg-5.png"></div>
+                                                <div class="preload" id="s5Content6Bg4" data-src="images/s5-content-6-bg-4.png"></div>
+                                                <div class="preload" id="s5Content6Bg3" data-src="images/s5-content-6-bg-3.png"></div>
+                                                <div class="preload" id="s5Content6Bg2" data-src="images/s5-content-6-bg-2.png"></div>
+                                                <div class="preload" id="s5Content6Bg1" data-src="images/s5-content-6-bg-1.png"></div>
+                                            </div>
+                                            <div class="s5ContentHeading">Formal Examination</div>
+                                            <div class="s5ContentText">
+                                                <p>As IP Offices in most SEA countries generally only conduct a <strong>formal examination of the industrial design application</strong>, which pertains to whether the necessary documentation and details are provided, a substantive examination of the registrability requirements, such as novelty and industrial application, is not undertaken. Consequently, it is often faster for industrial designs to be registered when compared to other IP applications such as patents or trade marks, barring any deficiencies in the required documents.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="btn" id="btnS5Next" role="button"><img src="images/s5-btn-next.png" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="list-unstyled" id="s5Menu">
+                            <li>Getting protection for your industrial design</li>
+                            <li>Novelty is crucial</li>
+                            <li>Application Process</li>
+                            <li>Applications in multiple countries via the Hague System</li>
+                            <li>Consider following this process for your Industrial Designs Application</li>
+                            <li>Industrial Designs Application Process</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="carousel-item site-slider-item" id="siteSlide6">
+                    <div class="preload" data-src="images/s6-bg.png"></div>
+                    <div class="preload" id="s6Machine1" data-src="images/s6-machine-1.png"></div>
+                    <div class="preload" id="s6Machine2" data-src="images/s6-machine-2.png"></div>
+                    <div class="preload" id="s6Machine3" data-src="images/s6-machine-3.png"></div>
+                    <div class="preload" id="s6Machine4" data-src="images/s6-machine-4.png"></div>
+                    <div class="preload" data-src="images/s6-bg-2.png"></div>
+                    <div id="s6Text1">
+                        <span>Approaches to dealing to with</span>
+                        <br> <span>infringement of an industrial design right</span>
+                    </div>
+                    <div id="s6Text2">
+                        <div class="preload" id="s6Paper" data-src="images/s6-paper.png"></div>
+                        <div class="preload" id="s6Hand" data-src="images/s6-hand.png"></div>
+                        <p><strong>A cease and desist letter</strong> (C&D) can be issued as a show of force to the infringer to demand a halt to the infringing activity.</p>
+                        <p>In certain countries like Vietnam and Thailand, administrative actions are also possible cost-effective and time-efficient options although they tend to be limited in effectiveness due to the relative inexperience of administrative bodies in dealing with more specialised areas such as industrial designs.</p>
+                        <p id="s6Text2Last">In some countries like Singapore, Malaysia and Vietnam, an infringer who has no knowledge or had no reasonable ground for believing that the design was registered, will not be liable for damages.</p>
+                    </div>
+                </div>
+                <div class="carousel-item site-slider-item" id="siteSlide7">
+                    <div class="preload" id="s7Bg2" data-src="images/s7-bg-2.png"></div>
+                    <div class="preload" data-src="images/s7-bg.png"></div>
+                    <div class="preload" id="s7Bg3" data-src="images/s7-bg-3.png"></div>
+                    <div id="s7Man">
+                        <div class="preload" id="s7ManBody" data-src="images/s7-man-body.png"></div>
+                        <div class="preload" id="s7ManEye" data-src="images/s7-man-eye.png"></div>
+                    </div>
+                    <div id="s7Bubble">
+                        <div class="preload" id="s7BubbleBg" data-src="images/s7-bubble.png"></div>
+                        <div id="s7BubbleText">
+                            <div class="s7QuizHi">
+                                Let’s now test your knowledge about Industrial Design!
+                            </div>
+                            <div class="s7QuizFail">
+                                <span>Fail!</span> Correct Answer is B
+                            </div>
+                            <div class="s7QuizSuccess">
+                                <span>Correct!</span> The Answer is B
+                            </div>
+                        </div>
+                    </div>
+                    <div id="s7Questions">
+                        <div class="s7Question" id="s7Question1">
+                            <div class="question">Which answer is a correct definition of industrial designs?</div>
+                            <div class="answers">
+                                <div class="form-check a">
+                                    <label class="toggle">
+                                        <input type="radio" name="s7Answer1" id="s7Answer11" value="A"> <span class="label-text">It is a legal term used to describe exclusive rights granted to authors, artists and other creators for their creations</span>
+                                    </label>
+                                </div>
+                                <div class="form-check b">
+                                    <label class="toggle">
+                                        <input type="radio" name="s7Answer1" id="s7Answer12" value="B"> <span class="label-text">It is a registered right granted to protect the features of shape, configuration, pattern or ornament applied to an article by an industrial process</span>
+                                    </label>
+                                </div>
+                                <div class="form-check c">
+                                    <label class="toggle">
+                                        <input type="radio" name="s7Answer1" id="s7Answer13" value="C"> <span class="label-text">It is a sign that allows consumers to distinguish goods or services of one producer from those of anothers</span>
+                                    </label>
+                                </div>
+                                <div class="form-check d">
+                                    <label class="toggle">
+                                        <input type="radio" name="s7Answer1" id="s7Answer14" value="D"> <span class="label-text">It is information obtained from financial or intellectual investment activities, which has not been disclosed and is applicable in business.</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s7Question" id="s7Question2">
+                            <div class="question">What are the common requirements for industrial design protection to be granted?</div>
+                            <div class="answers">
+                                <div class="form-check a">
+                                    <label class="toggle">
+                                        <input type="radio" name="s7Answer2" id="s7Answer21" value="A"> <span class="label-text">It must have economic value.</span>
+                                    </label>
+                                </div>
+                                <div class="form-check b">
+                                    <label class="toggle">
+                                        <input type="radio" name="s7Answer2" id="s7Answer22" value="B"> <span class="label-text">It must be novel and it must be applied industrially.</span>
+                                    </label>
+                                </div>
+                                <div class="form-check c">
+                                    <label class="toggle">
+                                        <input type="radio" name="s7Answer2" id="s7Answer23" value="C"> <span class="label-text">It must be interesting for the public.</span>
+                                    </label>
+                                </div>
+                                <div class="form-check d">
+                                    <label class="toggle">
+                                        <input type="radio" name="s7Answer2" id="s7Answer23" value="D"> <span class="label-text">It must be colorful and have patterns.</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn" id="s7BtnNext" role="button"><img src="images/s5-btn-next.png" alt=""></a>
+                </div>
+                <div class="carousel-item site-slider-item" id="siteSlide8">
+                    <div class="preload" data-src="images/s8-bg.png"></div>
+                    <div class="preload" id="s8Icon" data-src="images/s8-icon.png"></div>
+                    <div id="s8Content">
+                        <p>IP rights are territorial and industrial designs <strong>must be registered in each country where you have a business interest in.</strong> </p>
+                        <p><strong>IP audit should be performed on a regular basis.</strong> As with other aspects of a business strategy, your IP can evolve over time. </p>
+                        <p>A registered design <strong>may be obtained to protect</strong> the features of shape, configuration, pattern or ornament applied to an article by an industrial process. </p>
+                        <p>Once a design is created, it <strong>must not be disclosed</strong> in order to preserve the novelty, since failing to do so, would expose you to the risk that their design may then be considered as non-novel and incapable of registration.</p>
+                        <p>The procedure and process for an industrial design application <strong>differs</strong> between the ten SEA countries.</p>
+                        <p>Consider the best way to make use of your IP. If you are unable to fully commercialise it through your own efforts, <strong>licensing of industrial design rights</strong> could be a viable option.</p>
+                    </div>
+                </div>
+                <div class="carousel-item site-slider-item" id="siteSlide9">
+                    <div class="preload" data-src="images/s8-bg.png"></div>
+                    <div class="preload" id="s9Ball1" data-src="images/s9-ball-1.png"></div>
+                    <div class="preload" id="s9Ball2" data-src="images/s9-ball-2.png"></div>
+                    <ul class="list-unstyled link-list">
+                        <li>For additional information Visit the Country Factsheets of South-East Asia countries: <a href="http://www.southeastasia-iprhelpdesk.eu/en/country-factsheets">http://www.southeastasia-iprhelpdesk.eu/en/country-factsheets</a></li>
+                        <li>Guide on Industrial Designs Protection in South-East Asia:
+                            <a href="http://www.southeastasia-iprhelpdesk.eu/sites/default/files/page_pdf/Industrial%20Designs%20Protection%20in%20South-East%20Asia.pdf">http://www.southeastasia-iprhelpdesk.eu/sites/default/files/page_pdf/Industrial%20Designs%20Protection%20in%20South-East%20Asia.pdf</a> </li>
+                        <li>How to Guide on ASEAN Designview:
+                            <a href="http://www.southeastasia-iprhelpdesk.eu/sites/default/files/publications/How_to_Designview.pdf">http://www.southeastasia-iprhelpdesk.eu/sites/default/files/publications/How_to_Designview.pdf</a> </li>
+                        <li>Guide on IPR Enforcement in South-East Asia:
+                            <a href="http://www.southeastasia-iprhelpdesk.eu/sites/default/files/publications/EN_Enforcement.pdf">http://www.southeastasia-iprhelpdesk.eu/sites/default/files/publications/EN_Enforcement.pdf</a> </li>
+                        <li>Guide to Using Contracts to Protect your IP in South-East Asia:
+                            <a href="http://www.southeastasia-iprhelpdesk.eu/en/content/usingcontracts-protect-your-intellectual-property">http://www.southeastasia-iprhelpdesk.eu/en/content/usingcontracts-protect-your-intellectual-property</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <a class="carousel-control-prev slider-control btn" id="btnSliderPrev" role="button">
+                <img src="images/btn-prev.png" alt="">
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next slider-control btn" id="btnSliderNext" role="button">
+                <img src="images/btn-next.png" alt="">
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div id="siteFooter">
+            <div id="last-updated">
+                <p><strong>Industrial Designs</strong> | Last updated: March 2018</p>
+                <p>Copyright &copy; 2018 South-East Asia IPR SME Helpdesk. All rights reserved</p>
+            </div>
+        </div>
+    </div>
+    <div id="loaderWrapper">
+        <div class="loader">Loading...</div>
+    </div>
+    <script type="text/javascript">
+    window.onload = function() {
+        initSite();
+    }
+
+    function initSite() {
+        pageLoadedHandler();
+
+        function pageLoadedHandler() {
+            //Load in Javascript
+            loadJs('https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js', function() {
+                loadJs('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js', function() {
+                    loadJs('https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js', function() {
+                        loadJs('https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js', function() {
+                            loadJs('https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js', function() {
+                                loadJs('scripts/app.js', function() {
+                                    init();
+                                });
+                            });
+                        });
+                    });
+                });
+            });
+        }
+
+        function loadJs(file, complete) {
+            var extJavascript = document.createElement('script');
+            extJavascript.setAttribute('type', 'text/javascript');
+            extJavascript.setAttribute('src', file);
+            document.getElementsByTagName('head')[0].appendChild(extJavascript);
+            extJavascript.onload = complete;
+        };
+    }
+    </script>
+</body>
+
+</html>
