@@ -1,0 +1,67 @@
+  #desk-1 {
+      top: 125px;
+      left: 350px;
+  }
+  
+  #desk-2 {
+      top: 350px;
+      left: 250px;
+  }
+  
+  #desk-3 {
+      left: 760px;
+      bottom: 115px;
+  }
+  
+  #desk-4 {
+      left: 700px;
+      top: 385px;
+  }
+  
+  #person-1 {
+      top: 480px;
+      left: 155px;
+  }
+  
+  #person-2 {
+      top: 485px;
+      left: 835px;
+  }
+  
+  #person-3 {
+      top: 300px;
+      left: 270px;
+  }
+  
+  #person-4 {
+      top: 190px;
+      left: 350px;
+  }
+  
+  #cars {
+      bottom: -160px;
+      left: 230px;
+  }
+  
+  .object {
+      position: absolute;
+  }
+  
+  #way {
+      left: 435px;
+      top: 280px
+  }
+  
+  #floor {
+      top: 240px;
+      left: 285px;
+  }
+  
+  #big-slogan {
+      font-family: 'Roboto-Black', Fallback, sans-serif;
+      font-size: 35px;
+      color: white;
+      letter-spacing: 3px;
+      padding-left: 70px;
+      padding-top: 50px;
+  }
