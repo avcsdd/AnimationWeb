@@ -15,12 +15,9 @@
     <link rel="stylesheet" href="">
     <link rel="stylesheet" href="../assets/css/layout.css">
     <link rel="stylesheet" href="../assets/css/page/page01-css.css">
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <style>
-
-    </style>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -30,9 +27,9 @@
         <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////-->
         <div class="fixed-on-top" id="banner">
             <div id="banner-upper">
-                <img id="logo-left" src="../assets/images/logo/logo_ce-en-rvb-hr.png" width="15%" />
+                <img id="logo-left" src="../assets/images/logo/logo_ce-en-rvb-hr.png" width="15%"/>
                 <span id="web-title">E-LEARNING MODULE</span>
-                <img id="logo-right" src="../assets/images/logo/SEA logo.jpg" width="20%" />
+                <img id="logo-right" src="../assets/images/logo/SEA logo.jpg" width="20%"/>
             </div>
             <div id="banner-lower">
             </div>
@@ -79,6 +76,9 @@
             <div id="big-slogan">
                 PROTECTING YOUR IP <br/> AT TRADE FAIRS IN <br/> SOUTH-EAST ASIA
             </div>
+            <div id="leftCornerText">
+                UDATED IN NOVEMBER 2019
+            </div>
             <img class="object" id="floor" src="../assets/images/01/floor.png" />
             <img class="object" id="desk-1" src="../assets/images/01/Artboard 65 copy 34.png" />
             <img class="object" id="way" src="../assets/images/01/Artboard 65.png" />
@@ -96,6 +96,7 @@
         $(".nav-link").each(function() {
             $(this).not($(this).has("br")).css("padding-top", "15px")
         })
+        $('.carousel').carousel()
     </script>
 </body>
 

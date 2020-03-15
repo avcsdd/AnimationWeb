@@ -64,4 +64,16 @@
       letter-spacing: 3px;
       padding-left: 70px;
       padding-top: 50px;
+      height: 65%;
+  }
+
+  #leftCornerText{
+      font-family: 'Roboto-Black', Fallback, sans-serif;
+      font-size: 14px;
+      color: white;
+      letter-spacing: 3px;
+      padding-left: 70px;
+      margin-bottom: 0px;
+      -webkit-text-decoration-line: overline; /* Safari */
+      text-decoration-line: overline; 
   }
