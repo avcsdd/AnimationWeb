@@ -1,0 +1,86 @@
+#main-wrapper > .content-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+#upper-text-wrapper {
+    background-image: url('../../images/02/Artboard\ 65\ copy\ 7.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 115%;
+    height: 0;
+    padding-top: 53.42%;
+    margin-top: -180px;
+    margin-left: -53px;
+}
+
+#upper-text-wrapper > p:first-child {
+    margin-top: -370px;
+    margin-left: 210px;
+}
+
+#upper-text-wrapper > p:nth-child(2) {
+    margin-top: -21px;
+    margin-left: 215px;
+}
+
+#upper-text-wrapper > p {
+    font-size: 25px;
+    color: white;
+}
+
+#background-behind-girl > img {
+    margin-top: -377px;
+    margin-left: 140px;
+    width: 80%;
+}
+
+#girl-center > img {
+    margin-top: -630px;
+    margin-left: 260px;
+}
+
+#table > img {
+    margin-top: -497px;
+    margin-left: 255px;
+    width: 60%;
+}
+
+#stuff-on-table > img {
+    margin-top: -935px;
+    margin-left: 300px;
+}
+
+#LeftPros > img:first-child {
+    margin-top: -1350px;
+    margin-left: -125px;
+}
+
+#LeftPros > img:nth-child(3) {
+    margin-top: -300px;
+    margin-left: -88px;
+}
+
+#LeftPros > p, #RightCons > p {
+    color: white;
+    width: fit-content;
+}
+
+#LeftPros > p:nth-child(2) {
+    margin-top: -685px;
+    margin-left: 165px;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+#LeftPros > p:nth-child(4) {
+    margin-top: -331px;
+    margin-left: 204px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#RightCons > img:first-child {
+    margin-top: -1388px;
+    margin-left: 686px;
+}
