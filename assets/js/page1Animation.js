@@ -1,12 +1,22 @@
 $(document).ready(function(){
     // animation showup of desk 1
+    zoomEffectValue = 0.5
     desk1Animation = anime({
         targets: document.querySelectorAll("#desk-1"),
         translateY:  [{value:410,duration:1500}],
         opacity: [{value: 1,duration: 1500}],
             // translateX: [{value:250,duration:2000},{value:0,duration:1000}],
         easing: 'easeInOutQuad',
-    });
+    })
+    //
+    // desk1ZoomAnimation = anime({
+    //     targets: document.querySelectorAll("#desk-1"),
+    //     scaleX: [{value:1}],
+    //     scaleY: [{value:1}],
+    //     loop:true,
+    //     // translateX: [{value:250,duration:2000},{value:0,duration:1000}],
+    //     easing: 'easeInOutQuad',
+    // });
     // animation back to initial place of desk 1
     desk1AnimationBack = anime({
         targets: document.querySelectorAll("#desk-1"),
@@ -178,6 +188,44 @@ $(document).ready(function(){
         opacity:0,
         autoplay: false,
     });
+    // 
+    person4Animation = anime({
+        targets: document.querySelectorAll("#person-4"),
+        opacity: [{value: 1,duration: 1500}],
+        easing: 'easeInOutQuad',
+    });
+    // animation back to initial place of person 2
+    person4AnimationBack = anime({
+        targets: document.querySelectorAll("#person-4"),
+        opacity:0,
+        autoplay: false,
+    });
+    // 
+    textAnimation = anime({
+        targets: document.querySelectorAll("#big-slogan"),
+        opacity: [{value: 1,duration: 3600}],
+        easing: 'easeInOutQuad',
+    });
+    
+    // animation back to initial place of person 2
+    textAnimationBack = anime({
+        targets: document.querySelectorAll("#big-slogan"),
+        opacity:0,
+        autoplay: false,
+    });
+    // 
+    text2Animation = anime({
+        targets: document.querySelectorAll("#leftCornerText"),
+        opacity: [{value: 1,duration: 3600}],
+        easing: 'easeInOutQuad',
+    });
+    
+    // animation back to initial place of person 2
+    text2AnimationBack = anime({
+        targets: document.querySelectorAll("#leftCornerText"),
+        opacity:0,
+        autoplay: false,
+    });
     $('#carouselExampleControls').bind('slid.bs.carousel', function (e) {
         var ele = $('#carouselExampleControls .carousel-indicators li.active');
         var pageIndex = ele.data('value');
@@ -192,6 +240,9 @@ $(document).ready(function(){
             person2Animation.play()
             carAnimation.play()
             person3Animation.play()
+            person4Animation.play()
+            textAnimation.play()
+            text2Animation.play()
         } else {
             desk1AnimationBack.play()
             desk2AnimationBack.play()
@@ -203,6 +254,9 @@ $(document).ready(function(){
             person2AnimationBack.play()
             carAnimationBack.play()
             person3AnimationBack.play()
+            person4AnimationBack.play()
+            textAnimationBack.play()
+            text2AnimationBack.play()
         }
     });
 })

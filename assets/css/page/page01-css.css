@@ -40,11 +40,13 @@
   #person-3 {
       top: 70px;
       left: 280px;
+      opacity: 0;
   }
   
   #person-4 {
       top: -20px;
       left: 350px;
+      opacity: 0;
   }
   
   #cars {
@@ -69,6 +71,7 @@
       opacity:0;
   }
   
+
   #big-slogan {
       font-family: 'Roboto-Black', Fallback, sans-serif;
       font-size: 35px;
@@ -88,4 +91,8 @@
       margin-bottom: 0px;
       -webkit-text-decoration-line: overline; /* Safari */
       text-decoration-line: overline; 
+  }
+
+  .textPage1{
+      opacity: 0;
   }
