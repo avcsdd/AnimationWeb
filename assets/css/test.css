@@ -1,11 +1,6 @@
-#main-wrapper{
-    overflow: hidden !important;
-}
-
 .content-wrapper{
     height: 100% !important;
     position: relative !important;
-    background-color: red;
 }
 
 #carouselExampleControls {
@@ -16,11 +11,25 @@
     height: 100% !important;
 }
 
-#page-content-wrapper {
+.page-content-wrapper {
     height: 100% !important;
-    position: inherit;
 }
 
 .carousel-item{
     height: 100%;
+}
+
+.carousel-control-button{
+    height: 55%;
+}
+
+.carousel-control-prev{
+    margin-left: -5%;
+}
+.carousel-control-next {
+    margin-right: -5%;
+}
+
+#page2{
+    background-image: url('../../images/logo/shutterstock_182632013.jpg') !important;
 }
