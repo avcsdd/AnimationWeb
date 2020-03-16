@@ -1,4 +1,5 @@
 #main-wrapper > .content-wrapper {
+    background-image: url('../../images/logo/shutterstock_182632013.jpg');
     width: 100%;
     height: 100%;
 }
@@ -51,6 +52,17 @@
     margin-left: 300px;
 }
 
+@font-face {
+    font-family: RobotoCondensed-Bold;
+    src: url('../../font/RobotoCondensed-Bold.woff') format("woff");
+}
+
+#LeftPros > p, #RightCons > p {
+    color: white;
+    width: fit-content;
+    font-family: RobotoCondensed-Bold;
+}
+
 #LeftPros > img:first-child {
     margin-top: -1350px;
     margin-left: -125px;
@@ -61,20 +73,15 @@
     margin-left: -88px;
 }
 
-#LeftPros > p, #RightCons > p {
-    color: white;
-    width: fit-content;
-}
-
 #LeftPros > p:nth-child(2) {
-    margin-top: -685px;
-    margin-left: 165px;
+    margin-top: -682px;
+    margin-left: 167px;
     font-size: 50px;
     cursor: pointer;
 }
 
 #LeftPros > p:nth-child(4) {
-    margin-top: -331px;
+    margin-top: -330px;
     margin-left: 204px;
     font-size: 12px;
     cursor: pointer;
@@ -83,4 +90,23 @@
 #RightCons > img:first-child {
     margin-top: -1388px;
     margin-left: 686px;
+}
+
+#RightCons > img:nth-child(3) {
+    margin-top: -301px;
+    margin-left: 670px;
+}
+
+#RightCons > p:nth-child(2) {
+    margin-top: -698px;
+    margin-left: 944px;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+#RightCons > p:nth-child(4) {
+    margin-top: -331px;
+    margin-left: 963px;
+    font-size: 12px;
+    cursor: pointer;
 }
