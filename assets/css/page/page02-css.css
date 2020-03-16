@@ -1,5 +1,5 @@
-#main-wrapper > .content-wrapper {
-    background-image: url('../../images/logo/shutterstock_182632013.jpg');
+#page2 .page-content-wrapper {
+    background-image: url('../../images/logo/shutterstock_182632013.jpg') !important;
     width: 100%;
     height: 100%;
 }
