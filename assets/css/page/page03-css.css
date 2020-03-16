@@ -72,15 +72,39 @@
     margin-top: -5px;
 }
 
-#leftBalance > #yellowBall {
-    width: 100%;
+#balls {
+    position: relative;
+    width: 61%;
+    height: 347px;
+    margin-top: 20px;
+    margin-left: 145px;
 }
 
-/* #leftBalance > #redBall {
-    margin-left: -134px;
-    margin-top: 156px;
-} */
+#rightBalance > #balls {
+    margin-left: 109px;
+}
+
+#yellowBall, #redBall, #blueBall {
+    position: absolute;
+}
+
+#redBall {
+    bottom: 0;
+    left: 0;
+}
+
+#blueBall {
+    bottom: 0;
+    right: 0;
+}
+
+#yellowBall {
+    right: 0;
+    left: 0;
+    margin: auto;
+}
 
 #leftBalance > p:last-child, #rightBalance > p:last-child {
     font-size: 32px;
+    margin-top: 60px;
 }
