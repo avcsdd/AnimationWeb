@@ -67,6 +67,11 @@ li.nav-item:hover {
     border: none;
 }
 
+li.nav-item.active {
+    background-image: linear-gradient(to right, orange, yellow);
+    border: none;
+}
+
 .nav-link {
     color: white
 }
