@@ -5,41 +5,39 @@
     background-image: url('../../images/logo/shutterstock_182632013.jpg') !important;
 }
 
-.sectionP4{
+.sectionP4 {
     height: 100%;
     width: 33%;
 }
 
-#section2P4{
-
-}
+#section2P4 {}
 
 #aseanCountryFlagsP4 {
     margin-top: -72% !important;
-    margin-left: 4% !important;    
+    margin-left: 4% !important;
 }
 
-#flagStaffP4{
+#flagStaffP4 {
     margin-top: 28% !important;
     margin-left: 12% !important;
 }
 
-#tableP4{
+#tableP4 {
     margin-top: 0%;
     margin-left: -9%;
 }
 
-#laptopP4{
-     margin-right: 0%; 
-     z-index: 1000 !important;
-     padding-right: 25%;
-     left: 0%;
-     position: relative;
+#laptopP4 {
+    margin-right: 0%;
+    z-index: 1000 !important;
+    padding-right: 25%;
+    left: 0%;
+    position: relative;
 }
 
-#girlP4{
+#girlP4 {
     position: absolute;
-    top:36%;
+    top: 36%;
     z-index: 1 !important;
     left: 36%;
 }
@@ -53,9 +51,10 @@
     margin-bottom: 58%;
     margin-top: 10%;
     margin-left: -10%;
+    opacity: 0;
 }
 
-#textBubbleP4 > p{
+#textBubbleP4>p {
     /* color: white !important;  */
     font-size: 22px !important;
     color: white !important;

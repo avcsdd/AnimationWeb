@@ -105,3 +105,19 @@ function returnX(obj, value) {
     });
     obj.play();
 }
+
+function fadeShowUp(def) {
+    return nh = anime({
+        targets: def,
+        opacity: [{ value: 1, duration: 1000 }],
+        easing: 'easeInOutQuad',
+    });
+}
+
+function off(def) {
+    return nh = anime({
+        targets: def,
+        opacity: 0,
+        easing: 'easeInOutQuad',
+    });
+}
