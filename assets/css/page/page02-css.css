@@ -4,7 +4,7 @@
     height: 100%;
 }
 
-#upper-text-wrapper {
+#page2 #upper-text-wrapper {
     background-image: url('../../images/02/Artboard\ 65\ copy\ 7.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -16,41 +16,41 @@
     opacity: 0;
 }
 
-#upper-text-wrapper>p:first-child {
+#page2 #upper-text-wrapper>p:first-child {
     margin-top: -370px;
     margin-left: 210px;
 }
 
-#upper-text-wrapper>p:nth-child(2) {
+#page2 #upper-text-wrapper>p:nth-child(2) {
     margin-top: -21px;
     margin-left: 215px;
 }
 
-#upper-text-wrapper>p {
+#page2 #upper-text-wrapper>p {
     font-size: 25px;
     color: white;
 }
 
-#background-behind-girl>img {
+#page2 #background-behind-girl>img {
     margin-top: -377px;
     margin-left: 140px;
     width: 80%;
     opacity: 0;
 }
 
-#girl-center>img {
+#page2 #girl-center>img {
     margin-top: -630px;
     margin-left: 260px;
     opacity: 0;
 }
 
-#table>img {
+#page2 #table>img {
     margin-top: -475px;
     margin-left: 255px;
     width: 60%;
 }
 
-#stuff-on-table>img {
+#page2 #stuff-on-table>img {
     margin-top: -700px;
     margin-left: 300px;
 }
@@ -60,35 +60,35 @@
     src: url('../../font/RobotoCondensed-Bold.woff') format("woff");
 }
 
-#LeftPros {
+#page2 #LeftPros {
     margin-left: 200px;
 }
 
-#RightCons {
+#page2 #RightCons {
     margin-left: -200px;
 }
 
-#LeftPros>p,
-#RightCons>p {
+#page2 #LeftPros>p,
+#page2 #RightCons>p {
     color: white;
     width: fit-content;
     font-family: RobotoCondensed-Bold;
     opacity: 0;
 }
 
-#LeftPros>img:first-child {
+#page2 #LeftPros>img:first-child {
     margin-top: -1350px;
     margin-left: -125px;
     opacity: 0;
 }
 
-#LeftPros>img:nth-child(3) {
+#page2 #LeftPros>img:nth-child(3) {
     margin-top: -300px;
     margin-left: -88px;
     opacity: 0;
 }
 
-#LeftPros>p:nth-child(2) {
+#page2 #LeftPros>p:nth-child(2) {
     margin-top: -682px;
     margin-left: 167px;
     font-size: 50px;
@@ -96,7 +96,7 @@
     opacity: 0;
 }
 
-#LeftPros>p:nth-child(4) {
+#page2 #LeftPros>p:nth-child(4) {
     margin-top: -330px;
     margin-left: 204px;
     font-size: 12px;
@@ -104,19 +104,19 @@
     opacity: 0;
 }
 
-#RightCons>img:first-child {
+#page2 #RightCons>img:first-child {
     margin-top: -1388px;
     margin-left: 686px;
     opacity: 0;
 }
 
-#RightCons>img:nth-child(3) {
+#page2 #RightCons>img:nth-child(3) {
     margin-top: -301px;
     margin-left: 670px;
     opacity: 0;
 }
 
-#RightCons>p:nth-child(2) {
+#page2 #RightCons>p:nth-child(2) {
     margin-top: -698px;
     margin-left: 944px;
     font-size: 50px;
@@ -124,7 +124,7 @@
     opacity: 0;
 }
 
-#RightCons>p:nth-child(4) {
+#page2 #RightCons>p:nth-child(4) {
     margin-top: -331px;
     margin-left: 963px;
     font-size: 12px;
