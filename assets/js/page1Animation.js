@@ -245,8 +245,11 @@ $(document).ready(function(){
             text2Animation.play()
         } 
         else if (pageIndex == 2){
-            leftBalls.play()
-            rightBalls.play()
+            leftRedBall.play()
+            leftBlueBall.play()
+            leftYellowBall.play()
+            rightRedBall.play()
+            rightBlueBall.play()
             rightYellowBall.play()
             balance.play()
             upperTextWrapper.play()
