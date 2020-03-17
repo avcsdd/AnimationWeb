@@ -1,0 +1,68 @@
+#page4 .page-content-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../images/logo/shutterstock_182632013.jpg') !important;
+}
+
+.sectionP4{
+    height: 100%;
+    width: 33%;
+}
+
+#section2P4{
+
+}
+
+#aseanCountryFlagsP4 {
+    margin-top: -72% !important;
+    margin-left: 4% !important;    
+}
+
+#flagStaffP4{
+    margin-top: 28% !important;
+    margin-left: 12% !important;
+}
+
+#tableP4{
+    margin-top: 0%;
+    margin-left: -9%;
+}
+
+#laptopP4{
+     margin-right: 0%; 
+     z-index: 1000 !important;
+     padding-right: 25%;
+     left: 0%;
+     position: relative;
+}
+
+#girlP4{
+    position: absolute;
+    top:36%;
+    z-index: 1 !important;
+    left: 36%;
+}
+
+#textBubbleP4 {
+    background-image: url("../../images/04/Artboard\ 65\ copy\ 19@4x.png");
+    background-size: 100%;
+    height: 25%;
+    width: 115%;
+    padding: 5%;
+    margin-bottom: 58%;
+    margin-top: 10%;
+    margin-left: -10%;
+}
+
+#textBubbleP4 > p{
+    /* color: white !important;  */
+    font-size: 22px !important;
+    color: white !important;
+    text-align: center;
+}
+
+#sandClockP4 {
+    margin-top: 45% !important;
+    margin-left: 25% !important;
+}
