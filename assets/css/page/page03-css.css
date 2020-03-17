@@ -72,15 +72,62 @@
     margin-top: -5px;
 }
 
-#leftBalance > #yellowBall {
-    width: 100%;
+#balls {
+    position: relative;
+    width: 61%;
+    height: 347px;
+    margin-top: 20px;
+    margin-left: 145px;
 }
 
-/* #leftBalance > #redBall {
-    margin-left: -134px;
-    margin-top: 156px;
-} */
+#rightBalance > #balls {
+    margin-left: 109px;
+}
+
+#yellowBall {
+    background-image: url('../../images/03/Artboard\ 65\ copy\ 14.png');
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#redBall {
+    background-image: url('../../images/03/Artboard\ 65\ copy\ 13.png');
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#blueBall {
+    background-image: url('../../images/03/Artboard\ 65\ copy\ 15.png');
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#balls p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+}
 
 #leftBalance > p:last-child, #rightBalance > p:last-child {
     font-size: 32px;
+    margin-top: 60px;
+}
+
+#balls p {
+    font-weight: bold;
+    color: white;
+    margin-left: -4px;
+    margin-top: -7px;
 }
