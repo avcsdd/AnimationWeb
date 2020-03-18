@@ -103,4 +103,19 @@ $(document).ready(function() {
         ],
         autoplay: false,
     });
+
+    $('#carouselExampleControls').bind('slid.bs.carousel', function(e) {
+        var ele = $('#carouselExampleControls .carousel-indicators li.active');
+        var pageIndex = ele.data('value');
+        if (pageIndex == 2) {
+            leftRedBall.restart()
+            leftBlueBall.restart()
+            leftYellowBall.restart()
+            rightRedBall.restart()
+            rightBlueBall.restart()
+            rightYellowBall.restart()
+            balance.restart()
+            upperTextWrapper.restart()
+        }
+    });
 })
