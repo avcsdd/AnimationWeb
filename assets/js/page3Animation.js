@@ -13,6 +13,12 @@ $(document).ready(function() {
         autoplay: false,
     });
 
+    leftRedBall_Reverse = anime({
+        targets: ['#leftBalance #redBall'],
+        scale: 0,
+        autoplay: false,
+    });
+
     leftBlueBall = anime({
         targets: ['#leftBalance #blueBall'],
         scale: [
@@ -23,6 +29,12 @@ $(document).ready(function() {
         translateY: [
             { value: 35, duration: 1000, delay: 7000, easing: 'easeOutSine' },
         ],
+        autoplay: false,
+    });
+
+    leftBlueBall_Reverse = anime({
+        targets: ['#leftBalance #blueBall'],
+        scale: 0,
         autoplay: false,
     });
 
@@ -45,6 +57,12 @@ $(document).ready(function() {
         autoplay: false,
     });
 
+    leftYellowBall_Reverse = anime({
+        targets: ['#leftBalance #yellowBall'],
+        scale: 0,
+        autoplay: false,
+    });
+
     rightRedBall = anime({
         targets: ['#rightBalance #redBall'],
         scale: [
@@ -55,6 +73,12 @@ $(document).ready(function() {
         translateY: [
             { value: -35, duration: 1000, delay: 7000, easing: 'easeOutSine' },
         ],
+        autoplay: false,
+    });
+
+    rightRedBall_Reverse = anime({
+        targets: ['#rightBalance #redBall'],
+        scale: 0,
         autoplay: false,
     });
 
@@ -71,6 +95,12 @@ $(document).ready(function() {
         autoplay: false,
     });
 
+    rightBlueBall_Reverse = anime({
+        targets: ['#rightBalance #blueBall'],
+        scale: 0,
+        autoplay: false,
+    });
+
     rightYellowBall = anime({
         targets: ['#rightBalance #yellowBall'],
         scale: [
@@ -80,6 +110,12 @@ $(document).ready(function() {
             { value: 1.1, duration: 500, delay: 1000, easing: 'easeOutCubic' },
             { value: 0, duration: 1000, easing: 'easeInCubic' }
         ],
+        autoplay: false,
+    });
+
+    rightYellowBall_Reverse = anime({
+        targets: ['#rightBalance #yellowBall'],
+        scale: 0,
         autoplay: false,
     });
 
@@ -95,12 +131,24 @@ $(document).ready(function() {
         autoplay: false,
     });
 
+    balance_Reverse = anime({
+        targets: ['#topBalance', '#bottomBalance'],
+        translateY: 500,
+        autoplay: false,
+    });
+
     upperTextWrapper = anime({
         targets: '#upperTextWrapperP3',
         translateY: [
             { value: -500, duration: 0, easing: 'easeOutQuint' },
             { value: 0, duration: 1000, delay: 4000, easing: 'easeOutSine' },
         ],
+        autoplay: false,
+    });
+
+    upperTextWrapper_Reverse = anime({
+        targets: '#upperTextWrapperP3',
+        translateY: -500,
         autoplay: false,
     });
 
@@ -116,6 +164,23 @@ $(document).ready(function() {
             rightYellowBall.restart()
             balance.restart()
             upperTextWrapper.restart()
+        } else if (pageIndex == 1 || pageIndex == 3) {
+            leftRedBall.pause()
+            leftBlueBall.pause()
+            leftYellowBall.pause()
+            rightRedBall.pause()
+            rightBlueBall.pause()
+            rightYellowBall.pause()
+            balance.pause()
+            upperTextWrapper.pause()
+            leftRedBall_Reverse.play()
+            leftBlueBall_Reverse.play()
+            leftYellowBall_Reverse.play()
+            rightRedBall_Reverse.play()
+            rightBlueBall_Reverse.play()
+            rightYellowBall_Reverse.play()
+            balance_Reverse.play()
+            upperTextWrapper_Reverse.play()
         }
     });
 })
