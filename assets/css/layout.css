@@ -46,6 +46,17 @@ body {
     /* Legacy iOS */
 }
 
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../../assets/font/Roboto-Regular.ttf');
+    /* IE9 Compat Modes */
+    src: url('../../assets/font/Roboto-Regular.ttf') format('embedded-opentype'), /* IE6-IE8 */
+    url('../../assets/font/Roboto-Regular.ttf') format('woff'), /* Modern Browsers */
+    url('../../assets/font/Roboto-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../../assets/font/Roboto-Regular.ttf') format('svg');
+    /* Legacy iOS */
+}
+
 ul.navbar-nav {
     font-family: 'RobotoCondensed-Bold', Fallback, sans-serif;
     width: 100%;
