@@ -45,6 +45,7 @@
 #bigCirclePage7 {
     left: 670px;
     bottom: 330px;
+    opacity: 0;
 }
 
 #Small12CirclePage7 {
@@ -172,5 +173,9 @@ div#selectedContent p {
     font-size: 21px;
     top: 120px;
     left: 270px;
+    opacity: 0;
+}
+
+#messageCirclePage7 {
     opacity: 0;
 }
