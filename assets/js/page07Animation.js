@@ -13,7 +13,9 @@ const selectedMapContent = new Map([
     ["Circle07Page7", ["bigCircle07SelectedPage7.png", "Once the patent<br/> is granted,<br/> usually the patent<br/> number and<br/> jurisdiction are used to<br/> show where the patent<br/> was issued."]],
     ["Circle09Page7", ["bigCircle09SelectedPage7.png", "This symbol can<br/> only be used for<br/> registered trade marks.<br/> It can be a criminal<br/> offence to use this symbol<br/> if the trade mark is not<br/> registered (prosecutions are,<br/> however, very rare)."]]
 ]);
+var firstClickCirclePage7 = false;
 $(".CirclePage7").click(async function() {
+
     let selected = $(this).find("img")[0];
     for ([key, value] of selectedMapImage.entries()) {
         $("#" + key).attr("src", "../assets/images/07/" + value[0])
@@ -23,14 +25,18 @@ $(".CirclePage7").click(async function() {
     $("#selectedContent").css("background-image", "url(../../assets/images/07/" + selectedMapContent.get($(this).attr("id"))[0] + ")")
     $("#messageCirclePage7").hide("slow");
     $("#selectedContent").attr("hidden", false);
-    fadeShowUp("#selectedContent");
-    $("#objectLeftPage7").hide("slow");
     $("#" + $(selected).attr("id")).attr("src", "../assets/images/07/" + selectedMapImage.get($(selected).attr('id'))[1])
-    await new Promise(r => setTimeout(r, 1000));
-    $("#objectLeftPage7-whenclick").show("slow");
-    await new Promise(r => setTimeout(r, 500));
-    toXDelay("#arrowPage7", 500, 70);
-    toXDelay("#messageArrowPage7", 500, 70);
+    fadeShowUp("#selectedContent");
+
+    if (firstClickCirclePage7 == false) {
+        $("#objectLeftPage7").hide("slow");
+        await new Promise(r => setTimeout(r, 1000));
+        $("#objectLeftPage7-whenclick").show("slow");
+        await new Promise(r => setTimeout(r, 500));
+        toXDelay("#arrowPage7", 500, 70);
+        toXDelay("#messageArrowPage7", 500, 70);
+    }
+    firstClickCirclePage7 = true;
 });
 
 // function setupTypewriter(t) {
@@ -106,15 +112,21 @@ $('#carouselExampleControls').bind('slid.bs.carousel', function(e) {
         // typewriter.type();
         fadeShowUp("#backgroundGirlPage7")
         appear("#girlPage7", 1200)
-        fadeup("#tablePage7", 2000, -20)
-        fadeup("#laptopPage7", 2300, -193)
-        appear("#balloonsPage7", 2500)
-        appear("#messagePage7", 2500)
+        appear("#messageCirclePage7", 1000)
+        fadeup("#tablePage7", 1000, -20)
+        fadeup("#laptopPage7", 1300, -193)
+        appear("#balloonsPage7", 1500)
+        appear("#messagePage7", 1500)
+        appear("#bigCirclePage7", 1000)
+        zoomInAppear(["#Circle12Page7 *", "#Circle03Page7 *", "#Circle05Page7 *", "#Circle07Page7 *", "#Circle09Page7 *"], 1, 500, false, false)
     } else {
+        firstClickCirclePage7 = false;
         returnX("#arrowPage7", -70);
         returnX("#messageArrowPage7", -70);
         off("#messagePage7")
         off("#girlPage7")
+        off("#bigCirclePage7")
+        off("#messageCirclePage7")
         off("#backgroundGirlPage7")
         returnY("#tablePage7", 20)
         returnY("#laptopPage7", 193)
@@ -123,8 +135,35 @@ $('#carouselExampleControls').bind('slid.bs.carousel', function(e) {
         $("#objectLeftPage7").show();
         $("#messageCirclePage7").show();
         $("#selectedContent").attr("hidden", true);
+        backZoom(["#Circle12Page7 *", "#Circle03Page7 *", "#Circle05Page7 *", "#Circle07Page7 *", "#Circle09Page7 *"])
         for ([key, value] of selectedMapImage.entries()) {
             $("#" + key).attr("src", "../assets/images/07/" + value[0])
         }
     }
 });
+
+function zoomInAppear(targets, turn, duration, loop, autoplay) {
+    objects = anime({
+        targets: targets,
+        rotate: { value: turn + 'turn', easing: 'linear', duration: duration },
+        scale: [
+            { value: 0, duration: 0, easing: 'easeInCubic' },
+            { value: 1.1, duration: 500, delay: 250, easing: 'easeOutCubic' },
+            { value: 1, duration: 500, easing: 'easeInCubic' }
+        ],
+        autoplay: autoplay,
+        loop: loop,
+        endDelay: 0,
+    });
+    objects.play();
+}
+
+function backZoom(targets) {
+    objects = anime({
+        targets: targets,
+        scale: [
+            { value: 0, duration: 0, easing: 'easeInCubic' },
+        ],
+    });
+    objects.play();
+}
