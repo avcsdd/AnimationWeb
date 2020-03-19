@@ -3,7 +3,8 @@ const dict = new Map([
     [1, 'page01'],
     [2, 'page01'],
     [3, 'page02'],
-    [4, 'page03'],
+    [4, 'page02'],
+    [5, 'page02'],
     //.......etc them sau
 ]);
 $('#carouselExampleControls').bind('slid.bs.carousel', function(e) {
