@@ -1,4 +1,4 @@
-const dict = new Map([
+const mapPage = new Map([
     [0, 'page01'],
     [1, 'page01'],
     [2, 'page01'],
@@ -10,7 +10,7 @@ const dict = new Map([
 $('#carouselExampleControls').bind('slid.bs.carousel', function(e) {
     var ele = $('#carouselExampleControls .carousel-indicators li.active');
     var pageIndex = ele.data('value');
-    let id = dict.get(pageIndex);
+    let id = mapPage.get(pageIndex);
     $(".nav-item").removeClass("active");
     $("#" + id).addClass("active");
 });

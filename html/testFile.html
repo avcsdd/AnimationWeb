@@ -47,11 +47,11 @@
         <nav class="navbar fixed-on-top navbar-expand-lg" id="topNav">
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav">
-                    <li id="page01" class="nav-item active has-border" data-target="#siteSlider" data-slide-to="0">
+                    <li id="page01" onclick="return firstPage(0);" class="nav-item active has-border" data-target="#siteSlider" data-slide-to="0">
                         <a class="nav-link" href="#">Where to start</a>
                     </li>
                     <li id="page02" class="nav-item has-border" data-target="#siteSlider" data-slide-to="2">
-                        <a class="nav-link" href="#">Planning <br/> in advance</a>
+                        <a class="nav-link" href="#" onclick="return firstPage(3);">Planning <br/> in advance</a>
                     </li>
                     <li class="nav-item has-border" data-target="#siteSlider" data-slide-to="3">
                         <a class="nav-link" href="#">Attending the <br/> trade fair</a>
@@ -333,11 +333,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item" id="page8"></div>
+                    <!-- <div class="carousel-item" id="page8"></div>
                     <div class="carousel-item" id="page9"></div>
                     <div class="carousel-item" id="page10"></div>
                     <div class="carousel-item" id="page11"></div>
-                    <div class="carousel-item" id="page12"></div>
+                    <div class="carousel-item" id="page12"></div> -->
                     <div class="carousel-item" id="page13">
                         <div class="page-content-wrapper" style="background-image: linear-gradient(to right, #2b7abd , #59bade);">
                             <div id="leftSectionP13">
@@ -490,6 +490,10 @@
             $(this).not($(this).has("br")).css("padding-top", "15px")
         })
         $('.carousel').carousel();
+
+        function firstPage(page) {
+            $(".carousel").carousel(page);
+        }
     </script>
 </body>
 
