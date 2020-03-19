@@ -8,14 +8,14 @@ $(document).ready(function() {
             fadeup($("#table").find("img")[0], 1200, -20);
             fadeup($("#stuff-on-table").find("img")[0], 1200, -135);
             appear("#upper-text-wrapper", 1500)
-            toXDelay("#LeftPros *", 2000, -200)
-            toXDelay("#RightCons *", 2000, 200);
+            toXDelay("#LeftPros *", 500, -200)
+            toXDelay("#RightCons *", 500, 200);
         } else {
             disappear($("#background-behind-girl").find("img")[0]);
             disappear($("#girl-center").find("img")[0]);
             returnY($("#table").find("img")[0], -20);
             returnY($("#stuff-on-table").find("img")[0], 135);
-            $("#upper-text-wrapper").css("opacity", 0)
+            off("#upper-text-wrapper");
             returnX("#LeftPros *", 200);
             returnX("#RightCons *", -200);
         }
