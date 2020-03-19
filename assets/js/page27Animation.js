@@ -7,7 +7,9 @@ $('#carouselExampleControls').bind('slid.bs.carousel', function(e) {
         appear("#cardTitlePage27", 2000)
         appearDelay("#cardContentPage27", 1000, 1500)
     } else {
-
+        diagonalMove("#speakerPage27", 0, -200, -200)
+        returnX("#cardPage27", 200, 600, 600)
+        off(["#speakerPage27", "#cardTitlePage27", "#cardContentPage27"]);
     }
 });
 
