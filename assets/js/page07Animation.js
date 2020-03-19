@@ -32,9 +32,9 @@ $(".CirclePage7").click(async function() {
         $("#objectLeftPage7").hide("slow");
         await new Promise(r => setTimeout(r, 1000));
         $("#objectLeftPage7-whenclick").show("slow");
-        await new Promise(r => setTimeout(r, 500));
-        toXDelay("#arrowPage7", 500, 70);
-        toXDelay("#messageArrowPage7", 500, 70);
+        await new Promise(r => setTimeout(r, 200));
+        toXDelay("#arrowPage7", 200, 70);
+        toXDelay("#messageArrowPage7", 200, 70);
     }
     firstClickCirclePage7 = true;
 });

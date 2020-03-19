@@ -104,3 +104,13 @@ function off(def) {
         opacity: 0,
     });
 }
+
+function appearDelay(obj, duration, delay) {
+    objects = anime({
+        targets: obj,
+        opacity: [{ value: 1, duration: duration }],
+        easing: 'easeInOutQuad',
+        delay: delay
+    });
+    objects.play();
+}
