@@ -1,0 +1,98 @@
+#blueAreaPage47 {
+    position: absolute;
+    width: 1230px;
+    height: 300px;
+    background: #0d4a8a;
+    top: 120px;
+}
+
+#titlePage47 {
+    position: absolute;
+    font-weight: bold;
+    font-size: 50px;
+    color: #0d4a8a;
+    top: 20px;
+    left: 320px;
+}
+
+#blueAreaPage47 div {
+    color: white;
+    font-size: 23px;
+    padding-bottom: 20px
+}
+
+#blueAreaPage47 {
+    padding-left: 150px;
+    padding-top: 50px;
+}
+
+#blueAreaPage47 span {
+    color: #eab347;
+}
+
+.hand {
+    width: 40px;
+    position: absolute;
+}
+
+#hand01Page47 {
+    left: 100px;
+    top: 60px;
+}
+
+#hand02Page47 {
+    left: 100px;
+    top: 115px;
+}
+
+#hand03Page47 {
+    left: 100px;
+    top: 200px;
+}
+
+.socialNetPage47 {
+    width: 4%;
+    top: 450px;
+    position: absolute;
+}
+
+#twPage47 {
+    left: 160px;
+}
+
+#inPage47 {
+    left: 500px;
+}
+
+#fbPage47 {
+    left: 830px;
+}
+
+.socialTextPage47 {
+    position: absolute;
+    top: 460px;
+    font-weight: bolder;
+}
+
+#socialTextTwPage47 {
+    left: 220px;
+}
+
+#socialTextInPage47 {
+    left: 560px;
+    top: 450px;
+}
+
+#socialTextFbPage47 {
+    left: 890px;
+    top: 450px;
+}
+
+#informationPage47 {
+    position: absolute;
+    top: 520px;
+    left: 160px;
+    font-size: 12px;
+    width: 72%;
+    text-align: justify;
+}
