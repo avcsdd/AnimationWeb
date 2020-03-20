@@ -1,3 +1,4 @@
+$("#textAboveNav").hide();
 const mapPage = new Map([
     [0, 'page01'],
     [1, 'page01'],
@@ -13,4 +14,9 @@ $('#carouselExampleControls').bind('slid.bs.carousel', function(e) {
     let id = mapPage.get(pageIndex);
     $(".nav-item").removeClass("active");
     $("#" + id).addClass("active");
+    if (pageIndex == 0) {
+        $("#textAboveNav").hide();
+    } else {
+        $("#textAboveNav").show();
+    }
 });
