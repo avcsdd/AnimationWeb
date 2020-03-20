@@ -114,11 +114,10 @@
                                         <span class=cardBoxTitlte>
                                             NOTIFICATION LETTER
                                         </span>
-                                        <img id="cardImage1P18" src="../assets/images/19/Artboard 66 copy 6@6x.png">
-                                        <img id="speakers1P18" src="../assets/images/19/Artboard 66 copy 5@6x.png">
+                                        <img id="cardImage1P18" src="../assets/images/19/Artboard 65@6x 2.png">
                                     </div>
                                     <div class="buttonClickHere18">
-                                        <button type="button" data-toggle="modal" data-target="#modalP18">
+                                        <button type="button" onclick=modalOpen(this) data-id="1" data-toggle="modal" data-target="#modalP18">
                                             Click Me
                                         </button>                                        
                                     </div>
@@ -133,7 +132,7 @@
                                          <img id="stopP18" src="../assets/images/20/Artboard 66 copy 6@6x.png">
                                     </div>
                                     <div class="buttonClickHere18">
-                                        <button type="button" data-toggle="modal"
+                                        <button type="button" data-toggle="modal" onclick=modalOpen(this) data-id="2"
                                             data-target="#modalP18">
                                             Click Me
                                         </button>
@@ -149,7 +148,7 @@
                                     </div>
                                     <div class="buttonClickHere18">
                                         <button type="button" data-toggle="modal"
-                                            data-target="#modalP18">
+                                            data-target="#modal2P18">
                                             Click Me
                                         </button>
                                     </div>
@@ -162,7 +161,7 @@
                                         <img id="cardImage4P18" src="../assets/images/22/Artboard 66 copy 6@6x.png">
                                     </div>
                                     <div class="buttonClickHere18">
-                                        <button type="button" data-toggle="modal"
+                                        <button type="button" data-toggle="modal" onclick=modalOpen(this) data-id="4"
                                             data-target="#modalP18">
                                             Click Me
                                         </button>
@@ -177,7 +176,7 @@
                                         <img id="cardImage5P18" src="../assets/images/23/Artboard 66 copy 6@6x.png">
                                     </div>
                                     <div class="buttonClickHere18">
-                                        <button type="button" data-toggle="modal"
+                                        <button type="button" data-toggle="modal" onclick=modalOpen(this) data-id="5"
                                             data-target="#modalP18">
                                             Click Me
                                         </button>
@@ -191,7 +190,7 @@
                                         <img id="people1CardP18" src="../assets/images/24/Artboard 65 copy 2@6x.png">
                                     </div>
                                     <div class="buttonClickHere18">
-                                        <button type="button" data-toggle="modal"
+                                        <button type="button" data-toggle="modal" onclick=modalOpen(this) data-id="6"
                                             data-target="#modalP18">
                                             Click Me
                                         </button>
@@ -341,25 +340,55 @@
             <div class="modal-dialog" id="modal-dialogP18" role="document">
                 <div class="modal-content" id="modal-contentP18">
                     <div class="modal-header" id="modal-headerP18">
-                        <h5 class="modal-title" id="modal-titleP18">'CEASE AND DESIST’ LETTER</h5>
+                        <h5 class="modal-title" id="modal-titleP18"></h5>
                         <button type="button" class="close" id="buttonCloseP18" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body" id="modal-bodyP18">
                         <div id="imageCardModelContainerP18">
-                            <img id="imageCardModelP18" src="../assets/images/24/Artboard 65 copy 2@6x.png">
+                            <img id="imageCardModelP18" src="">
                         </div>
                         <div id="textCardModelP18">
-                            Some countries in South-East Asia will offer mediation or arbitration services, which can be
-                            an efficient way of resolving certain IP disputes. The arbitration services offered by the
-                            Singapore International Arbitration Centre (SIAC) are considered to be the most viable and
-                            most commonly used option by the lawyers based in the South-East Asia region.
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!--MODAL2-->
+        <div class="modal fade" id="modal2P18" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" data-backdrop="false" aria-hidden="true">
+            <div class="modal-dialog" id="modal2-dialogP18" role="document">
+                <div class="modal-content" id="modal2-contentP18">
+                    <div class="modal-header" id="modal2-headerP18">
+                        <h5 class="modal-title" id="modal2-titleP18">'CEASE AND DESIST’ LETTER</h5>
+                        <button type="button" class="close" id="buttonClose2P18" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" id="modal2-bodyP18">
+                        <div id="upperSectionModal2">
+                            These are usually done <b>ex parte</b>, i.e. without informing the infringer, in order to take them
+                            by surprise. The procedures and relevant authorities are different in each South-East Asian
+                            nation, but these raids can usually be organised with two
+                        </div>
+                        <div id="lowerSectionModal2">
+                             <div id="imageCardModel2ContainerP18">
+                                 <img id="imageCard2ModelP18" src="../assets/images/21/Artboard 66 copy 6@6x.png">
+                             </div>
+                             <div id="textCardModel2P18">
+                                 to three days’ notice. If successful, the infringer will most often be charged with a
+                                 criminal offence, so there must be evidence of criminal intention (such as counterfeit
+                                 goods). More common, however, is a civil case, where the infringer has been copying IP
+                                 but with no criminal intention. Search and seize orders from courts in cases such as
+                                 these across South-East Asia are rare, but not unheard of. Local legal advice for this
+                                 type of case is essential.
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!---->
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>`
