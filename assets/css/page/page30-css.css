@@ -1,0 +1,114 @@
+#page30 > .page-content-wrapper > #center-wrapper {
+    position: absolute;
+    width: 1000px;
+    height: 335px;
+    margin: auto;
+    right: 0;
+    margin-top: 70px;
+    left: 0;
+    border: 3px white solid;
+    background-color: white;
+}
+
+#page30 > .page-content-wrapper > #center-wrapper > div, #page30 > .page-content-wrapper > #bottom-wrapper > div {
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+#page30 > .page-content-wrapper > #center-wrapper > div:not(:last-child) {
+    border-right: 3px white solid;
+}
+
+#page30 #left-question-wrapper, #page30 #left-result-wrapper {
+    width: 267px;
+}
+
+#page30 #center-question-wrapper, #page30 #center-result-wrapper {
+    width: 423px;
+}
+
+#page30 #right-question-wrapper, #page30 #right-result-wrapper {
+    width: 304px;
+}
+
+#page30 div#question {
+    width: 100%;
+    height: 107px;
+    background-color: #fecc3e;
+    position: relative;
+    padding: 17px;
+}
+
+#page30 #center-question-wrapper > #question {
+    padding: 6px;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+#page30 #question p {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    line-height: 23px;
+}
+
+#page30 #answer {
+    padding: 24px;
+}
+
+#page30 #bottom-wrapper > div {
+    padding-left: 24px;
+}
+
+#page30 #right-question-wrapper > #answer, #page30 #center-question-wrapper > #answer {
+    padding-top: 26px;
+}
+
+#page30 td {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#page30 #answer tr {
+    height: 50px;
+}
+
+#page30 #answer p {
+    color: #0f519f;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+#page30 #bottom-wrapper p {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+#page30 #bottom-wrapper p span {
+    font-size: 30px;
+    position: absolute;
+    margin-top: -10px;
+}
+
+#page30 #submit-image {
+    margin-top: 50px;
+    margin-left: 180px;
+}
+
+#page30 #bottom-wrapper {
+    height: 65px;
+    position: absolute;
+    width: 1000px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 440px;
+}
+
+.wrong-answer, .correct-answer {
+    opacity: 0;
+}
