@@ -1,0 +1,119 @@
+img#peopleGroupPage28 {
+    left: 100px;
+    top: 250px;
+    position: absolute;
+    opacity: 0;
+}
+
+.smallObjPage28 {
+    position: absolute;
+    width: 5%;
+    opacity: 0;
+}
+
+#smallCheckListPage28 {
+    top: 150px;
+    left: 130px;
+    width: 8%
+}
+
+#smallCirclePage28 {
+    width: 6%;
+    top: 130px;
+    left: 250px;
+}
+
+#smallCertificatePage28 {
+    width: 7%;
+    top: 130px;
+    left: 360px;
+}
+
+#smallCheckList2Page28 {
+    width: 5%;
+    top: 210px;
+    left: 385px;
+}
+
+#smallBarChartPage28 {
+    width: 7%;
+    top: 130px;
+    left: 480px;
+}
+
+#smallPieChartPage28 {
+    width: 5%;
+    top: 225px;
+    left: 495px;
+}
+
+#ipLessionPage28 {
+    position: absolute;
+    width: 43%;
+    left: 630px;
+    top: 100px;
+    opacity: 0;
+}
+
+h4#lessionsTitlePage28 {
+    position: absolute;
+    left: 660px;
+    top: 100px;
+    color: white;
+    opacity: 0;
+}
+
+.lessionPage28 {
+    position: relative;
+    width: 36%;
+    text-align: justify;
+    color: rgb(32, 103, 164);
+    font-size: 20px;
+    line-height: 25px;
+    left: 680px;
+    top: 130px;
+    letter-spacing: 0.2px;
+}
+
+#lession01ContentPage28 {
+    opacity: 0;
+}
+
+#lession02ContentPage28 {
+    opacity: 0;
+}
+
+#lession03ContentPage28 {
+    opacity: 0;
+}
+
+#lession04ContentPage28 {
+    opacity: 0;
+}
+
+.handsPage28 {
+    position: relative;
+    display: block;
+    left: 300px;
+    bottom: 135px;
+    width: 17%;
+}
+
+#hand01Page28 {
+    margin-bottom: 120px;
+    opacity: 0;
+}
+
+#hand02Page28 {
+    margin-bottom: 75px;
+    opacity: 0;
+}
+
+#hand03Page28 {
+    margin-bottom: 78px;
+    opacity: 0;
+}
+
+#hand04Page28 {
+    opacity: 0;
+}

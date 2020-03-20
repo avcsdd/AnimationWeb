@@ -208,3 +208,9 @@ img {
 .navbar {
     margin-bottom: 0px !important;
 }
+
+#textAboveNav {
+    color: white;
+    margin-left: 240px;
+    padding-top: 10px;
+}
