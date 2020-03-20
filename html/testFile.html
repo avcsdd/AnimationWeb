@@ -12,11 +12,14 @@
     <link rel="stylesheet" href="../assets/css/page/page04-css.css">
     <link rel="stylesheet" href="../assets/css/page/page05-css.css">
     <link rel="stylesheet" href="../assets/css/page/page06-css.css">
+    <link rel="stylesheet" href="../assets/css/page/page07-css.css">
     <link rel="stylesheet" href="../assets/css/page/page13-css.css">
     <link rel="stylesheet" href="../assets/css/page/page14-css.css">
     <link rel="stylesheet" href="../assets/css/page/page15-css.css">
     <link rel="stylesheet" href="../assets/css/page/page16-css.css">
     <link rel="stylesheet" href="../assets/css/page/page17-css.css">
+    <link rel="stylesheet" href="../assets/css/page/page27-css.css">
+    <link rel="stylesheet" href="../assets/css/page/page28-css.css">
     <link rel="stylesheet" href="../assets/css/test.css">
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -47,11 +50,11 @@
         <nav class="navbar fixed-on-top navbar-expand-lg" id="topNav">
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav">
-                    <li id="page01" class="nav-item active has-border" data-target="#siteSlider" data-slide-to="0">
+                    <li id="page01" onclick="return firstPage(0);" class="nav-item active has-border" data-target="#siteSlider" data-slide-to="0">
                         <a class="nav-link" href="#">Where to start</a>
                     </li>
                     <li id="page02" class="nav-item has-border" data-target="#siteSlider" data-slide-to="2">
-                        <a class="nav-link" href="#">Planning <br/> in advance</a>
+                        <a class="nav-link" href="#" onclick="return firstPage(3);">Planning <br/> in advance</a>
                     </li>
                     <li class="nav-item has-border" data-target="#siteSlider" data-slide-to="3">
                         <a class="nav-link" href="#">Attending the <br/> trade fair</a>
@@ -234,11 +237,13 @@
                         <div class="page-content-wrapper">
                             <div id="left-wrapper">
                                 <img src="../assets/images/05/Artboard 65@5x.png" alt="">
-                                <p>&nbsp;&nbsp;&nbsp;&nbsp;IP rights are territorial. Having a patent, a design, or a trade mark registered in the EU does not mean that you are protected worldwide. <span>Registration is needed in each and every country</span>, especially in South-East Asia where IP infringement is still a major concern.</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;IP rights are territorial. Having a patent, a design, or a trade mark registered in the EU does not mean that you are protected worldwide. <span>Registration is needed in each and every country</span>,
+                                    especially in South-East Asia where IP infringement is still a major concern.</p>
                             </div>
                             <div id="right-wrapper">
                                 <img src="../assets/images/05/Artboard 65@5x.png" alt="">
-                                <p>&nbsp;&nbsp;&nbsp;&nbsp;Trade fairs are made up of local and foreign exhibitors and visitors. Exhibiting IP owners are disclosing their IP to a much wider audience. For example, if the trade fair is in Singapore but the majority of the visitors are from China, it will be important to explore IP protection in China as well as in Singapore.</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;Trade fairs are made up of local and foreign exhibitors and visitors. Exhibiting IP owners are disclosing their IP to a much wider audience. For example, if the trade fair is in Singapore but the
+                                    majority of the visitors are from China, it will be important to explore IP protection in China as well as in Singapore.</p>
                             </div>
                             <div id="middle-wrapper">
                                 <p>GEOGRAPHICAL ISSUES</p>
@@ -247,7 +252,8 @@
                             </div>
                             <div id="bottom-wrapper">
                                 <img src="../assets/images/05/Artboard 65 copy@5x.png" alt="">
-                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Budget will, of course, be a consideration when SMEs decide where to file for IP protection, but it is strongly advised that, if you are unsure, spending a few hundred euros to file a trade mark or a design application (a little more for a patent) is certainly worthwhile.</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Budget will, of course, be a consideration when SMEs decide where to file for IP protection, but it is strongly advised that, if you are unsure, spending a few hundred euros
+                                    to file a trade mark or a design application (a little more for a patent) is certainly worthwhile.</p>
                             </div>
                         </div>
                     </div>
@@ -255,11 +261,14 @@
                         <div class="page-content-wrapper">
                             <div id="left-wrapper">
                                 <img src="../assets/images/06/Artboard 65 copy@6x.png" alt="">
-                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>First to File system:</span><br />IP protection in South-east Asia is based on First to File principle. It means the first party to file an patent/industrial design/trade mark application will own rights to it once the registration is granted.</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>First to File system:</span><br />IP protection in South-east Asia is based on First to File principle. It means the first party to file an patent/industrial design/trade
+                                    mark application will own rights to it once the registration is granted.</p>
                             </div>
                             <div id="right-wrapper">
                                 <img src="../assets/images/06/Artboard 65 copy@6x.png" alt="">
-                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Bad Faith Registration: </span>First to File principle, a third party (not the legitimate owner) could utilise the trade fair to obtain and gather the information of your patent, design or trade mark and then immediately file an application to the IP offices to become the legal owner. This may cause various consequences, from losing your IP rights, damaging your reputation or completely excluding you from the market of that country.</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Bad Faith Registration: </span>First to File principle, a third party (not the legitimate owner) could utilise the trade fair to obtain and gather the information of your patent, design
+                                    or trade mark and then immediately file an application to the IP offices to become the legal owner. This may cause various consequences, from losing your IP rights, damaging your reputation or completely excluding you
+                                    from the market of that country.</p>
                             </div>
                             <div id="middle-wrapper">
                                 <p>TIMING ISSUES</p>
@@ -267,28 +276,79 @@
                             </div>
                             <div id="bottom-wrapper">
                                 <img src="../assets/images/06/Artboard 65 copy 2@6x.png" alt="">
-                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If you do not have the time to obtain a registration, it is still highly advisable to file an application in the country of interest. Once the IP has been registered, it is then possible to take actions against the infringer. It may also be possible to warn off an infringer by referring to a pending application.</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If you do not have the time to obtain a registration, it is still highly advisable to file an application in the country of interest. Once the IP has been registered, it is then possible to
+                                    take actions against the infringer. It may also be possible to warn off an infringer by referring to a pending application.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item" id="page7"></div>
+                    <div class="carousel-item" id="page7">
+                        <div class="page-content-wrapper" style="background-image: linear-gradient(to right, #2b7abd , #59bade);">
+                            <div id="objectLeftPage7">
+                                <div class="messagePage7">
+                                    <img class="object" id="balloonsPage7" src="../assets/images/07/Artboard 65 copy 6@6x.png" width="37%" />
+                                    <p id="messagePage7" style="text-align: justify; z-index: 99999999999;position: absolute; width: 30%;">
+                                        When preparing your materials for the exhibition, it is wise to <b>notify the public, when appropriate</b>, of your IP ownership. This can be done by using the following symbols and phrases:
+                                    </p>
+                                </div>
+                                <img class="object" id="backgroundGirlPage7" src="../assets/images/07/Artboard 65@6x.png" width="45%" />
+                                <img class="object" id="girlPage7" src="../assets/images/07/Artboard 65 copy@6x.png" width="15%" />
+                                <img class="object" id="tablePage7" src="../assets/images/07/Artboard 65 copy 2@6x.png" />
+                                <img class="object" id="laptopPage7" src="../assets/images/07/Artboard 65 copy 5@6x.png" />
+                            </div>
+                            <div id="objectLeftPage7-whenclick">
+                                <div class="messagePage7">
+                                    <img class="object" id="arrowPage7" src="../assets/images/08/Artboard 65 copy 10@6x.png" width="22%" />
+                                    <p id="messageArrowPage7" style="text-align: left;position: absolute; width: 30%;">
+                                        Notify the public of<br/> your IP ownership
+                                    </p>
+                                </div>
+                                <img class="object" id="backgroundGirlWhenClickPage7" src="../assets/images/08/Artboard 65@6x.png" width="45%" />
+                                <img class="object" id="girlWhenClickPage7" src="../assets/images/08/Artboard 65 copy 2@6x.png" width="16%" />
+                            </div>
+                            <img class="object" id="bigCirclePage7" src="../assets/images/07/Artboard 65 copy 8@6x.png" width="35%" />
+                            <div class="" id="selectedContent" hidden>
+                                <img class="" id="selectedCircle" src="../assets/images/07/bigCircleSelectedPage7.png" />
+                                <p id="content">
+                                </p>
+                            </div>
+                            <p id="messageCirclePage7">
+                                CLICK THE ICON <br/> FOR MORE DETAILS
+                            </p>
+                            <div class="CirclePage7" id="Circle12Page7">
+                                <img class="object" id="Small12CirclePage7" src="../assets/images/07/Artboard 65 copy 9@6x.png" width="12%" />
+                                <img class="object" id="tmPage7" src="../assets/images/07/tm.png" width="3%" />
+                            </div>
+                            <div class="CirclePage7" id="Circle03Page7">
+                                <img class="object" id="Small03CirclePage7" src="../assets/images/07/Artboard 65 copy 7@6x.png" width="12%" />
+                                <img class="object" id="cPage7" src="../assets/images/07/c.png" width="3%" />
+                            </div>
+                            <div class="CirclePage7" id="Circle05Page7">
+                                <img class="object" id="Small05CirclePage7" src="../assets/images/07/Artboard 65 copy 11@6x.png" width="12%" />
+                                <img class="object" id="pdPage7" src="../assets/images/07/paten.png" width="4%" />
+                            </div>
+                            <div class="CirclePage7" id="Circle07Page7">
+                                <img class="object" id="Small07CirclePage7" src="../assets/images/07/Artboard 65 copy 12@6x.png" width="12%" />
+                                <img class="object" id="patenPage7" src="../assets/images/07/pd.png" width="4%" />
+                            </div>
+                            <div class="CirclePage7" id="Circle09Page7">
+                                <img class="object" id="Small09CirclePage7" src="../assets/images/07/Artboard 65 copy 13@6x.png" width="12%" />
+                                <img class="object" id="rPage7" src="../assets/images/07/r.png" width="3%" />
+                            </div>
+                        </div>
+                    </div>
                     <div class="carousel-item" id="page8"></div>
                     <div class="carousel-item" id="page9"></div>
                     <div class="carousel-item" id="page10"></div>
                     <div class="carousel-item" id="page11"></div>
                     <div class="carousel-item" id="page12"></div>
                     <div class="carousel-item" id="page13">
-                        <div class="page-content-wrapper"
-                            style="background-image: linear-gradient(to right, #2b7abd , #59bade);">
+                        <div class="page-content-wrapper" style="background-image: linear-gradient(to right, #2b7abd , #59bade);">
                             <div id="leftSectionP13">
                                 <div id="textBubleP13">
                                     <div id=bubbleP13>
-                                        <p><b>Advisor / IP Helpdesk in South-East Asisa:</b> <br>
-                                            To know how to act wisely, and in a timely fashion, it is
-                                            necessary to contact an <b>IP Advisor and/or IP Helpdesk in
-                                                South-East Asia</b> so that you can immediately obtain
-                                            advice in case you detect any infringement of your IP
-                                            rights</p>
+                                        <p><b>Advisor / IP Helpdesk in South-East Asisa:</b> <br> To know how to act wisely, and in a timely fashion, it is necessary to contact an <b>IP Advisor and/or IP Helpdesk in
+                                                South-East Asia</b> so that you can immediately obtain advice in case you detect any infringement of your IP rights
+                                        </p>
                                     </div>
                                 </div>
                                 <div id="imageContainerP13">
@@ -327,93 +387,67 @@
                             <img id="gear2P14" src="../assets/images/14/Artboard 68 copy@6x.png">
                             <div id="bubbleTextP14">
                                 <p><b>Preparing certification of ownership documents </b> <br></p>
-                                <p>Leave some time to prepare your documents and have
-                                    them in order. It is important to have at least a <b>copy of
-                                    your IP certificates </b> with you at the trade fair.
-                                    Additionally, all foreign language documents should be
+                                <p>Leave some time to prepare your documents and have them in order. It is important to have at least a <b>copy of
+                                    your IP certificates </b> with you at the trade fair. Additionally, all foreign language documents should be
                                     <b>translated </b> into the respective language of the country.</p>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item" id="page15">
-                         <div class="page-content-wrapper"
-                             style="background-image: linear-gradient(to right, #2b7abd , #59bade);">
-                             <div id="leftSectionP15">
-                                 <div id="boxTextP15">
-                                     <p><b>Disclosure of my IP – How much is too much? </b><br></p>
-                                     <p>Throughout the course of a year, you may attend
-                                         several trade fairs, and at each one, your
-                                         innovation could be at <b>a different stage of
+                        <div class="page-content-wrapper" style="background-image: linear-gradient(to right, #2b7abd , #59bade);">
+                            <div id="leftSectionP15">
+                                <div id="boxTextP15">
+                                    <p><b>Disclosure of my IP – How much is too much? </b><br></p>
+                                    <p>Throughout the course of a year, you may attend several trade fairs, and at each one, your innovation could be at <b>a different stage of
                                              development. </b><br></p>
-                                     <p>It is crucial to determine whether or not your
-                                         innovation is ready to be disclosed to the public.
-                                         Much of this will depend on <b>commercial
-                                             considerations</b>such as whether or not you have a
-                                         genuinely marketable product.</p>
-                                     <p>A <b>too early disclosure</b> may result in others seeing
-                                         the nascent innovation and improving on it,
-                                         before claiming it as their own.</p>
-                                     <p><b>Non-Disclosure Agreement (NDA):</b> When you
-                                         find a potential partner and are excited to share
-                                         your creative works for further negotiation, DO
-                                         remember to ask the partner to sign in a NDA.</p>
-                                 </div>
-                             </div>
-                             <div id="rightSectionP15">
-                                 <div id="note1P15">
-                                     <span id="noteContent1P15" class="noteContentP15">Save or collect all trade fair
+                                    <p>It is crucial to determine whether or not your innovation is ready to be disclosed to the public. Much of this will depend on <b>commercial
+                                             considerations</b>such as whether or not you have a genuinely marketable product.</p>
+                                    <p>A <b>too early disclosure</b> may result in others seeing the nascent innovation and improving on it, before claiming it as their own.</p>
+                                    <p><b>Non-Disclosure Agreement (NDA):</b> When you find a potential partner and are excited to share your creative works for further negotiation, DO remember to ask the partner to sign in a NDA.</p>
+                                </div>
+                            </div>
+                            <div id="rightSectionP15">
+                                <div id="note1P15">
+                                    <span id="noteContent1P15" class="noteContentP15">Save or collect all trade fair
                                          material and exhibitor information</span>
-                                 </div>
-                                 <div id="note2P15">
-                                     <span id="noteContent2P15" class="noteContentP15">Take as many photos as you
+                                </div>
+                                <div id="note2P15">
+                                    <span id="noteContent2P15" class="noteContentP15">Take as many photos as you
                                          can</span>
-                                 </div>
-                                 <div id="note3P15">
-                                     <span id="noteContent3P15" class="noteContentP15">Gather as much technical data as
+                                </div>
+                                <div id="note3P15">
+                                    <span id="noteContent3P15" class="noteContentP15">Gather as much technical data as
                                          possible about your competitors and their products</span>
-                                 </div>
-                                 <div id="note4P15">
-                                     <span id="noteContent4P15" class="noteContentP15">Do not threaten legal proceedings
+                                </div>
+                                <div id="note4P15">
+                                    <span id="noteContent4P15" class="noteContentP15">Do not threaten legal proceedings
                                          without <br>
                                          he advice of a lawyer. Groundless threats could result inyou being countersued
                                      </span>
-                                 </div>
-                                 <div id="note5P15">
-                                     <span id="noteContent5P15" class="noteContentP15">If you suspect an infringement,
+                                </div>
+                                <div id="note5P15">
+                                    <span id="noteContent5P15" class="noteContentP15">If you suspect an infringement,
                                          immediately seek competent advice</span>
-                                 </div>
-                                 <div id="note6P15">
-                                     <span id="noteContent6P15" class="noteContentP15">Involve the organisers of the
+                                </div>
+                                <div id="note6P15">
+                                    <span id="noteContent6P15" class="noteContentP15">Involve the organisers of the
                                          trade fair, if you believe it would support your case</span>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="carousel-item" id="page16">
                         <div class="page-content-wrapper" style="background-image: linear-gradient(to right, #2b7abd , #59bade);">
                             <div id="leftTextBoxP16"> At the moment, it is <b>unlikely
-                                 that immediate action </b> could
-                                be taken at a trade fair, but in
-                                some <b>emergency cases </b>, it is
-                                possible for IP holders to bring
-                                administrative or criminal
-                                proceedings at short notice.</div>
+                                 that immediate action </b> could be taken at a trade fair, but in some <b>emergency cases </b>, it is possible for IP holders to bring administrative or criminal proceedings at short notice.</div>
                             <div id="rightTextBoxP16">
-                                Each country in South-East
-                                Asia have its <b>own legal
-                                remedies </b>, and most countries
-                                have a system to <b>search for
-                                and seize infringing goods</b>
-                                provided that there is very
-                                strong evidence of IP
-                                infringement.
+                                Each country in South-East Asia have its <b>own legal
+                                remedies </b>, and most countries have a system to <b>search for
+                                and seize infringing goods</b> provided that there is very strong evidence of IP infringement.
                             </div>
                             <div id="bottomTextBoxP16">
-                                In many countries such as Thailand, Indonesia or Vietnam, the court, authorities or
-                                police may refuse to seize
-                                the goods in the case of patent infringement as there may be complex issues involved.
-                                Trade marks or
-                                copyright infringement are more suitable for such an action.
+                                In many countries such as Thailand, Indonesia or Vietnam, the court, authorities or police may refuse to seize the goods in the case of patent infringement as there may be complex issues involved. Trade marks or copyright infringement are more suitable
+                                for such an action.
                             </div>
                             <img id="policeP16" src="../assets/images/16/Artboard 68 copy@6x.png">
                         </div>
@@ -484,8 +518,52 @@
                     <div class="carousel-item" id="page24"></div>
                     <div class="carousel-item" id="page25"></div>
                     <div class="carousel-item" id="page26"></div>
-                    <div class="carousel-item" id="page27"></div>
-                    <div class="carousel-item" id="page28"></div>
+                    <div class="carousel-item" id="page27">
+                        <div class="page-content-wrapper" style="background-image: linear-gradient(to right, #2b7abd , #59bade);">
+                            <img id="speakerPage27" src="../assets/images/27/Artboard 66 copy 7@6x.png" width="40%" />
+                            <div class="cardPage27-container">
+                                <img id="cardPage27" src="../assets/images/27/Artboard 66 copy 15@6x.png" width="48%" />
+                                <h4 id="cardTitlePage27"><b>OUTCOMES:</b></h4>
+                                <p id="cardContentPage27">
+                                    The Chinese company was served a <b>notification letter</b> during the trade fair and was asked to remove the products infringing the designs owned by the Slovenian company from the exhibition booth. Subsequently, a
+                                    <b>cease and desist letter</b> was sent and the case proceeded to settlement.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" id="page28">
+                        <div class="page-content-wrapper" style="background-image: linear-gradient(to right, #2b7abd , #59bade);">
+                            <div id="leftObjectsPage28">
+                                <img id="peopleGroupPage28" src="../assets/images/28/Artboard 66 copy 7@6x.png" width="35%" />
+                                <img class="smallObjPage28" id="smallCheckListPage28" src="../assets/images/28/Artboard 66 copy 10@6x.png" />
+                                <img class="smallObjPage28" id="smallCirclePage28" src="../assets/images/28/Artboard 66 copy 11@6x.png" />
+                                <img class="smallObjPage28" id="smallCertificatePage28" src="../assets/images/28/Artboard 66 copy 12@6x.png" />
+                                <img class="smallObjPage28" id="smallBarChartPage28" src="../assets/images/28/Artboard 66 copy 13@6x.png" />
+                                <img class="smallObjPage28" id="smallCheckList2Page28" src="../assets/images/28/Artboard 66 copy 14@6x.png" />
+                                <img class="smallObjPage28" id="smallPieChartPage28" src="../assets/images/28/Artboard 66 copy 17@6x.png" />
+                            </div>
+                            <div id="rightObjectsPage28">
+                                <img id="ipLessionPage28" src="../assets/images/28/Artboard 66 copy 15@6x.png" />
+                                <h4 id="lessionsTitlePage28">IP LESSIONS:</h4>
+                                <div class="lessionsContainerPage28">
+                                    <p class="lessionPage28" id="lession01ContentPage28"><b>Prepare in advance</b>: Find out who will be participating at the trade fairs you're attending, identify if potential infringements may take place, and prepare timely copies of your IP certificates
+                                    </p>
+                                    <p class="lessionPage28" id="lession02ContentPage28"><b>Register your IP</b> in the country where the exhibition takes place and also in the countries where you intend to trade.
+                                    </p>
+                                    <p class="lessionPage28" id="lession03ContentPage28">Use the <b>help and support of a local lawyer</b> to obtain advice on how to collect valid evidence and what options are available to you.
+                                    </p>
+                                    <p class="lessionPage28" id="lession04ContentPage28">Soft approaches, such as <b>notification letters and/or cease and desist letters</b>, can be a cost and time effective way to stop an infringement
+                                    </p>
+                                </div>
+                                <div class="handsPage28">
+                                    <img class="handsPage28" id="hand01Page28" src="../assets/images/28/Artboard 66 copy 16@6x.png" />
+                                    <img class="handsPage28" id="hand02Page28" src="../assets/images/28/Artboard 66 copy 16@6x.png" />
+                                    <img class="handsPage28" id="hand03Page28" src="../assets/images/28/Artboard 66 copy 16@6x.png" />
+                                    <img class="handsPage28" id="hand04Page28" src="../assets/images/28/Artboard 66 copy 16@6x.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- Left and right controls -->
@@ -509,11 +587,18 @@
     <script src="../assets/js/page4Animation.js"></script>
     <script src="../assets/js/page5Animation.js"></script>
     <script src="../assets/js/page6Animation.js"></script>
+    <script src="../assets/js/page07Animation.js"></script>
+    <script src="../assets/js/page27Animation.js"></script>
+    <script src="../assets/js/page28Animation.js"></script>
     <script>
         $(".nav-link").each(function() {
             $(this).not($(this).has("br")).css("padding-top", "15px")
         })
         $('.carousel').carousel();
+
+        function firstPage(page) {
+            $(".carousel").carousel(page);
+        }
     </script>
 </body>
 
