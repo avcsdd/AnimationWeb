@@ -22,7 +22,7 @@ $(".CirclePage7").click(async function() {
     }
     $("#selectedContent #content").empty()
     $("#selectedContent #content").append(selectedMapContent.get($(this).attr("id"))[1])
-    $("#selectedContent").css("background-image", "url(../../assets/images/07/" + selectedMapContent.get($(this).attr("id"))[0] + ")")
+    $("#selectedContent").css("background-image", "url(../assets/images/07/" + selectedMapContent.get($(this).attr("id"))[0] + ")")
     $("#messageCirclePage7").hide("slow");
     $("#selectedContent").attr("hidden", false);
     $("#" + $(selected).attr("id")).attr("src", "../assets/images/07/" + selectedMapImage.get($(selected).attr('id'))[1])
