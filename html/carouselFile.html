@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../assets/css/page/page03-css.css">
     <link rel="stylesheet" href="../assets/css/page/page04-css.css">
     <link rel="stylesheet" href="../assets/css/page/page15-css.css">
-    <link rel="stylesheet" href="../assets/css/page/page16-css.css">
+    <link rel="stylesheet" href="../assets/css/page/page18-css.css">
     <link rel="stylesheet" href="../assets/css/test.css">
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -106,33 +106,97 @@
                     <li data-target="#myCarousel" data-value="27" data-slide-to="27"></li>
                 </ol>
                 <div class="carousel-inner">
-                    <div class="active carousel-item" id="page16">
+                    <div class="active carousel-item" id="page18">
                         <div class="page-content-wrapper" style="background-image: linear-gradient(to right, #2b7abd , #59bade);">
-                            <div id="leftTextBoxP16"> At the moment, it is <b>unlikely
-                                 that immediate action </b> could
-                                be taken at a trade fair, but in
-                                some <b>emergency cases </b>, it is
-                                possible for IP holders to bring
-                                administrative or criminal
-                                proceedings at short notice.</div>
-                            <div id="rightTextBoxP16">
-                                Each country in South-East
-                                Asia have its <b>own legal
-                                remedies </b>, and most countries
-                                have a system to <b>search for
-                                and seize infringing goods</b>
-                                provided that there is very
-                                strong evidence of IP
-                                infringement.
+                            <div id="cardWrapperP18">
+                                <div class="cardP18">
+                                    <div class="cardBoxP18">
+                                        <span class=cardBoxTitlte>
+                                            NOTIFICATION LETTER
+                                        </span>
+                                        <img id="cardImage1P18" src="../assets/images/19/Artboard 65@6x 2.png">
+                                    </div>
+                                    <div class="buttonClickHere18">
+                                        <button type="button" onclick=modalOpen(this) data-id="1" data-toggle="modal" data-target="#modalP18">
+                                            Click Me
+                                        </button>                                        
+                                    </div>
+                                </div>
+                                <div class="cardP18">
+                                    <div class="cardBoxP18">
+                                         <span class=cardBoxTitlte>
+                                             'CEASE AND <br> DESIST’ LETTER
+                                         </span>
+                                         <img id="cardImage2P18" src="../assets/images/20/Artboard 66 copy 5@6x.png">
+                                         <p id="textTitleCard2P18">UNDERTAKINGS</p>
+                                         <img id="stopP18" src="../assets/images/20/Artboard 66 copy 6@6x.png">
+                                    </div>
+                                    <div class="buttonClickHere18">
+                                        <button type="button" data-toggle="modal" onclick=modalOpen(this) data-id="2"
+                                            data-target="#modalP18">
+                                            Click Me
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="cardP18">
+                                    <div class="cardBoxP18">
+                                        <span class=cardBoxTitlte>
+                                        RAID OR ‘SEARCH <br>
+                                        AND SEIZE’ ACTIONS
+                                        </span>
+                                        <img id="cardImage3P18" src="../assets/images/21/Artboard 66 copy 6@6x.png">
+                                    </div>
+                                    <div class="buttonClickHere18">
+                                        <button type="button" data-toggle="modal"
+                                            data-target="#modal2P18">
+                                            Click Me
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="cardP18">
+                                    <div class="cardBoxP18">
+                                        <span class=cardBoxTitlte>
+                                            INVESTIGATE <br> THE INFRINGER
+                                        </span>
+                                        <img id="cardImage4P18" src="../assets/images/22/Artboard 66 copy 6@6x.png">
+                                    </div>
+                                    <div class="buttonClickHere18">
+                                        <button type="button" data-toggle="modal" onclick=modalOpen(this) data-id="4"
+                                            data-target="#modalP18">
+                                            Click Me
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="cardP18">
+                                    <div class="cardBoxP18">
+                                        <span class=cardBoxTitlte>
+                                            ISSUE LEGAL <br> PROCEEDINGS
+                                        </span>
+                                        <img id="backgroundCyanP18" src="../assets/images/17/background_cyan.jpg">
+                                        <img id="cardImage5P18" src="../assets/images/23/Artboard 66 copy 6@6x.png">
+                                    </div>
+                                    <div class="buttonClickHere18">
+                                        <button type="button" data-toggle="modal" onclick=modalOpen(this) data-id="5"
+                                            data-target="#modalP18">
+                                            Click Me
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="cardP18">
+                                    <div class="cardBoxP18">
+                                        <span class=cardBoxTitlte>
+                                            ALTERNATIVE DISPUTE <br> RESOLUTION
+                                        </span>
+                                        <img id="people1CardP18" src="../assets/images/24/Artboard 65 copy 2@6x.png">
+                                    </div>
+                                    <div class="buttonClickHere18">
+                                        <button type="button" data-toggle="modal" onclick=modalOpen(this) data-id="6"
+                                            data-target="#modalP18">
+                                            Click Me
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
-                            <div id="bottomTextBoxP16">
-                                In many countries such as Thailand, Indonesia or Vietnam, the court, authorities or
-                                police may refuse to seize
-                                the goods in the case of patent infringement as there may be complex issues involved.
-                                Trade marks or
-                                copyright infringement are more suitable for such an action.
-                            </div>
-                            <img id="policeP16" src="../assets/images/16/Artboard 68 copy@6x.png">
                         </div>
                     </div>
                     <div class="carousel-item" id="page2">
@@ -269,6 +333,63 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
+        <!--
+                MODALS FOR PAGES
+        -->
+        <div class="modal fade" id="modalP18" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" data-backdrop="false" aria-hidden="true">
+            <div class="modal-dialog" id="modal-dialogP18" role="document">
+                <div class="modal-content" id="modal-contentP18">
+                    <div class="modal-header" id="modal-headerP18">
+                        <h5 class="modal-title" id="modal-titleP18"></h5>
+                        <button type="button" class="close" id="buttonCloseP18" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" id="modal-bodyP18">
+                        <div id="imageCardModelContainerP18">
+                            <img id="imageCardModelP18" src="">
+                        </div>
+                        <div id="textCardModelP18">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--MODAL2-->
+        <div class="modal fade" id="modal2P18" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" data-backdrop="false" aria-hidden="true">
+            <div class="modal-dialog" id="modal2-dialogP18" role="document">
+                <div class="modal-content" id="modal2-contentP18">
+                    <div class="modal-header" id="modal2-headerP18">
+                        <h5 class="modal-title" id="modal2-titleP18">'CEASE AND DESIST’ LETTER</h5>
+                        <button type="button" class="close" id="buttonClose2P18" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" id="modal2-bodyP18">
+                        <div id="upperSectionModal2">
+                            These are usually done <b>ex parte</b>, i.e. without informing the infringer, in order to take them
+                            by surprise. The procedures and relevant authorities are different in each South-East Asian
+                            nation, but these raids can usually be organised with two
+                        </div>
+                        <div id="lowerSectionModal2">
+                             <div id="imageCardModel2ContainerP18">
+                                 <img id="imageCard2ModelP18" src="../assets/images/21/Artboard 66 copy 6@6x.png">
+                             </div>
+                             <div id="textCardModel2P18">
+                                 to three days’ notice. If successful, the infringer will most often be charged with a
+                                 criminal offence, so there must be evidence of criminal intention (such as counterfeit
+                                 goods). More common, however, is a civil case, where the infringer has been copying IP
+                                 but with no criminal intention. Search and seize orders from courts in cases such as
+                                 these across South-East Asia are rare, but not unheard of. Local legal advice for this
+                                 type of case is essential.
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---->
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>`
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -278,6 +399,7 @@
     <script src="../assets/js/page3Animation.js"></script>
     <script src="../assets/js/page2Animation.js"></script>
     <script src="../assets/js/page4Animation.js"></script>
+    <script src="../assets/js/page18.js"></script>
     <script>
         $(".nav-link").each(function() {
             $(this).not($(this).has("br")).css("padding-top", "15px")
