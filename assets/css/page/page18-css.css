@@ -62,9 +62,14 @@
     padding-top: 6%;
 }
 
-.cardBoxP18 img,p {
+.cardBoxP18 img {
     position: absolute;
 }
+
+.cardBoxP18 p {
+    position: absolute;
+}
+
 
 #cardImage1P18{
     height: 18%;

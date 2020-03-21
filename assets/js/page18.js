@@ -11,7 +11,7 @@ modalOpen = (object) => {
             modalAttribute["content"] = "This letter simply provides the infringer with <b>notice of your IP rights</b>. You may wish to also include a statement stating that you would be willing to discuss the issue or offer to license the IP to them. This is considered to be a softer approach and is often used when there is no strong evidence of infringement. It may be possible to send such a letter on the letterhead of the IP owner (i.e. without instructing lawyers).";
             modalAttribute["imageWidth"] = 70
             modalAttribute["imageHeight"] = 70
-            modalAttribute["imagemarginTop"] = 70
+            modalAttribute["imageMarginTop"] = 12
             modalAttribute["textPaddingRight"] = 7.5;
             modalAttribute["textPaddingTop"] = 3;
             modalAttribute["textPaddingLeft"] = 2;
@@ -20,7 +20,7 @@ modalOpen = (object) => {
             modalAttribute["imagePath"] = "../assets/images/20/Artboard 65 copy@6x.png"
             modalAttribute["imageWidth"] = 84
             modalAttribute["imageHeight"] = 72
-            modalAttribute["imagemarginTop"] = 8
+            modalAttribute["imageMarginTop"] = 8
             modalAttribute["textPaddingRight"] = 6;
             modalAttribute["textPaddingTop"] = 3;
             modalAttribute["textPaddingLeft"] = 2;
@@ -29,7 +29,7 @@ modalOpen = (object) => {
         case 4:
             modalAttribute["imageWidth"] = 90
             modalAttribute["imageHeight"] = 55
-            modalAttribute["imagemarginTop"] = 16
+            modalAttribute["imageMarginTop"] = 16
             modalAttribute["textPaddingRight"] = 8.45;
             modalAttribute["textPaddingTop"] = 5;
             modalAttribute["textPaddingLeft"] = 4;
@@ -38,7 +38,7 @@ modalOpen = (object) => {
         case 5:
             modalAttribute["imageWidth"] = 100
             modalAttribute["imageHeight"] = 50
-            modalAttribute["imagemarginTop"] = 24
+            modalAttribute["imageMarginTop"] = 24
             modalAttribute["textPaddingRight"] = 8.45;
             modalAttribute["textPaddingTop"] = 3;
             modalAttribute["textPaddingLeft"] = 4;
@@ -49,7 +49,7 @@ modalOpen = (object) => {
         case 6:
             modalAttribute["imageWidth"] = 100
             modalAttribute["imageHeight"] = 70
-            modalAttribute["imagemarginTop"] = 12
+            modalAttribute["imageMarginTop"] = 12
             modalAttribute["textPaddingRight"] = 7.5;
             modalAttribute["textPaddingTop"] = 3;
             modalAttribute["textPaddingLeft"] = 5;
