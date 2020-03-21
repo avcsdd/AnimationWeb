@@ -214,3 +214,17 @@ img {
     margin-left: 240px;
     padding-top: 10px;
 }
+
+.carousel-control-next-icon {
+    background-image: url('../images/07/Artboard 65 copy 4@6x.png') !important;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 20px !important;
+    height: 50px !important;
+}
+
+.carousel-control-prev-icon {
+    background-image: url('../images/07/Artboard 65 copy 3@6x.png') !important;
+}

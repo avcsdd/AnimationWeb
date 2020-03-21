@@ -438,28 +438,34 @@
                             </div>
                             <div id="rightSectionP15">
                                 <div id="note1P15">
+                                    <img class="noteImgP15" id="note1ImgP15" src="../assets/images/15/Artboard 68 copy 3@6x.png" />
                                     <span id="noteContent1P15" class="noteContentP15">Save or collect all trade fair
                                          material and exhibitor information</span>
                                 </div>
                                 <div id="note2P15">
+                                    <img class="noteImgP15" id="note2ImgP15" src="../assets/images/15/Artboard 68 copy 2@6x.png" />
                                     <span id="noteContent2P15" class="noteContentP15">Take as many photos as you
                                          can</span>
                                 </div>
                                 <div id="note3P15">
+                                    <img class="noteImgP15" id="note3ImgP15" src="../assets/images/15/Artboard 68 copy 4@6x.png" />
                                     <span id="noteContent3P15" class="noteContentP15">Gather as much technical data as
                                          possible about your competitors and their products</span>
                                 </div>
                                 <div id="note4P15">
+                                    <img class="noteImgP15" id="note4ImgP15" src="../assets/images/15/Artboard 68 copy@6x.png" />
                                     <span id="noteContent4P15" class="noteContentP15">Do not threaten legal proceedings
                                          without <br>
                                          he advice of a lawyer. Groundless threats could result inyou being countersued
                                      </span>
                                 </div>
                                 <div id="note5P15">
+                                    <img class="noteImgP15" id="note5ImgP15" src="../assets/images/15/Artboard 68@6x.png" />
                                     <span id="noteContent5P15" class="noteContentP15">If you suspect an infringement,
                                          immediately seek competent advice</span>
                                 </div>
                                 <div id="note6P15">
+                                    <img class="noteImgP15" id="note6ImgP15" src="../assets/images/15/Artboard 68 copy 6@6x.png" />
                                     <span id="noteContent6P15" class="noteContentP15">Involve the organisers of the
                                          trade fair, if you believe it would support your case</span>
                                 </div>
@@ -984,7 +990,7 @@
         $(".nav-link").each(function() {
             $(this).not($(this).has("br")).css("padding-top", "15px")
         })
-        $('.carousel').carousel();
+        $('.carousel').carousel(9);
 
         function firstPage(page) {
             $(".carousel").carousel(page);
