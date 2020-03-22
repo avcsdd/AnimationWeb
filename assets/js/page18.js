@@ -1,12 +1,12 @@
 modalOpen = (object) => {
     modalAttribute = {}
-    //
+        //
     index = parseInt($(object).data("id"))
-    var card = $('#cardWrapperP18 div:nth-child('+index+')')
+    var card = $('#cardWrapperP18 div:nth-child(' + index + ')')
     var cardBox = $(card).children(".cardBoxP18")
-    modalAttribute["title"] = cardBox.children('span').html().replace("<br>","")
+    modalAttribute["title"] = cardBox.children('span').html().replace("<br>", "")
     modalAttribute["imagePath"] = cardBox.children('img').attr("src")
-    switch(index){
+    switch (index) {
         case 1:
             modalAttribute["content"] = "This letter simply provides the infringer with <b>notice of your IP rights</b>. You may wish to also include a statement stating that you would be willing to discuss the issue or offer to license the IP to them. This is considered to be a softer approach and is often used when there is no strong evidence of infringement. It may be possible to send such a letter on the letterhead of the IP owner (i.e. without instructing lawyers).";
             modalAttribute["imageWidth"] = 70
@@ -61,27 +61,33 @@ modalOpen = (object) => {
     updateModal(modalAttribute)
 }
 
+$(".buttonClickHere18").click(function() {
+    $(".cardP18").fadeOut("slow");
+})
+$(".close").click(function() {
+    $(".cardP18").fadeIn("slow");
+})
 updateModal = data => {
     var modalContent = $("#modal-contentP18")
-    // add title for modal
+        // add title for modal
     var modalHeader = $(modalContent).children("#modal-headerP18").children("h5")
     $(modalHeader).html(data["title"])
     var modalBody = $(modalContent).children("#modal-bodyP18")
-    // add source image to modal
+        // add source image to modal
     var imageModal = $(modalBody).children("#imageCardModelContainerP18").children("img")
     $(imageModal).attr("src", modalAttribute["imagePath"])
-    //
+        //
     var bodyTextModal = $(modalBody).children("#textCardModelP18")
     console.log(bodyTextModal.html())
     bodyTextModal.html(data["content"])
     $("#textCardModelP18").css("padding-right", data["textPaddingRight"] + "%")
     $("#textCardModelP18").css("padding-top", data["textPaddingTop"] + "%")
-    $("#textCardModelP18").css("padding-left", data["textPaddingLeft"]+"%")
+    $("#textCardModelP18").css("padding-left", data["textPaddingLeft"] + "%")
     $("#imageCardModelP18").css("height", data["imageHeight"] + "%")
     $("#imageCardModelP18").css("width", data["imageWidth"] + "%")
     $("#imageCardModelP18").css("margin-top", data["imageMarginTop"] + "%")
     console.log(data["textMarginLeft"])
-    if (data["textMarginLeft"] != undefined){
+    if (data["textMarginLeft"] != undefined) {
         $("#textCardModelP18").css("margin-left", data["textMarginLeft"] + "%")
     }
 }
