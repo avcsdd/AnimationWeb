@@ -94,6 +94,62 @@ $(document).ready(function() {
             autoplay: false,
         });
     }
+    xP5 = 500 // x of asean flag
+    yP5 = 170 // y of asean flag
+    rP5 = 120 // radius
+    mP5 = [0]
+    arrAnimeP5 = [];
+    for (let i = 0; i < 9; i++) {
+        mP5[i + 1] = mP5[i] + 0.628;
+    }
+
+    function rotateP5(a, ele) {
+        var px = xP5 + rP5 * Math.cos(a);
+        var py = yP5 + rP5 * Math.sin(a);
+        document.querySelector(ele).style.left = px + "px";
+        document.querySelector(ele).style.top = py + "px";
+    }
+
+    function startFlagsP5() {
+        for (let i = 0; i < mP5.length; i++) {
+            var intervalID = null;
+            myvar = setInterval(function() {
+                mP5[i] = (mP5[i] + Math.PI / 360) % (Math.PI * 2);
+                rotateP5(mP5[i], "#flag" + i + "Page05");
+            }, 10);
+            arrAnimeP5.push(myvar)
+        }
+    }
+
+    function stopFlagsP5() {
+        for (var i = 0; i < arrAnimeP5.length; i++) { clearInterval(arrAnimeP5[i]) }
+        arrAnimeP5 = []
+    }
+
+    function scaleTo0(def) {
+        return anime({
+            targets: [def],
+            scale: [
+                { value: 0, duration: 0, easing: 'easeInCubic' },
+            ],
+            autoplay: false,
+        });
+    }
+    var scaleFlagsTo0P5 = scaleTo0('#flagsPage05 *');
+
+    var zoomOutFlagsP5 = anime({
+        targets: ['#flagsPage05 *'],
+        scale: [
+            { value: 0, duration: 0, easing: 'easeInCubic' },
+            { value: 1.1, duration: 1000, easing: 'easeOutCubic' },
+            { value: 1, duration: 1000, easing: 'easeInCubic' }
+        ],
+        autoplay: false,
+    });
+
+
+
+
     var animationP5 = new AnimationPage05();
     $('#carouselExampleControls').bind('slid.bs.carousel', function(e) {
         var ele = $('#carouselExampleControls .carousel-indicators li.active');
@@ -104,6 +160,8 @@ $(document).ready(function() {
             animationP5.leftWrapperP5.restart();
             animationP5.rightWrapperP5.restart();
             animationP5.bottomWrapperP5.restart();
+            zoomOutFlagsP5.restart();
+            startFlagsP5();
         } else if (pageIndex == 3 || pageIndex == 5) {
             animationP5.flagAnimationP5.pause();
             animationP5.asianFlagAppearP5.pause();
@@ -115,6 +173,9 @@ $(document).ready(function() {
             animationP5.leftWrapperP5_Reverse.play();
             animationP5.rightWrapperP5_Reverse.play();
             animationP5.bottomWrapperP5_Reverse.play();
+            zoomOutFlagsP5.pause();
+            scaleFlagsTo0P5.restart();
+            stopFlagsP5();
         }
     });
-})
+});
