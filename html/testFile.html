@@ -59,29 +59,29 @@
         <nav class="navbar fixed-on-top navbar-expand-lg" id="topNav">
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav">
-                    <li id="page01" onclick="return firstPage(0);" class="nav-item active has-border" data-target="#siteSlider" data-slide-to="0">
+                    <li id="page01" onclick="carouselJumpTo(0)" class="nav-item active has-border" data-target="#siteSlider" data-slide-to="0">
                         <a class="nav-link" href="#">Where to start</a>
                     </li>
                     <li id="page02" class="nav-item has-border" data-target="#siteSlider" data-slide-to="2">
-                        <a class="nav-link" href="#" onclick="return firstPage(3);">Planning <br/> in advance</a>
+                        <a class="nav-link" href="#" onclick="carouselJumpTo(3)">Planning <br/> in advance</a>
                     </li>
-                    <li class="nav-item has-border" data-target="#siteSlider" data-slide-to="3">
-                        <a class="nav-link" href="#">Attending the <br/> trade fair</a>
+                    <li id="page03" class="nav-item has-border" data-target="#siteSlider" data-slide-to="3">
+                        <a class="nav-link" href="#" onclick="carouselJumpTo(9)" >Attending the <br/> trade fair</a>
                     </li>
-                    <li class="nav-item has-border" data-target="#siteSlider" data-slide-to="4">
-                        <a class="nav-link" style="font-size: 14.825px;" href="#">Taking action <br/> against an infringer</a>
+                    <li id="page04" class="nav-item has-border" data-target="#siteSlider" data-slide-to="4">
+                        <a class="nav-link" style="font-size: 14.825px;" href="#" onclick="carouselJumpTo(10)">Taking action <br/> against an infringer</a>
                     </li>
-                    <li class="nav-item has-border" data-target="#siteSlider" data-slide-to="5">
-                        <a class="nav-link" href="#">Case study</a>
+                    <li id="page05" class="nav-item has-border" data-target="#siteSlider" data-slide-to="5">
+                        <a class="nav-link" href="#" onclick="carouselJumpTo(13)">Case study</a>
                     </li>
-                    <li class="nav-item has-border" data-target="#siteSlider" data-slide-to="6">
-                        <a class="nav-link" href="#">Take away <br/> message</a>
+                    <li id="page06" class="nav-item has-border" data-target="#siteSlider" data-slide-to="6">
+                        <a class="nav-link" href="#" onclick="carouselJumpTo(16)">Take away <br/> message</a>
                     </li>
-                    <li class="nav-item has-border" data-target="#siteSlider" data-slide-to="7">
-                        <a class="nav-link" href="#">Quiz</a>
+                    <li id="page07" class="nav-item has-border" data-target="#siteSlider" data-slide-to="7">
+                        <a class="nav-link" href="#" onclick="carouselJumpTo(18)">Quiz</a>
                     </li>
-                    <li class="nav-item" data-target="#siteSlider" data-slide-to="8">
-                        <a class="nav-link" href="#">Further <br/> information</a>
+                    <li id="page08" class="nav-item" data-target="#siteSlider" data-slide-to="8">
+                        <a class="nav-link" href="#" onclick="carouselJumpTo(19)">Further <br/> information</a>
                     </li>
                 </ul>
             </div>
@@ -100,20 +100,19 @@
                     <li data-target="#myCarousel" data-value="4" data-slide-to="4"></li>
                     <li data-target="#myCarousel" data-value="5" data-slide-to="5"></li>
                     <li data-target="#myCarousel" data-value="6" data-slide-to="6"></li>
-                    <li data-target="#myCarousel" data-value="7" data-slide-to="7"></li>
-                    <li data-target="#myCarousel" data-value="13" data-slide-to="13"></li>
-                    <li data-target="#myCarousel" data-value="14" data-slide-to="14"></li>
-                    <li data-target="#myCarousel" data-value="15" data-slide-to="15"></li>
-                    <li data-target="#myCarousel" data-value="16" data-slide-to="16"></li>
-                    <li data-target="#myCarousel" data-value="17" data-slide-to="17"></li>
-                    <li data-target="#myCarousel" data-value="18" data-slide-to="18"></li>
-                    <li data-target="#myCarousel" data-value="25" data-slide-to="25"></li>
-                    <li data-target="#myCarousel" data-value="26" data-slide-to="26"></li>
-                    <li data-target="#myCarousel" data-value="27" data-slide-to="27"></li>
-                    <li data-target="#myCarousel" data-value="28" data-slide-to="28"></li>
-                    <li data-target="#myCarousel" data-value="29" data-slide-to="29"></li>
-                    <li data-target="#myCarousel" data-value="30" data-slide-to="30"></li>
-                    <li data-target="#myCarousel" data-value="31" data-slide-to="31"></li>
+                    <li data-target="#myCarousel" data-value="12" data-slide-to="13"></li>
+                    <li data-target="#myCarousel" data-value="13" data-slide-to="14"></li>
+                    <li data-target="#myCarousel" data-value="14" data-slide-to="15"></li>
+                    <li data-target="#myCarousel" data-value="15" data-slide-to="16"></li>
+                    <li data-target="#myCarousel" data-value="16" data-slide-to="17"></li>
+                    <li data-target="#myCarousel" data-value="17" data-slide-to="18"></li>
+                    <li data-target="#myCarousel" data-value="24" data-slide-to="25"></li>
+                    <li data-target="#myCarousel" data-value="25" data-slide-to="26"></li>
+                    <li data-target="#myCarousel" data-value="26" data-slide-to="27"></li>
+                    <li data-target="#myCarousel" data-value="27" data-slide-to="28"></li>
+                    <li data-target="#myCarousel" data-value="28" data-slide-to="29"></li>
+                    <li data-target="#myCarousel" data-value="29" data-slide-to="30"></li>
+                    <li data-target="#myCarousel" data-value="30" data-slide-to="31"></li>
 
                 </ol>
                 <div class="carousel-inner">
@@ -990,9 +989,8 @@
         $(".nav-link").each(function() {
             $(this).not($(this).has("br")).css("padding-top", "15px")
         })
-        $('.carousel').carousel();
 
-        function firstPage(page) {
+        function carouselJumpTo(page) {
             $(".carousel").carousel(page);
         }
     </script>
