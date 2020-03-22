@@ -1,4 +1,4 @@
-$("#objectLeftPage7-whenclick").hide();
+$("#objectLeftPage7-whenclick").fadeOut("slow");
 const selectedMapImage = new Map([
     ["Small12CirclePage7", ["Artboard 65 copy 9@6x.png", "selectedCircle12Page7.png"]],
     ["Small03CirclePage7", ["Artboard 65 copy 7@6x.png", "selectedCircle03Page7.png"]],
@@ -15,7 +15,6 @@ const selectedMapContent = new Map([
 ]);
 var firstClickCirclePage7 = false;
 $(".CirclePage7").click(async function() {
-
     let selected = $(this).find("img")[0];
     for ([key, value] of selectedMapImage.entries()) {
         $("#" + key).attr("src", "../assets/images/07/" + value[0])
@@ -23,20 +22,18 @@ $(".CirclePage7").click(async function() {
     $("#selectedContent #content").empty()
     $("#selectedContent #content").append(selectedMapContent.get($(this).attr("id"))[1])
     $("#selectedContent").css("background-image", "url(../assets/images/07/" + selectedMapContent.get($(this).attr("id"))[0] + ")")
-    $("#messageCirclePage7").hide("slow");
+    $("#messageCirclePage7").fadeOut("slow");
     $("#selectedContent").attr("hidden", false);
     $("#" + $(selected).attr("id")).attr("src", "../assets/images/07/" + selectedMapImage.get($(selected).attr('id'))[1])
     fadeShowUp("#selectedContent");
-
     if (firstClickCirclePage7 == false) {
-        $("#objectLeftPage7").hide("slow");
-        await new Promise(r => setTimeout(r, 1000));
+        $("#objectLeftPage7").fadeOut("slow");
+        await new Promise(r => setTimeout(r, 500));
         $("#objectLeftPage7-whenclick").show("slow");
-        await new Promise(r => setTimeout(r, 200));
-        toXDelay("#arrowPage7", 200, 70);
-        toXDelay("#messageArrowPage7", 200, 70);
+        // await new Promise(r => setTimeout(r, 100));
+        toXDelay(["#arrowPage7", "#messageArrowPage7"], 200, 70);
+        firstClickCirclePage7 = true;
     }
-    firstClickCirclePage7 = true;
 });
 //////////////////////////////////////////////////////////////////////////
 
@@ -66,9 +63,9 @@ $('#carouselExampleControls').bind('slid.bs.carousel', function(e) {
         returnY("#tablePage7", 20)
         returnY("#laptopPage7", 193)
         off("#balloonsPage7")
-        $("#objectLeftPage7-whenclick").hide()
-        $("#objectLeftPage7").show();
-        $("#messageCirclePage7").show();
+        $("#objectLeftPage7-whenclick").fadeOut("slow")
+        $("#objectLeftPage7").fadeIn("slow");
+        $("#messageCirclePage7").fadeIn("slow");
         $("#selectedContent").attr("hidden", true);
         backZoom(["#Circle12Page7 *", "#Circle03Page7 *", "#Circle05Page7 *", "#Circle07Page7 *", "#Circle09Page7 *"])
         for ([key, value] of selectedMapImage.entries()) {
