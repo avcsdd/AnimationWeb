@@ -1,4 +1,4 @@
-$(document).ready(function() {
+class AnimationPage04 {
     hourglass = anime({
         targets: ['#section3P4 #sandClockP4'],
         scale: [
@@ -22,36 +22,38 @@ $(document).ready(function() {
     x = 160 // x of asean flag
     y = 200 // y of asean flag
     r = 120 // radius
-    m = [0]
+        // m = [0]
     arrAnime = [];
-    for (let i = 0; i < 9; i++) {
-        m[i + 1] = m[i] + 0.628;
-    }
+    // for (let i = 0; i < 9; i++) {
+    //     m[i + 1] = m[i] + 0.628;
+    // }
 
-    function rotate(a, ele) {
-        var px = x + r * Math.cos(a);
-        var py = y + r * Math.sin(a);
+    rotate(a, ele) {
+        var px = this.x + this.r * Math.cos(a);
+        var py = this.y + this.r * Math.sin(a);
         document.querySelector(ele).style.left = px + "px";
         document.querySelector(ele).style.top = py + "px";
     }
 
-    function startFlags() {
+    startFlags() {
+        let m = [0, 0.628, 1.256, 1.884, 2.512, 3.14, 3.7680000000000002, 4.396, 5.024, 5.652];
+        let ins = new AnimationPage04();
         for (let i = 0; i < m.length; i++) {
             var intervalID = null;
-            myvar = setInterval(function() {
+            let myvar = setInterval(function() {
                 m[i] = (m[i] + Math.PI / 360) % (Math.PI * 2);
-                rotate(m[i], "#flag" + i);
+                ins.rotate(m[i], "#flag" + i);
             }, 10);
-            arrAnime.push(myvar)
+            this.arrAnime.push(myvar)
         }
     }
 
-    function stopFlags() {
-        for (var i = 0; i < arrAnime.length; i++) { clearInterval(arrAnime[i]) }
-        arrAnime = []
+    stopFlags() {
+        for (var i = 0; i < this.arrAnime.length; i++) { clearInterval(this.arrAnime[i]) }
+        this.arrAnime.length = 0
     }
 
-    function scaleTo0(def) {
+    scaleTo0(def) {
         return anime({
             targets: [def],
             scale: [
@@ -60,11 +62,11 @@ $(document).ready(function() {
             autoplay: false,
         });
     }
-    var scaleFlagsTo0 = scaleTo0('#flags *');
-    var scaleAseanFlagTo0 = scaleTo0('#flagStaffP4');
-    var scaleHourGlassTo0 = scaleTo0('#section3P4 #sandClockP4');
+    scaleFlagsTo0 = this.scaleTo0('#flags *');
+    scaleAseanFlagTo0 = this.scaleTo0('#flagStaffP4');
+    scaleHourGlassTo0 = this.scaleTo0('#section3P4 #sandClockP4');
 
-    var zoomOutFlags = anime({
+    zoomOutFlags = anime({
         targets: ['#flags *'],
         scale: [
             { value: 0, duration: 0, easing: 'easeInCubic' },
@@ -73,41 +75,50 @@ $(document).ready(function() {
         ],
         autoplay: false,
     });
-
+    ani = new MyAnimation();
     /////////////////////////////////////////////////////
-    var girlP4 = fadeShowUp("#girlP4");
-    var laptopP4 = fadeShowUp("#laptopP4");
-    var tableP4 = fadeShowUp("#tableP4");
-    var textBubbleP4 = fadeShowUp("#textBubbleP4");
+    girlP4 = this.ani.fadeShowUp("#girlP4");
+    laptopP4 = this.ani.fadeShowUp("#laptopP4");
+    tableP4 = this.ani.fadeShowUp("#tableP4");
+    textBubbleP4 = this.ani.fadeShowUp("#textBubbleP4");
+    ////////////////////////////////////////////////////////
+    off(def) {
+        return anime({
+            targets: def,
+            opacity: 0,
+        });
+    }
+}
+var p04Animation = new AnimationPage04()
 
+export default p04Animation
 
-    $('#carouselExampleControls').bind('slid.bs.carousel', function(e) {
-        var ele = $('#carouselExampleControls .carousel-indicators li.active');
-        var pageIndex = ele.data('value');
-        if (pageIndex == 3) {
-            // first = true;
-            // flagAnimation.play();
-            hourglass.restart();
-            asianFlagAppear.restart();
-            girlP4.restart();
-            laptopP4.restart();
-            tableP4.restart();
-            textBubbleP4.restart();
-            zoomOutFlags.restart();
-            startFlags();
-        } else {
-            girlP4.pause();
-            laptopP4.pause();
-            tableP4.pause();
-            textBubbleP4.pause();
-            asianFlagAppear.pause();
-            hourglass.pause();
-            scaleAseanFlagTo0.restart();
-            scaleFlagsTo0.restart();
-            scaleHourGlassTo0.restart();
-            zoomOutFlags.pause();
-            stopFlags();
-            off(["#girlP4", "#laptopP4", "#tableP4", "#textBubbleP4"]);
-        }
-    });
-})
+// $('#carouselExampleControls').bind('slid.bs.carousel', function(e) {
+//     var ele = $('#carouselExampleControls .carousel-indicators li.active');
+//     var pageIndex = ele.data('value');
+//     if (pageIndex == 3) {
+//         // first = true;
+//         // flagAnimation.play();
+//         hourglass.restart();
+//         asianFlagAppear.restart();
+//         girlP4.restart();
+//         laptopP4.restart();
+//         tableP4.restart();
+//         textBubbleP4.restart();
+//         zoomOutFlags.restart();
+//         startFlags();
+//     } else {
+//         girlP4.pause();
+//         laptopP4.pause();
+//         tableP4.pause();
+//         textBubbleP4.pause();
+//         asianFlagAppear.pause();
+//         hourglass.pause();
+//         scaleAseanFlagTo0.restart();
+//         scaleFlagsTo0.restart();
+//         scaleHourGlassTo0.restart();
+//         zoomOutFlags.pause();
+//         stopFlags();
+//         off(["#girlP4", "#laptopP4", "#tableP4", "#textBubbleP4"]);
+//     }
+// });
