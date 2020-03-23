@@ -36,6 +36,24 @@ class AnimationPage02 {
     reverseUpperText = ani.disappear("#upper-text-wrapper");
     reverseLeftPros = ani.returnX("#LeftPros *", 200);
     reverseRightCons = ani.returnX("#RightCons *", -200);
+    run() {
+        this.girlCenterAnimation.restart();
+        this.backgroundBehindGirlAnimation.restart();
+        this.tableAnimation.restart();
+        this.stuffOnTableAnimation.restart();
+        this.upperTextWrapperAnimation.restart();
+        this.leftProsAnimation.restart();
+        this.rightProsAnimation.restart();
+    }
+    reverse() {
+        this.reverseBackground.restart();
+        this.reverseGirl.restart();
+        this.reverseTable.restart();
+        this.reverseStuffOnTable.restart();
+        this.reverseUpperText.restart();
+        this.reverseLeftPros.restart();
+        this.reverseRightCons.restart();
+    }
 }
 
 var p02Animation = new AnimationPage02()

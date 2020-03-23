@@ -89,7 +89,7 @@ class AnimationPage07 {
     reverseObjectLeftPage7Click = ani.off("#objectLeftPage7_click") //$("#objectLeftPage7-whenclick").hide();
     reverseCirclesPage07 = this.backZoom(["#Circle12Page7 *", "#Circle03Page7 *", "#Circle05Page7 *", "#Circle07Page7 *", "#Circle09Page7 *"])
 
-    reversePage07() {
+    reverse() {
         this.reversearrowPage7.restart();
         this.reverseMessageArrowPage7.restart();
         this.reverseMessagePage7.restart();
@@ -110,7 +110,17 @@ class AnimationPage07 {
             $("#" + key).attr("src", "../assets/images/07/" + value[0])
         }
     }
-
+    run() {
+        this.backgroundGirlPage7.restart();
+        this.girlPage7.restart();
+        this.messageCirclePage7.restart();
+        this.tablePage7.restart();
+        this.laptopPage7.restart();
+        this.balloonsPage7.restart();
+        this.messagePage7.restart();
+        this.bigCirclePage7.restart();
+        this.zoomInCicles.restart();
+    }
 }
 var animationPage7 = new AnimationPage07();
 

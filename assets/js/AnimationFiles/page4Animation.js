@@ -88,6 +88,30 @@ class AnimationPage04 {
             opacity: 0,
         });
     }
+    reverse() {
+        this.girlP4.pause();
+        this.laptopP4.pause();
+        this.tableP4.pause();
+        this.textBubbleP4.pause();
+        this.asianFlagAppear.pause();
+        this.hourglass.pause();
+        this.scaleAseanFlagTo0.restart();
+        this.scaleFlagsTo0.restart();
+        this.scaleHourGlassTo0.restart();
+        this.zoomOutFlags.pause();
+        this.stopFlags();
+        this.off(["#girlP4", "#laptopP4", "#tableP4", "#textBubbleP4"]);
+    }
+    run() {
+        this.hourglass.restart();
+        this.asianFlagAppear.restart();
+        this.girlP4.restart();
+        this.laptopP4.restart();
+        this.tableP4.restart();
+        this.textBubbleP4.restart();
+        this.zoomOutFlags.restart();
+        this.startFlags();
+    }
 }
 var p04Animation = new AnimationPage04()
 
