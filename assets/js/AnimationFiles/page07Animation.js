@@ -20,8 +20,8 @@ var contentShow = ani.appear("#selectedContent", 1200);
 var objectLeftPage7WhenclickShow = ani.appear("#objectLeftPage7_click", 1200);
 var objectLeftPage7 = ani.appear("#objectLeftPage7_click", 1200);
 // var selectedContent = ani.fadeShowUp("#selectedContent");
+var firstClickCirclePage7 = false;
 $(".CirclePage7").click(async function() {
-    // var firstClickCirclePage7 = false;
     let selected = $(this).find("img")[0];
     for (let [key, value] of selectedMapImage.entries()) {
         $("#" + key).attr("src", "../assets/images/07/" + value[0])
@@ -34,14 +34,14 @@ $(".CirclePage7").click(async function() {
     $("#" + $(selected).attr("id")).attr("src", "../assets/images/07/" + selectedMapImage.get($(selected).attr('id'))[1])
         // $("#selectedContent").fadeOut("slow");
     contentShow.restart();
-    // if (firstClickCirclePage7 == false) {
-    $("#objectLeftPage7").fadeOut("slow");
-    objectLeftPage7WhenclickShow.restart();
-    // await new Promise(r => setTimeout(r, 500))
-    // await new Promise(r => setTimeout(r, 100));
-    messageArrow.restart();
-    // firstClickCirclePage7 = true;
-    // }
+    if (firstClickCirclePage7 == false) {
+        $("#objectLeftPage7").fadeOut("slow");
+        objectLeftPage7WhenclickShow.restart();
+        // await new Promise(r => setTimeout(r, 500))
+        // await new Promise(r => setTimeout(r, 100));
+        messageArrow.restart();
+        firstClickCirclePage7 = true;
+    }
 });
 class AnimationPage07 {
     zoomInAppear(targets, turn, duration, loop, autoplay) {
@@ -102,6 +102,7 @@ class AnimationPage07 {
         this.reverseBalloonsPage7.restart();
         this.reverseObjectLeftPage7Click.restart();
         this.reverseCirclesPage07.restart();
+        firstClickCirclePage7 = false;
         $("#objectLeftPage7").show();
         // $("#objectLeftPage7_click").css("opacity", "0");
         $("#messageCirclePage7").show();
