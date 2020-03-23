@@ -1,6 +1,7 @@
 import page15Animation from "./AnimationFiles/page15Animation.js"
 import page02Animation from "./AnimationFiles/page2Animation.js"
 import page04Animation from "./AnimationFiles/page4Animation.js"
+import page07Animation from "./AnimationFiles/page07Animation.js"
 
 function PreloadPageSelected(pageIndex) {
     return new Promise(resolve => {
@@ -32,6 +33,9 @@ function PreloadPageSelected(pageIndex) {
             page04Animation.stopFlags();
             page04Animation.off(["#girlP4", "#laptopP4", "#tableP4", "#textBubbleP4"]);
         }
+        if (pageIndex == 6) {
+            page07Animation.reversePage07();
+        }
         resolve(pageIndex)
     })
 }
@@ -60,6 +64,18 @@ function LoadPageSelected(pageIndex) {
             page04Animation.textBubbleP4.restart();
             page04Animation.zoomOutFlags.restart();
             page04Animation.startFlags();
+        }
+        if (pageIndex == 6) {
+
+            page07Animation.backgroundGirlPage7.restart();
+            page07Animation.girlPage7.restart();
+            page07Animation.messageCirclePage7.restart();
+            page07Animation.tablePage7.restart();
+            page07Animation.laptopPage7.restart();
+            page07Animation.balloonsPage7.restart();
+            page07Animation.messagePage7.restart();
+            page07Animation.bigCirclePage7.restart();
+            page07Animation.zoomInCicles.restart();
         }
         resolve(pageIndex)
     })
