@@ -7,6 +7,10 @@ function PreloadPageSelected(pageIndex){
             page15Animation.boxTextP15Back.play()
             console.log("preload")
         }
+        //
+        if (pageIndex==0){
+            page15Animation.boxTextP15Back.play()
+        }
         resolve(pageIndex)
     })
 }
@@ -17,6 +21,7 @@ function LoadPageSelected(pageIndex){
             page15Animation.boxTextP15.play()
             console.log("loading")
         }
+        //
         resolve(pageIndex)
     })
 }
@@ -29,14 +34,12 @@ export function prepareLoading(indicator){
     } else if (pageIndex > 19) {
         pageIndex = 0;
     }
-    console.log(pageIndex)
     return carouselJumpTo(pageIndex)
 }
 
 export function carouselJumpTo(pageIndex) {
     return PreloadPageSelected(pageIndex)
-          .then(LoadPageSelected(pageIndex))
           .then(()=>{
             $(".carousel").carousel(pageIndex);
-          })
+          }).then(LoadPageSelected(pageIndex))
 }
