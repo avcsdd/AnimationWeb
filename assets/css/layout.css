@@ -228,3 +228,8 @@ img {
 .carousel-control-prev-icon {
     background-image: url('../images/07/Artboard 65 copy 3@6x.png') !important;
 }
+
+#buttonCarousel{
+    position: absolute;
+    top:10%;
+}
