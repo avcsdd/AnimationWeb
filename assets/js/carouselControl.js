@@ -2,6 +2,8 @@ import page15Animation from "./AnimationFiles/page15Animation.js"
 import page02Animation from "./AnimationFiles/page2Animation.js"
 import page04Animation from "./AnimationFiles/page4Animation.js"
 import page07Animation from "./AnimationFiles/page07Animation.js"
+import page25Animation from "./AnimationFiles/page25Animation.js"
+import page26Animation from "./AnimationFiles/page26Animation.js"
 import page27Animation from "./AnimationFiles/page27Animation.js"
 import page28Animation from "./AnimationFiles/page28Animation.js"
 
@@ -20,6 +22,12 @@ function PreloadPageSelected(pageIndex) {
         }
         if (pageIndex == 6) {
             page07Animation.reverse();
+        }
+        if (pageIndex == 13) {
+            page25Animation.reverse();
+        }
+        if (pageIndex == 14) {
+            page26Animation.reverse();
         }
         if (pageIndex == 15) {
             page27Animation.reverse();
@@ -45,6 +53,12 @@ function LoadPageSelected(pageIndex) {
         }
         if (pageIndex == 6) {
             page07Animation.run();
+        }
+        if (pageIndex == 13) {
+            page25Animation.run();
+        }
+        if (pageIndex == 14) {
+            page26Animation.run();
         }
         if (pageIndex == 15) {
             page27Animation.run();
