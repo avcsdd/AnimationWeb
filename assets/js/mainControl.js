@@ -36,9 +36,5 @@ $(document).ready(function(){
             $("#textAboveNav").show();
         }
         //
-        if (pageIndex==14){
-            // page15Animation.boxTextP15.play()
-            // Add(2,3)
-        }
     })
 })

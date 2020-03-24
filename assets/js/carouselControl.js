@@ -116,8 +116,7 @@ export function prepareLoading(indicator) {
 
 export function carouselJumpTo(pageIndex) {
     return PreloadPageSelected(pageIndex)
-        .then(LoadPageSelected(pageIndex))
-        .then(() => {
+          .then(()=>{
             $(".carousel").carousel(pageIndex);
-        })
+          }).then(LoadPageSelected(pageIndex))
 }
