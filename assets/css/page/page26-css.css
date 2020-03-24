@@ -4,7 +4,7 @@
 
 #documenntPage26 {
     left: 100px;
-    top: 300px;
+    top: 660px;
     position: absolute;
     width: 25%
 }
@@ -19,15 +19,17 @@ img#cardPage26 {
 img#bikeLeftPage26 {
     position: absolute;
     width: 14%;
-    left: 370px;
+    left: -100px;
     top: 30px;
+    opacity: 0;
 }
 
 img#bikeRightPage26 {
     position: absolute;
     width: 14%;
-    left: 800px;
+    left: 1230px;
     top: 30px;
+    opacity: 0;
 }
 
 #vsPage26 {
@@ -35,8 +37,9 @@ img#bikeRightPage26 {
     font-size: 50px;
     font-weight: bolder;
     left: 650px;
-    top: 100px;
+    top: 50px;
     color: #2067a4;
+    opacity: 0;
 }
 
 #leftBallonsPage26 {
@@ -44,6 +47,7 @@ img#bikeRightPage26 {
     left: 200px;
     top: 60px;
     width: 16%;
+    opacity: 0;
 }
 
 #rightBallonsPage26 {
@@ -51,12 +55,14 @@ img#bikeRightPage26 {
     left: 960px;
     top: 60px;
     width: 16%;
+    opacity: 0;
 }
 
 .BallonsTextPage26 {
     position: absolute;
     text-align: center;
     color: #000077;
+    opacity: 0;
 }
 
 #leftBallonsTextPage26 {
@@ -90,4 +96,8 @@ p#cardContentPage26 {
     font-size: 19px;
     line-height: 25px;
     /* opacity: 0; */
+}
+
+#cardPage26-container {
+    opacity: 0;
 }

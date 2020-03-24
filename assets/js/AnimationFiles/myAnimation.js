@@ -34,13 +34,22 @@ class MyAnimation {
         }
         ///////////////////////////////////////////ROTATE APPEAR////////////////////////////////////////////////
     rotateAppear(obj, time) {
-            objects = anime({
+        objects = anime({
+            targets: obj,
+            opacity: [{ value: 1, duration: time }],
+            easing: 'easeInOutQuad',
+            rotate: '1turn'
+        });
+        objects.play();
+    }
+    toYDelay(obj, delay, duration, value) {
+            return anime({
                 targets: obj,
-                opacity: [{ value: 1, duration: time }],
-                easing: 'easeInOutQuad',
-                rotate: '1turn'
-            });
-            objects.play();
+                delay: delay,
+                opacity: [{ value: 1, duration: duration }],
+                translateY: value,
+                duration: duration
+            })
         }
         ///////////////////////////////////////////toleft delay///////////////////////////////////////
     toXDelay(obj, time, value) {
@@ -51,6 +60,28 @@ class MyAnimation {
             translateX: value,
         })
     }
+
+    moveHorizontalDelay(obj, delay, duration, value) {
+        return anime({
+            targets: obj,
+            delay: delay,
+            opacity: [{ value: 1, duration: duration }],
+            translateX: value,
+            easing: 'easeInOutExpo'
+        })
+    }
+
+    moveVerticalDelay(obj, delay, duration, value) {
+        return anime({
+            targets: obj,
+            delay: delay,
+            opacity: [{ value: 1, duration: duration }],
+            duration: duration,
+            translateY: value,
+            easing: 'easeInOutExpo'
+        })
+    }
+
 
     returnX(obj, value) {
         return anime({
