@@ -114,4 +114,14 @@ class MyAnimation {
             delay: delay
         });
     }
+    moveEasingLR(targets, delay, value) {
+        return anime({
+            targets: targets,
+            translateX: { value: value, delay: 0 },
+            direction: 'alternate',
+            loop: true,
+            delay: delay,
+            easing: 'linear'
+        });
+    }
 }
