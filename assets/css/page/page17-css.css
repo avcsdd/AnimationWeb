@@ -4,32 +4,36 @@
     background-image: url('../../images/logo/shutterstock_182632013.jpg') !important;
     display: flex;
 }
-#leftSectionP17{
+
+#leftSectionP17 {
     width: 65%;
 }
 
-#leftSectionP17 > * {
+#leftSectionP17>* {
     position: absolute;
 }
 
-#rightSectionP17{
+#rightSectionP17 {
     width: 35%;
     background-image: url("../../images/17/background_cyan.jpg");
     background-size: 100% 100%;
+    opacity: 0;
 }
 
-#imageBackgroundLeftP17{
+#imageBackgroundLeftP17 {
     height: 35%;
     width: 40%;
-    top: 38%;
+    top: 220px;
     left: 12%;
+    opacity: 0;
 }
 
 #imagePeopleLeftP17 {
-   height: 35%;
-   width: 25%;
-   left:19%;
-   top:36%;
+    height: 35%;
+    width: 25%;
+    left: 19%;
+    top: 220px;
+    opacity: 0;
 }
 
 #leftSectionP17 div {
@@ -44,25 +48,28 @@
     font-size: 20px;
 }
 
-#upperTextBoxP17{
-    left:5%;
-    top:5%;
+#upperTextBoxP17 {
+    left: -50px;
+    top: 5%;
+    opacity: 0;
 }
 
-#lowerTextBoxP17{
-    left:5%;
-    top:21%;
+#lowerTextBoxP17 {
+    left: 200px;
+    top: 21%;
+    opacity: 0;
 }
 
-#rightSectionP17 > div {
+#rightSectionP17>div {
     height: 10%;
     width: 100%;
     padding-left: 17%;
     padding-right: 2%;
     color: white;
+    opacity: 0;
 }
 
-.textBoxWrapperP17 > div {
+.textBoxWrapperP17>div {
     width: 80%;
     height: 100%;
 }
@@ -74,7 +81,7 @@
     height: 8%;
 }
 
-#rightSectionP17 > div:first-child > div{
+#rightSectionP17>div:first-child>div {
     font-size: 22px;
     text-align: center;
     font-weight: 500;
@@ -85,7 +92,7 @@
     background-size: 100% 100%;
     font-size: 20px;
     font-weight: 500;
-    display:flex;
+    display: flex;
     padding-left: 8%;
     align-items: center;
 }

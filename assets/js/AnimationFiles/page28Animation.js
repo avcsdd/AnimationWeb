@@ -79,20 +79,20 @@
      }
 
      reverse() {
-         this.hand01Page28.pause();
-         this.hand02Page28.pause();
-         this.hand03Page28.pause();
-         this.hand04Page28.pause();
-         this.peopleGroupPage28.pause();
-         this.smallObjPage28.pause();
-         this.ipLessionPage28.pause();
-         this.lession01ContentPage28.pause();
-         this.lession02ContentPage28.pause();
-         this.lession03ContentPage28.pause();
-         this.lession04ContentPage28.pause();
-         this.back01.restart();
-         this.back02.restart();
-         this.back03.restart();
+         //  this.hand01Page28.pause();
+         //  this.hand02Page28.pause();
+         //  this.hand03Page28.pause();
+         //  this.hand04Page28.pause();
+         //  this.peopleGroupPage28.pause();
+         //  this.smallObjPage28.pause();
+         //  this.ipLessionPage28.pause();
+         //  this.lession01ContentPage28.pause();
+         //  this.lession02ContentPage28.pause();
+         //  this.lession03ContentPage28.pause();
+         //  this.lession04ContentPage28.pause();
+         //  this.back01.restart();
+         //  this.back02.restart();
+         //  this.back03.restart();
      }
  }
  var animationPage28 = new AnimationPage28();

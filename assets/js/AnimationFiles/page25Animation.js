@@ -23,15 +23,15 @@ class AnimationPage25 {
 
     }
     reverse() {
-        this.boothPage25.pause();
-        this.cardPage25.pause();
-        this.attendanceListPage25.pause();
-        this.attendanceListHighlight.pause();
-        this.peoplegroup1Page25.pause();
-        this.balloonPage25.pause();
-        this.boothPage25Reverse.restart();
-        this.cardPage25Reverse.restart();
-        this.peoplegroup1Page25Reverse.restart();
+        // this.boothPage25.pause();
+        // this.cardPage25.pause();
+        // this.attendanceListPage25.pause();
+        // this.attendanceListHighlight.pause();
+        // this.peoplegroup1Page25.pause();
+        // this.balloonPage25.pause();
+        // this.boothPage25Reverse.restart();
+        // this.cardPage25Reverse.restart();
+        // this.peoplegroup1Page25Reverse.restart();
     }
 }
 var animationPage25 = new AnimationPage25();

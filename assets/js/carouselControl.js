@@ -2,18 +2,18 @@ import page15Animation from "./AnimationFiles/page15Animation.js"
 import page02Animation from "./AnimationFiles/page2Animation.js"
 import page04Animation from "./AnimationFiles/page4Animation.js"
 import page07Animation from "./AnimationFiles/page07Animation.js"
+import page16Animation from "./AnimationFiles/page16Animation.js"
+import page17Animation from "./AnimationFiles/page17Animation.js"
 import page25Animation from "./AnimationFiles/page25Animation.js"
 import page26Animation from "./AnimationFiles/page26Animation.js"
 import page27Animation from "./AnimationFiles/page27Animation.js"
 import page28Animation from "./AnimationFiles/page28Animation.js"
 
+
 function PreloadPageSelected(pageIndex) {
     return new Promise(resolve => {
         console.log(pageIndex)
-        if (pageIndex == 9) {
-            page15Animation.boxTextP15Back.play()
-            console.log("preload")
-        }
+
         if (pageIndex == 1) {
             page02Animation.reverse();
         }
@@ -22,6 +22,15 @@ function PreloadPageSelected(pageIndex) {
         }
         if (pageIndex == 6) {
             page07Animation.reverse();
+        }
+        if (pageIndex == 9) {
+            page15Animation.reverse();
+        }
+        if (pageIndex == 10) {
+            page16Animation.reverse();
+        }
+        if (pageIndex == 11) {
+            page17Animation.reverse();
         }
         if (pageIndex == 13) {
             page25Animation.reverse();
@@ -41,10 +50,7 @@ function PreloadPageSelected(pageIndex) {
 
 function LoadPageSelected(pageIndex) {
     return new Promise(resolve => {
-        if (pageIndex == 9) {
-            page15Animation.boxTextP15.play()
-            console.log("loading")
-        }
+
         if (pageIndex == 1) {
             page02Animation.run();
         }
@@ -53,6 +59,15 @@ function LoadPageSelected(pageIndex) {
         }
         if (pageIndex == 6) {
             page07Animation.run();
+        }
+        if (pageIndex == 9) {
+            page15Animation.run();
+        }
+        if (pageIndex == 10) {
+            page16Animation.run();
+        }
+        if (pageIndex == 11) {
+            page17Animation.run();
         }
         if (pageIndex == 13) {
             page25Animation.run();
@@ -78,7 +93,6 @@ export function prepareLoading(indicator) {
     } else if (pageIndex > 19) {
         pageIndex = 0;
     }
-    console.log(pageIndex)
     return carouselJumpTo(pageIndex)
 }
 

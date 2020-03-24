@@ -4,9 +4,9 @@
     background-image: url('../../images/logo/shutterstock_182632013.jpg') !important;
 }
 
-#page16 .page-content-wrapper > * {
+#page16 .page-content-wrapper>* {
     position: absolute;
-    color:white;
+    color: white;
     font-size: 18px;
     padding-left: 2%;
     padding-right: 3%;
@@ -15,41 +15,46 @@
     text-justify: inter-word;
 }
 
-#leftTextBoxP16, #rightTextBoxP16{
+#leftTextBoxP16,
+#rightTextBoxP16 {
     height: 35%;
     width: 27%;
     background-image: url("../../images/16/Artboard\ 68\ copy\ 5@6x.png");
     background-size: 100% 100%;
 }
 
-#bottomTextBoxP16{
+#bottomTextBoxP16 {
     height: 17%;
     width: 89%;
     background-image: url("../../images/16/Artboard\ 68\ copy\ 7@6x.png");
     background-size: 100% 100%;
 }
 
-#policeP16{
+#policeP16 {
     height: 48%;
-    widows: 44%;
 }
 
 #leftTextBoxP16 {
     top: 8%;
-    left:6%;
+    left: 10px;
+    opacity: 0;
 }
 
 #rightTextBoxP16 {
     top: 8%;
-    left: 68%;
+    left: 900px;
+    opacity: 0;
 }
 
 #policeP16 {
-    top: 2%;
+    position: absolute;
+    top: -70px;
     left: 36%;
+    opacity: 0;
 }
 
-#bottomTextBoxP16{
-    top:50%;
-    left:6%;
+#bottomTextBoxP16 {
+    top: 470px;
+    left: 6%;
+    opacity: 0;
 }

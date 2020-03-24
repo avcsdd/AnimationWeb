@@ -29,7 +29,7 @@
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 4%;
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 #boxTextP15>* {
@@ -51,6 +51,7 @@
 }
 
 #note1P15 {
+    opacity: 0;
     /* background-image: url("../../images/15/Artboard\ 68\ copy\ 3@6x.png"); */
     background-size: 100% 100%;
     padding-left: 18%;
@@ -59,6 +60,7 @@
 }
 
 #note2P15 {
+    opacity: 0;
     /* background-image: url("../../images/15/Artboard\ 68\ copy\ 2@6x.png"); */
     background-size: 100% 100%;
     padding-left: 18%;
@@ -67,6 +69,7 @@
 }
 
 #note3P15 {
+    opacity: 0;
     /* background-image: url("../../images/15/Artboard\ 68\ copy\ 4@6x.png"); */
     background-size: 100% 100%;
     padding-left: 18%;
@@ -75,6 +78,7 @@
 }
 
 #note4P15 {
+    opacity: 0;
     /* background-image: url("../../images/15/Artboard\ 68\ copy@6x.png"); */
     background-size: 100% 100%;
     padding-left: 18%;
@@ -85,6 +89,7 @@
 }
 
 #note5P15 {
+    opacity: 0;
     /* background-image: url("../../images/15/Artboard\ 68@6x.png"); */
     background-size: 100% 100%;
     padding-left: 18%;
@@ -98,11 +103,18 @@
 }
 
 #note6P15 {
-    /* background-image: url("../../images/15/Artboard\ 68\ copy\ 6@6x.png"); */
+    opacity: 0;
+    /* background-image:
+     url("../../images/15/Artboard\ 68\ copy\ 6@6x.png"); */
     background-size: 100% 100%;
     padding-left: 18%;
     /* padding-top: 3%; */
     padding-right: 5%;
+}
+
+#boxTextP15 {
+    margin-left: -200px !important;
+    opacity: 0;
 }
 
 .noteImgP15 {
@@ -134,3 +146,8 @@
 #note6ImgP15 {
     top: 540px;
 }
+
+
+/* #rightSectionP15 * {
+    opacity: 0;
+} */
