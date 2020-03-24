@@ -25,18 +25,18 @@ class AnimationPage26 {
         this.cardPage26.restart();
     }
     reverse() {
-        this.bikeLeftPage26.pause();
-        this.bikeRightPage26.pause();
-        this.leftBallonsPage26.pause();
-        this.rightBallonsPage26.pause();
-        this.vsPage26.pause();
-        this.documenntPage26.pause();
-        this.cardPage26.pause();
-        this.bikeRightPage26Reverse.restart();
-        this.bikeLeftPage26Reverse.restart();
-        this.leftBallonsPage26Reverse.restart();
-        this.vsPage26Reverse.restart();
-        this.documenntPage26Reverse.restart();
+        // this.bikeLeftPage26.pause();
+        // this.bikeRightPage26.pause();
+        // this.leftBallonsPage26.pause();
+        // this.rightBallonsPage26.pause();
+        // this.vsPage26.pause();
+        // this.documenntPage26.pause();
+        // this.cardPage26.pause();
+        // this.bikeRightPage26Reverse.restart();
+        // this.bikeLeftPage26Reverse.restart();
+        // this.leftBallonsPage26Reverse.restart();
+        // this.vsPage26Reverse.restart();
+        // this.documenntPage26Reverse.restart();
     }
 }
 var animationPage26 = new AnimationPage26();

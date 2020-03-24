@@ -27,14 +27,14 @@ class AnimationPage27 {
         this.cardContentPage27.restart();
     }
     reverse() {
-        this.speakerPage27.restart();
-        this.cardPage27Reverse.restart();
-        this.speakerPage27FadeOut.restart();
-        this.disapperAll.restart();
-        this.speakerMove.pause();
-        this.cardPage27.pause();
-        this.cardTitlePage27.pause();
-        this.cardContentPage27.pause();
+        // this.speakerPage27.restart();
+        // this.cardPage27Reverse.restart();
+        // this.speakerPage27FadeOut.restart();
+        // this.disapperAll.restart();
+        // this.speakerMove.pause();
+        // this.cardPage27.pause();
+        // this.cardTitlePage27.pause();
+        // this.cardContentPage27.pause();
     }
 }
 var animationPage27 = new AnimationPage27();
