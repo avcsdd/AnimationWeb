@@ -1,4 +1,4 @@
-#page13 .page-content-wrapper{
+#page13 .page-content-wrapper {
     display: flex;
     width: 100%;
     height: 100%;
@@ -6,18 +6,18 @@
     display: flex;
 }
 
-#leftSectionP13{
+#leftSectionP13 {
     height: 100%;
     width: 55%;
     flex-direction: column;
 }
 
-#rightSectionP13{
+#rightSectionP13 {
     height: 100%;
     width: 45%;
 }
 
-#textBubleP13{
+#textBubleP13 {
     height: 40% !important;
     padding-top: 5%;
     padding-left: 5%;
@@ -26,14 +26,15 @@
     text-justify: inter-word;
 }
 
-#textBubleP13 #bubbleP13{
+#textBubleP13 #bubbleP13 {
     height: 75%;
     width: 100%;
     background-image: url('../../images/13/Artboard\ 65\ copy\ 6@6x.png');
     background-size: 100% 100%;
+    opacity: 0;
 }
 
-#textBubleP13 #bubbleP13 p{
+#textBubleP13 #bubbleP13 p {
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 3%;
@@ -44,18 +45,18 @@
 
 #leftSectionP13 #imageContainerP13 img {
     position: absolute;
-    left:15%;
-    bottom:35%;
+    left: 15%;
+    bottom: 35%;
 }
 
-#rightSectionP13{
+#rightSectionP13 {
     padding-left: 2%;
     padding-right: 5%;
 }
 
-#rightSectionP13 .cardP13{
+#rightSectionP13 .cardP13 {
     height: 28%;
-
+    opacity: 0;
 }
 
 #rightSectionP13 .cardP13:first-child {
@@ -64,43 +65,47 @@
     background-size: 100% 100%;
 }
 
-#rightSectionP13 .cardP13:first-child > * {
+#rightSectionP13 .cardP13:first-child>* {
     position: absolute;
 }
 
-#girlOnDeskP13{
+#girlOnDeskP13 {
     left: 58%;
-    top:  11%;
+    top: 11%;
+    opacity: 0;
 }
 
-#threeDotsP13{
-    left: 58%;
-    top:12%;
+#threeDotsP13 {
+    left: 700px;
+    top: 12%;
+    opacity: 0;
 }
 
-#checkedP13{
-    left: 75%;
+#checkedP13 {
+    left: 850px;
     top: 22%;
+    opacity: 0;
 }
 
-#textBubleInCardP13{
+#textBubleInCardP13 {
     background-image: url("../../images/13/Artboard\ 65\ copy\ 13@6x.png");
     background-size: 100% 100%;
-    left:73%;
-    top:12%;
+    left: 73%;
+    top: 12%;
     height: 8%;
     width: 18%;
     text-align: center;
     font-size: 14px;
     font-weight: 500;
+    opacity: 0;
 }
 
 #card1TitleP13 {
     color: white;
     font-size: 24px;
     font-weight: 800;
-    left:59%;
-    top:5%;
+    left: 59%;
+    top: 5%;
 }
 
 #rightSectionP13 .cardP13:nth-child(2) {
@@ -109,7 +114,7 @@
     background-size: 100% 100%;
 }
 
-#rightSectionP13 .cardP13:nth-child(2) > *{
+#rightSectionP13 .cardP13:nth-child(2)>* {
     position: absolute;
 }
 
@@ -121,23 +126,23 @@
     top: 37%;
 }
 
-#askQuestionP13{
+#askQuestionP13 {
     color: white;
     font-size: 26px;
     font-weight: 600;
     left: 65%;
-    top: 44%; 
+    top: 44%;
 }
 
-#emailCardP13{
+#emailCardP13 {
     color: white;
     font-size: 22px;
     font-weight: 600;
     left: 59%;
-    top: 50%;       
+    top: 50%;
 }
 
-#phoneNumber1P13{
+#phoneNumber1P13 {
     color: white;
     font-size: 22px;
     font-weight: 600;
@@ -153,4 +158,13 @@
     left: 59%;
     top: 59%;
     letter-spacing: 1px;
+}
+
+#twoPeople {
+    top: 200px;
+    opacity: 0;
+}
+
+#cardP13Bellow {
+    opacity: 0;
 }
