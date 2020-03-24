@@ -50,7 +50,6 @@ function PreloadPageSelected(pageIndex) {
 
 function LoadPageSelected(pageIndex) {
     return new Promise(resolve => {
-
         if (pageIndex == 1) {
             page02Animation.run();
         }
@@ -98,8 +97,7 @@ export function prepareLoading(indicator) {
 
 export function carouselJumpTo(pageIndex) {
     return PreloadPageSelected(pageIndex)
-        .then(LoadPageSelected(pageIndex))
-        .then(() => {
+          .then(()=>{
             $(".carousel").carousel(pageIndex);
-        })
+          }).then(LoadPageSelected(pageIndex))
 }
