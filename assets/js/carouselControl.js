@@ -19,7 +19,6 @@ function PreloadPageSelected(pageIndex) {
             case 1:
                 page02Animation.reverse();
                 break;
-                break;
             case 3:
                 page04Animation.reverse();
                 break;
@@ -116,7 +115,7 @@ export function prepareLoading(indicator) {
 
 export function carouselJumpTo(pageIndex) {
     return PreloadPageSelected(pageIndex)
-          .then(()=>{
+        .then(() => {
             $(".carousel").carousel(pageIndex);
-          }).then(LoadPageSelected(pageIndex))
+        }).then(LoadPageSelected(pageIndex))
 }
