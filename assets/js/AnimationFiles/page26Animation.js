@@ -4,7 +4,7 @@ class AnimationPage26 {
     bikeLeftPage26 = ani.moveHorizontalDelay("#bikeLeftPage26", 700, 1500, 480)
     leftBallonsPage26 = ani.appearDelay(["#leftBallonsPage26", "#leftBallonsTextPage26"], 1000, 2000)
     rightBallonsPage26 = ani.appearDelay(["#rightBallonsPage26", "#rightBallonsTextPage26"], 1000, 2000)
-    vsPage26 = ani.toYDelay("#vsPage26", 2000, 700, 50)
+    vsPage26 = ani.appearDelay("#vsPage26", 2000, 1000)
     documenntPage26 = ani.toYDelay("#documenntPage26", 2500, 1000, -360)
     cardPage26 = ani.appearDelay("#cardPage26-container", 1000, 3000)
         //////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -12,9 +12,20 @@ class AnimationPage26 {
     bikeLeftPage26Reverse = ani.moveHorizontalDelay("#bikeLeftPage26", 0, 0, -550)
     leftBallonsPage26Reverse = ani.off(["#bikeRightPage26", "#bikeLeftPage26", "#leftBallonsPage26", "#cardPage26-container", "#leftBallonsTextPage26", "#rightBallonsPage26", "#rightBallonsTextPage26"])
         // rightBallonsPage26Reverse = ani.appearDelay(["#rightBallonsPage26", "#rightBallonsTextPage26"], 1000, 2000)
-    vsPage26Reverse = ani.toYDelay("#vsPage26", 0, 0, 50)
+        // vsPage26Reverse = ani.appearDelay("#vsPage26", 2000, 1000)
     documenntPage26Reverse = ani.toYDelay("#documenntPage26", 0, 0, 360)
         // cardPage26Reverse = ani.appearDelay("#cardPage26-container", 1000, 3000)
+    vsZoom = anime({
+            targets: "#vsPage26",
+            scale: { value: 1.5, delay: 0 },
+            direction: 'alternate',
+            loop: true,
+            delay: 2000,
+            autoplay: false,
+            easing: 'easeInOutQuad'
+        })
+        // cardUD = ani.moveEasingLR(["#cardPage26"], 2000, 10)
+
     run() {
         this.bikeLeftPage26.restart();
         this.bikeRightPage26.restart();
@@ -23,6 +34,8 @@ class AnimationPage26 {
         this.vsPage26.restart();
         this.documenntPage26.restart();
         this.cardPage26.restart();
+        this.vsZoom.restart()
+            // this.cardUD.restart();
     }
     reverse() {
         // this.bikeLeftPage26.pause();

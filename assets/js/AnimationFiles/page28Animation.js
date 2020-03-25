@@ -48,24 +48,27 @@
              delay: delay
          });
      }
+
+
      hand01Page28 = this.delayMove("#hand01Page28", 500, 40);
      hand02Page28 = this.delayMove("#hand02Page28", 1300, 40);
      hand03Page28 = this.delayMove("#hand03Page28", 2200, 40);
      hand04Page28 = this.delayMove("#hand04Page28", 3000, 40);
      peopleGroupPage28 = this.fadeAppear("#peopleGroupPage28", 1000);
-     smallObjPage28 = this.fadeUpAppear(".smallObjPage28", 2000, -30);
+     smallObjPage28 = ani.appearDelay(".smallObjPage28", 2000, 1000);
      ipLessionPage28 = this.fadeUpAppear(["#ipLessionPage28", "#lessionsTitlePage28"], 1000, -30)
      lession01ContentPage28 = this.appearWithDelay("#lession01ContentPage28", 1000, 800);
      lession02ContentPage28 = this.appearWithDelay("#lession02ContentPage28", 1000, 1600);
      lession03ContentPage28 = this.appearWithDelay("#lession03ContentPage28", 1000, 2400);
      lession04ContentPage28 = this.appearWithDelay("#lession04ContentPage28", 1000, 3200);
-
+     smallObjPage28UD = ani.moveEasingUD(".smallObjPage28", 3000, 20);
      back01 = ani.off(["#peopleGroupPage28", "#lession01ContentPage28", "#lession02ContentPage28", "#lession03ContentPage28", "#lession04ContentPage28"]);
      back02 = ani.returnY(["#ipLessionPage28", "#lessionsTitlePage28", ".smallObjPage28"], 30)
      back03 = ani.returnX(["#hand01Page28", "#hand02Page28", "#hand03Page28", "#hand04Page28"], -40)
      run() {
          this.peopleGroupPage28.restart();
          this.smallObjPage28.restart();
+         this.smallObjPage28UD.restart();
          this.ipLessionPage28.restart();
          // scaleInOut(".smallObjPage28");
          this.hand01Page28.restart();
@@ -76,6 +79,7 @@
          this.lession03ContentPage28.restart()
          this.hand04Page28.restart();
          this.lession04ContentPage28.restart()
+             //  this.handsHeaving.restart();
      }
 
      reverse() {

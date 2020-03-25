@@ -9,6 +9,14 @@ class Page14nimation {
     folderP14 = ani.appearDelay("#folderP14", 1000, 1500);
     magnifyingP14 = ani.appearDelay("#magnifyingP14", 1000, 2000);
     magnifyingP14Move = ani.moveEasingLR("#magnifyingP14", 2500, 20)
+    gear2P14 = anime({
+        targets: ["#gear2P14", "#gear1P14"],
+        rotate: '1turn',
+        duration: 5000,
+        easing: 'linear',
+        loop: true,
+        autoplay: false
+    })
     run() {
         this.grassBackgroundP14.restart();
         this.girlOndeskP14.restart();
@@ -18,6 +26,7 @@ class Page14nimation {
         this.folderP14.restart();
         this.magnifyingP14.restart();
         this.magnifyingP14Move.restart();
+        this.gear2P14.restart();
     }
     reverse() {
 
