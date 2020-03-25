@@ -1,7 +1,7 @@
 var leftCorrectAnswer = anime({
     targets: ['#page30 #left-result-wrapper .correct-answer'],
     opacity: [
-        { value: 1, duration: 1000, easing: 'easeInCubic' }
+        { value: 1, duration: 500, easing: 'easeInCubic' }
     ],
     autoplay: false,
 });
@@ -9,7 +9,7 @@ var leftCorrectAnswer = anime({
 var leftWrongAnswer = anime({
     targets: ['#page30 #left-result-wrapper .wrong-answer'],
     opacity: [
-        { value: 1, duration: 1000, easing: 'easeInCubic' }
+        { value: 1, duration: 500, easing: 'easeInCubic' }
     ],
     autoplay: false,
 });
@@ -17,7 +17,7 @@ var leftWrongAnswer = anime({
 var centerCorrectAnswer = anime({
     targets: ['#page30 #center-result-wrapper .correct-answer'],
     opacity: [
-        { value: 1, duration: 1000, easing: 'easeInCubic' }
+        { value: 1, duration: 500, easing: 'easeInCubic' }
     ],
     autoplay: false,
 });
@@ -25,7 +25,7 @@ var centerCorrectAnswer = anime({
 var centerWrongAnswer = anime({
     targets: ['#page30 #center-result-wrapper .wrong-answer'],
     opacity: [
-        { value: 1, duration: 1000, easing: 'easeInCubic' }
+        { value: 1, duration: 500, easing: 'easeInCubic' }
     ],
     autoplay: false,
 });
@@ -33,7 +33,7 @@ var centerWrongAnswer = anime({
 var rightCorrectAnswer = anime({
     targets: ['#page30 #right-result-wrapper .correct-answer'],
     opacity: [
-        { value: 1, duration: 1000, easing: 'easeInCubic' }
+        { value: 1, duration: 500, easing: 'easeInCubic' }
     ],
     autoplay: false,
 });
@@ -41,8 +41,28 @@ var rightCorrectAnswer = anime({
 var rightWrongAnswer = anime({
     targets: ['#page30 #right-result-wrapper .wrong-answer'],
     opacity: [
-        { value: 1, duration: 1000, easing: 'easeInCubic' }
+        { value: 1, duration: 500, easing: 'easeInCubic' }
     ],
+    autoplay: false,
+});
+
+var correctAnswerBouncing = anime({
+    targets: ['#page30 img.correct-answer'],
+    translateY: [
+        { value: 5, duration: 500, easing: 'easeOutQuad' },
+        { value: 0, duration: 500, easing: 'easeInQuad' },
+    ],
+    loop: true,
+    autoplay: false,
+});
+
+var wrongAnswerBouncing = anime({
+    targets: ['#page30 img.wrong-answer'],
+    translateX: [
+        { value: 5, duration: 500, easing: 'easeOutQuad' },
+        { value: 0, duration: 500, easing: 'easeInQuad' },
+    ],
+    loop: true,
     autoplay: false,
 });
 
@@ -67,6 +87,8 @@ $('#page30 #submit-image').click(function () {
     var ans1 = $('#page30 #left-question-wrapper').find('.checked:not(:hidden)').attr('value')
     var ans2 = $('#page30 #center-question-wrapper').find('.checked:not(:hidden)').attr('value')
     var ans3 = $('#page30 #right-question-wrapper').find('.checked:not(:hidden)').attr('value')
+    setTimeout(correctAnswerBouncing.play(), 500)
+    setTimeout(wrongAnswerBouncing.play(), 500)
     if (ans1 == 'r'){
         $('#page30 #left-result-wrapper .correct-answer').removeAttr('hidden')
         leftCorrectAnswer.play();

@@ -46,11 +46,18 @@
     opacity: 0;
 }
 
-#policeP16 {
+/* #policeP16 {
     position: absolute;
     top: -70px;
     left: 36%;
     opacity: 0;
+    top: 10px;
+} */
+
+#policeP16_shaking {
+    height: 410px;
+    left: 440.5px;
+    top: 10px;
 }
 
 #bottomTextBoxP16 {
