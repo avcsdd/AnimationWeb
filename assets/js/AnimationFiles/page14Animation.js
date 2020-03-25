@@ -9,7 +9,8 @@ class Page14nimation {
     folderP14 = ani.appearDelay("#folderP14", 1000, 1500);
     magnifyingP14 = ani.appearDelay("#magnifyingP14", 1000, 2000);
     magnifyingP14Move = ani.moveEasingLR("#magnifyingP14", 2500, 20);
-    // meptu = ani.appearDelay("#meptu", 0, 2500);
+    folder14Move = ani.moveEasingUD("#folderP14", 2000, 5)
+        // meptu = ani.appearDelay("#meptu", 0, 2500);
     ngankeo = ani.moveHorizontalDelay("#ngankeo", 2000, 1000, 50);
     gear2P14 = anime({
         targets: ["#gear2P14", "#gear1P14"],
@@ -31,6 +32,7 @@ class Page14nimation {
         this.gear2P14.restart();
         // this.meptu.restart()
         this.ngankeo.restart()
+        this.folder14Move.restart();
     }
     reverse() {
 
