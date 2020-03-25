@@ -15,6 +15,7 @@ import page28Animation from "./AnimationFiles/page28Animation.js"
 
 function PreloadPageSelected(pageIndex) {
     return new Promise(resolve => {
+        console.log(pageIndex)
         switch (pageIndex) {
             case 1:
                 page02Animation.reverse();
@@ -43,16 +44,16 @@ function PreloadPageSelected(pageIndex) {
             case 11:
                 page17Animation.reverse();
                 break;
-            case 13:
+            case 19:
                 page25Animation.reverse();
                 break;
-            case 14:
+            case 20:
                 page26Animation.reverse();
                 break;
-            case 15:
+            case 21:
                 page27Animation.reverse();
                 break;
-            case 16:
+            case 22:
                 page28Animation.reverse();
                 break;
         }
@@ -91,17 +92,16 @@ function LoadPageSelected(pageIndex) {
             case 11:
                 page17Animation.run();
                 break;
-            case 13:
+            case 19:
                 page25Animation.run();
                 break;
-            case 14:
+            case 20:
                 page26Animation.run();
-
                 break;
-            case 15:
+            case 21:
                 page27Animation.run();
                 break;
-            case 16:
+            case 22:
                 page28Animation.run();
                 break;
         }
@@ -113,8 +113,8 @@ export function prepareLoading(indicator) {
     var ele = $('#carouselExampleControls .carousel-indicators li.active');
     var pageIndex = ele.data('pageindex') + indicator;
     if (pageIndex < 0) {
-        pageIndex = 19;
-    } else if (pageIndex > 19) {
+        pageIndex = 25;
+    } else if (pageIndex > 25) {
         pageIndex = 0;
     }
     return carouselJumpTo(pageIndex)
