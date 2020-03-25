@@ -124,4 +124,16 @@ class MyAnimation {
             easing: 'linear'
         });
     }
+    moveEasingUD(targets, delay, value) {
+        return anime({
+            targets: targets,
+            translateY: { value: value, delay: 0 },
+            direction: 'alternate',
+            loop: true,
+            delay: delay,
+            autoplay: false,
+            easing: 'linear'
+        });
+    }
+
 }
