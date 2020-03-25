@@ -1,10 +1,10 @@
 var ani = new MyAnimation();
 
 $("#LeftPros").click(function() {
-    $(".carousel").carousel(2);
+    carouselJumpTo(2)
 })
 $("#RightCons").click(function() {
-    $(".carousel").carousel(2);
+    carouselJumpTo(2)
 })
 class AnimationPage02 {
     girlCenterAnimation = ani.appear("#girl-center *", 1200);
