@@ -5,9 +5,9 @@ $(document).ready(function() {
             rotate: { value: '99999turn', easing: 'linear', duration: 999990000 },
             opacity: 1,
             scale: [
-                { value: 0, duration: 0, easing: 'easeInCubic' },
-                { value: 1.1, duration: 1000, delay: 500, easing: 'easeOutCubic' },
-                { value: 1, duration: 1000, easing: 'easeInCubic' }
+                { value: 0, duration: 0, easing: 'easeInOutQuad' },
+                { value: 1.1, duration: 1000, delay: 500, easing: 'easeInOutQuad' },
+                { value: 1, duration: 1000, easing: 'easeInOutQuad' }
             ],
             autoplay: false,
             loop: true,
@@ -41,11 +41,11 @@ $(document).ready(function() {
             targets: ['#page5 #left-wrapper'],
             opacity: [
                 { value: 0, duration: 0 },
-                { value: 1, duration: 500, delay: 1500, easing: 'easeInQuint' }
+                { value: 1, duration: 500, delay: 1500, easing: 'easeInOutQuad' }
             ],
             translateX: [
-                { value: -500, duration: 0, easing: 'easeInCubic' },
-                { value: 0, duration: 500, delay: 1500, easing: 'easeInCubic' },
+                { value: -500, duration: 0, easing: 'easeInOutQuad' },
+                { value: 0, duration: 500, delay: 1500, easing: 'easeInOutQuad' },
             ],
             autoplay: false,
         });
@@ -60,11 +60,11 @@ $(document).ready(function() {
             targets: ['#page5 #right-wrapper'],
             opacity: [
                 { value: 0, duration: 0 },
-                { value: 1, duration: 500, delay: 2000, easing: 'easeInQuint' }
+                { value: 1, duration: 500, delay: 2000, easing: 'easeInOutQuad' }
             ],
             translateX: [
-                { value: 500, duration: 0, easing: 'easeInCubic' },
-                { value: 0, duration: 500, delay: 2000, easing: 'easeInCubic' },
+                { value: 500, duration: 0, easing: 'easeInOutQuad' },
+                { value: 0, duration: 500, delay: 2000, easing: 'easeInOutQuad' },
             ],
             autoplay: false,
         });
@@ -79,11 +79,11 @@ $(document).ready(function() {
             targets: ['#page5 #bottom-wrapper'],
             opacity: [
                 { value: 0, duration: 0 },
-                { value: 1, duration: 500, delay: 2500, easing: 'easeInQuint' }
+                { value: 1, duration: 500, delay: 2500, easing: 'easeInOutQuad' }
             ],
             translateY: [
-                { value: 500, duration: 0, easing: 'easeInCubic' },
-                { value: 0, duration: 500, delay: 2500, easing: 'easeInCubic' },
+                { value: 500, duration: 0, easing: 'easeInOutQuad' },
+                { value: 0, duration: 500, delay: 2500, easing: 'easeInOutQuad' },
             ],
             autoplay: false,
         });
