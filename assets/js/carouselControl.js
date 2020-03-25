@@ -1,4 +1,5 @@
 import page02Animation from "./AnimationFiles/page2Animation.js"
+import page03Animation from "./AnimationFiles/page3Animation.js"
 import page04Animation from "./AnimationFiles/page4Animation.js"
 import page07Animation from "./AnimationFiles/page07Animation.js"
 import page13Animation from "./AnimationFiles/page13Animation.js"
@@ -17,6 +18,9 @@ function PreloadPageSelected(pageIndex) {
         switch (pageIndex) {
             case 1:
                 page02Animation.reverse();
+                break;
+            case 2:
+                page03Animation.reverse();
                 break;
             case 3:
                 page04Animation.reverse();
@@ -62,6 +66,9 @@ function LoadPageSelected(pageIndex) {
         switch (pageIndex) {
             case 1:
                 page02Animation.run();
+                break;
+            case 2:
+                page03Animation.run();
                 break;
             case 3:
                 page04Animation.run();
