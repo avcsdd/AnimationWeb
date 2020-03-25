@@ -1,4 +1,4 @@
-#page6 .page-content-wrapper{
+#page6 .page-content-wrapper {
     background-image: url('../../images/logo/shutterstock_182632013.jpg') !important;
     width: 100%;
     height: 100%;
@@ -21,10 +21,11 @@
 }
 
 #page6 #middle-wrapper img {
-    margin-top: 17px;
+    margin-top: -30px;
 }
 
-#page6 #left-wrapper, #page6 #right-wrapper {
+#page6 #left-wrapper,
+#page6 #right-wrapper {
     position: absolute;
     top: 45px;
     width: 394px;
@@ -40,13 +41,17 @@
     right: 58px;
 }
 
-#page6 #left-wrapper, #page6 #right-wrapper, #page6 #bottom-wrapper {
+#page6 #left-wrapper,
+#page6 #right-wrapper,
+#page6 #bottom-wrapper {
     padding-top: 19px;
     padding-left: 28px;
     padding-right: 28px;
 }
 
-#page6 #left-wrapper p, #page6 #right-wrapper p, #page6 #bottom-wrapper p {
+#page6 #left-wrapper p,
+#page6 #right-wrapper p,
+#page6 #bottom-wrapper p {
     color: white;
     font-size: 21px;
     text-align: justify;
@@ -58,7 +63,8 @@
     src: url('../../font/RobotoCondensed-Bold.woff') format("woff");
 }
 
-#page6 #left-wrapper span, #page6 #right-wrapper span {
+#page6 #left-wrapper span,
+#page6 #right-wrapper span {
     font-weight: bold;
 }
 
@@ -73,7 +79,9 @@
     margin-top: 436px;
 }
 
-#page6 #left-wrapper img, #page6 #right-wrapper img, #page6 #bottom-wrapper img {
+#page6 #left-wrapper img,
+#page6 #right-wrapper img,
+#page6 #bottom-wrapper img {
     position: absolute;
     left: 28px;
     margin-top: -10px;
