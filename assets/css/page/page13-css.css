@@ -61,8 +61,8 @@
 
 #rightSectionP13 .cardP13:first-child {
     margin-top: 7%;
-    background-image: url("../../images/13/Artboard\ 65\ copy\ 15@6x.png");
-    background-size: 100% 100%;
+    /* background-image: url("../../images/13/Artboard\ 65\ copy\ 15@6x.png"); */
+    /* background-size: 100% 100%; */
 }
 
 #rightSectionP13 .cardP13:first-child>* {
@@ -76,13 +76,13 @@
 }
 
 #threeDotsP13 {
-    left: 700px;
+    left: 720px;
     top: 12%;
     opacity: 0;
 }
 
 #checkedP13 {
-    left: 850px;
+    left: 900px;
     top: 22%;
     opacity: 0;
 }
@@ -110,8 +110,17 @@
 
 #rightSectionP13 .cardP13:nth-child(2) {
     margin-top: 7%;
-    background-image: url("../../images/13/Artboard\ 65\ copy\ 18@6x.png");
-    background-size: 100% 100%;
+    /* background-image: url("../../images/13/Artboard\ 65\ copy\ 18@6x.png"); */
+    /* background-size: 100% 100%; */
+}
+
+#cardBackgoundAboveP13 {
+    width: 37%;
+}
+
+#cardBackgoundBellowP13 {
+    width: 37%;
+    top: 300px
 }
 
 #rightSectionP13 .cardP13:nth-child(2)>* {
@@ -166,5 +175,23 @@
 }
 
 #cardP13Bellow {
+    opacity: 0;
+}
+
+#dot1P13 {
+    left: 735px;
+    top: 125px;
+    opacity: 0;
+}
+
+#dot2P13 {
+    left: 745px;
+    top: 125px;
+    opacity: 0;
+}
+
+#dot3P13 {
+    left: 755px;
+    top: 125px;
     opacity: 0;
 }

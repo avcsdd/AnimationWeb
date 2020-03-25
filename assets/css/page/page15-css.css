@@ -113,7 +113,8 @@
 }
 
 #boxTextP15 {
-    margin-left: -200px !important;
+    margin-left: -10px !important;
+    margin-top: 5px;
     opacity: 0;
 }
 

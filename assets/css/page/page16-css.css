@@ -36,13 +36,13 @@
 
 #leftTextBoxP16 {
     top: 8%;
-    left: 10px;
+    left: 75px;
     opacity: 0;
 }
 
 #rightTextBoxP16 {
     top: 8%;
-    left: 900px;
+    left: 828px;
     opacity: 0;
 }
 
@@ -54,7 +54,7 @@
 }
 
 #bottomTextBoxP16 {
-    top: 470px;
+    top: 440px;
     left: 6%;
     opacity: 0;
 }
