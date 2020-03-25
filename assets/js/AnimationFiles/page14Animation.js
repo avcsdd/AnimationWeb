@@ -4,7 +4,7 @@ class Page14nimation {
     grassBackgroundP14 = ani.appearDelay("#grassBackgroundP14", 1000, 200);
     girlOndeskP14 = ani.moveVerticalDelay("#girlOndeskP14", 500, 1000, -305);
     bubbleTextP14 = ani.appearDelay("#bubbleTextP14", 1000, 1000);
-    closeCabinetP14 = ani.moveVerticalDelay(["#closeCabinetP14", "#meptu"], 800, 1000, -305);
+    closeCabinetP14 = ani.moveVerticalDelay(["#closeCabinetP14", "#meptu", "#matngankeo"], 800, 1000, -305);
     certificateP14 = ani.moveHorizontalDelay("#certificateP14", 1000, 1000, -50);
     folderP14 = ani.appearDelay("#folderP14", 1000, 1500);
     magnifyingP14 = ani.appearDelay("#magnifyingP14", 1000, 2000);
@@ -12,6 +12,16 @@ class Page14nimation {
     folder14Move = ani.moveEasingUD("#folderP14", 2000, 5)
         // meptu = ani.appearDelay("#meptu", 0, 2500);
     ngankeo = ani.moveHorizontalDelay("#ngankeo", 2000, 1000, 50);
+    folderngankeoMove = anime({
+        targets: "#folderngankeo",
+        // delay: 2500,
+        // opacity: [{ value: 1, duration: 1000 }],
+        duration: 1000,
+        translateY: -40,
+        loop: true,
+        easing: 'easeInOutExpo'
+    });
+    showFolderNganKeo = ani.appearDelay("#folderngankeo", 1000, 3000);
     gear2P14 = anime({
         targets: ["#gear2P14", "#gear1P14"],
         rotate: '1turn',
@@ -33,6 +43,8 @@ class Page14nimation {
         // this.meptu.restart()
         this.ngankeo.restart()
         this.folder14Move.restart();
+        this.folderngankeoMove.restart();
+        this.showFolderNganKeo.restart()
     }
     reverse() {
 
