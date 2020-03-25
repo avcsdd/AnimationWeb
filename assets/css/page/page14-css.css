@@ -87,3 +87,17 @@
     color: white;
     font-size: 18px;
 }
+
+#meptu {
+    width: 6%;
+    top: 661px;
+    left: 651px;
+    opacity: 0;
+}
+
+#ngankeo {
+    width: 20%;
+    top: 429px;
+    left: 651px;
+    opacity: 0;
+}
