@@ -28,6 +28,10 @@
     width: 423px;
 }
 
+#page30 #center-result-wrapper img.wrong-answer {
+    margin-top: -26px;
+}
+
 #page30 #right-question-wrapper, #page30 #right-result-wrapper {
     width: 304px;
 }
