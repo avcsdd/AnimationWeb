@@ -132,7 +132,7 @@ class MyAnimation {
             loop: true,
             delay: delay,
             autoplay: false,
-            easing: 'linear'
+            easing: 'easeInOutSine'
         });
     }
 

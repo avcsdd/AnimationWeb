@@ -89,16 +89,7 @@ function LoadPageSelected(pageIndex) {
                 break;
             case 14:
                 page26Animation.run();
-                var testZoom = anime({
-                    targets: "#vsPage26",
-                    scale: { value: 1.5, delay: 0 },
-                    direction: 'alternate',
-                    loop: true,
-                    delay: 2000,
-                    autoplay: false,
-                    easing: 'easeInOutQuad'
-                })
-                testZoom.play();
+
                 break;
             case 15:
                 page27Animation.run();

@@ -96,3 +96,13 @@
     padding-left: 8%;
     align-items: center;
 }
+
+.textBoxWrapperP17 {
+    transition: transform .5s;
+    /* Animation */
+}
+
+.textBoxWrapperP17:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}

@@ -16,15 +16,15 @@ class AnimationPage26 {
     documenntPage26Reverse = ani.toYDelay("#documenntPage26", 0, 0, 360)
         // cardPage26Reverse = ani.appearDelay("#cardPage26-container", 1000, 3000)
     vsZoom = anime({
-            targets: "#vsPage26",
-            scale: { value: 1.5, delay: 0 },
-            direction: 'alternate',
-            loop: true,
-            delay: 2000,
-            autoplay: false,
-            easing: 'easeInOutQuad'
-        })
-        // cardUD = ani.moveEasingLR(["#cardPage26"], 2000, 10)
+        targets: "#vsPage26",
+        scale: { value: 1.5, delay: 0 },
+        direction: 'alternate',
+        loop: true,
+        delay: 2000,
+        autoplay: false,
+        easing: 'easeInOutQuad'
+    })
+    cardUD = ani.moveEasingUD(["#cardPage26-container *"], 2000, 10)
 
     run() {
         this.bikeLeftPage26.restart();
@@ -35,7 +35,7 @@ class AnimationPage26 {
         this.documenntPage26.restart();
         this.cardPage26.restart();
         this.vsZoom.restart()
-            // this.cardUD.restart();
+        this.cardUD.restart();
     }
     reverse() {
         // this.bikeLeftPage26.pause();

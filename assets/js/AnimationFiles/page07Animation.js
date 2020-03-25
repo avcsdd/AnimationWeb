@@ -88,7 +88,15 @@ class AnimationPage07 {
     reverseBalloonsPage7 = ani.off("#balloonsPage7")
     reverseObjectLeftPage7Click = ani.off("#objectLeftPage7_click") //$("#objectLeftPage7-whenclick").hide();
     reverseCirclesPage07 = this.backZoom(["#Circle12Page7 *", "#Circle03Page7 *", "#Circle05Page7 *", "#Circle07Page7 *", "#Circle09Page7 *"])
-
+    messageCirclePage7Zoom = anime({
+        targets: "#messageCirclePage7",
+        scale: { value: 1.1, delay: 0 },
+        direction: 'alternate',
+        loop: true,
+        delay: 2000,
+        autoplay: false,
+        easing: 'easeInOutQuad'
+    })
     reverse() {
         this.reversearrowPage7.restart();
         this.reverseMessageArrowPage7.restart();
@@ -102,6 +110,7 @@ class AnimationPage07 {
         this.reverseBalloonsPage7.restart();
         this.reverseObjectLeftPage7Click.restart();
         this.reverseCirclesPage07.restart();
+        this.messageCirclePage7Zoom.restart();
         firstClickCirclePage7 = false;
         $("#objectLeftPage7").show();
         // $("#objectLeftPage7_click").css("opacity", "0");
