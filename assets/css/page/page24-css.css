@@ -1,0 +1,29 @@
+#page24 .page-content-wrapper {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../images/logo/shutterstock_182632013.jpg') !important;
+    display: flex;
+    justify-content: center;
+    padding-top: 7%;
+}
+
+#cardImageP24{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cardTextP24{
+    width: 50%;
+    text-align: justify;
+    padding-top: 10%;
+    padding-right: 6%;
+    font-size: 17px;
+    color: rgb(5, 8, 124) !important;
+    font-weight: 500;
+}
+
+#cardImageP24 img{
+    width: 80%;
+    height: 60%;
+}
