@@ -8,7 +8,8 @@ class AnimationPage03 {
         ],
         translateY: [
             { value: 65, duration: 500, delay: 1500, easing: 'easeOutSine' },
-            { value: 0, duration: 500, delay: 500, easing: 'easeOutSine' },
+            { value: -30, duration: 500, delay: 500, easing: 'easeOutSine' },
+            { value: 0, duration: 1000, easing: 'easeOutSine' },
         ],
         autoplay: false,
     });
@@ -28,7 +29,8 @@ class AnimationPage03 {
         ],
         translateY: [
             { value: 35, duration: 500, delay: 1500, easing: 'easeOutSine' },
-            { value: 0, duration: 500, delay: 500, easing: 'easeOutSine' },
+            { value: -18, duration: 500, delay: 500, easing: 'easeOutSine' },
+            { value: 0, duration: 1000, easing: 'easeOutSine' },
         ],
         autoplay: false,
     });
@@ -48,15 +50,18 @@ class AnimationPage03 {
         ],
         translateY: [
             { value: 55, duration: 500, delay: 1500, easing: 'easeOutSine' },
-            { value: 0, duration: 500, delay: 500, easing: 'easeOutSine' },
+            { value: -19, duration: 500, delay: 500, easing: 'easeOutSine' },
+            { value: 0, duration: 1000, easing: 'easeOutSine' },
         ],
         translateX: [
             { value: -27, duration: 500, delay: 1500, easing: 'easeOutSine' },
-            { value: 0, duration: 500, delay: 500, easing: 'easeOutSine' },
+            { value: 9, duration: 500, delay: 500, easing: 'easeOutSine' },
+            { value: 0, duration: 1000, easing: 'easeOutSine' },
         ],
         rotate: [
             { value: -5, duration: 500, delay: 1500, easing: 'easeOutSine' },
-            { value: 0, duration: 500, delay: 500, easing: 'easeOutSine' },
+            { value: 2, duration: 500, delay: 500, easing: 'easeOutSine' },
+            { value: 0, duration: 1000, easing: 'easeOutSine' },
         ],
         autoplay: false,
     });
@@ -71,7 +76,8 @@ class AnimationPage03 {
         targets: ['#rightBalance #redBall'],
         translateY: [
             { value: -35, duration: 0, delay: 0, easing: 'easeOutSine' },
-            { value: 0, duration: 500, delay: 2500, easing: 'easeOutSine' },
+            { value: 15, duration: 500, delay: 2500, easing: 'easeOutSine' },
+            { value: 0, duration: 1000, easing: 'easeOutSine' },
         ],
         scale: [
             { value: 0, duration: 0, easing: 'easeInCubic' },
@@ -91,7 +97,8 @@ class AnimationPage03 {
         targets: ['#rightBalance #blueBall'],
         translateY: [
             { value: -65, duration: 0, delay: 0, easing: 'easeOutSine' },
-            { value: 0, duration: 500, delay: 2500, easing: 'easeOutSine' },
+            { value: 28, duration: 500, delay: 2500, easing: 'easeOutSine' },
+            { value: 0, duration: 1000, easing: 'easeOutSine' },
         ],
         scale: [
             { value: 0, duration: 0, easing: 'easeInCubic' },
@@ -116,15 +123,18 @@ class AnimationPage03 {
         ],
         translateY: [
             { value: -45, duration: 0, delay: 0, easing: 'easeOutSine' },
-            { value: 0, duration: 500, delay: 2500, easing: 'easeOutSine' },
+            { value: 25, duration: 500, delay: 2500, easing: 'easeOutSine' },
+            { value: 0, duration: 1000, easing: 'easeOutSine' },
         ],
         translateX: [
             { value: -27, duration: 0, delay: 0, easing: 'easeOutSine' },
-            { value: 0, duration: 500, delay: 2500, easing: 'easeOutSine' },
+            { value: 10, duration: 500, delay: 2500, easing: 'easeOutSine' },
+            { value: 0, duration: 1000, easing: 'easeOutSine' },
         ],
         rotate: [
             { value: -5, duration: 0, delay: 0, easing: 'easeOutSine' },
-            { value: 0, duration: 500, delay: 2500, easing: 'easeOutSine' },
+            { value: 2, duration: 500, delay: 2500, easing: 'easeOutSine' },
+            { value: 0, duration: 1000, easing: 'easeOutSine' },
         ],
         autoplay: false,
     });
@@ -143,7 +153,8 @@ class AnimationPage03 {
         ],
         rotate: [
             { value: -9, duration: 500, delay: 1500, easing: 'easeOutSine' },
-            { value: 0, duration: 500, delay: 500, easing: 'easeOutSine' },
+            { value: 4.5, duration: 500, delay: 500, easing: 'easeOutSine' },
+            { value: 0, duration: 1000, easing: 'easeOutSine' },
         ],
         autoplay: false,
     });
