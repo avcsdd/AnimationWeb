@@ -59,6 +59,14 @@
     cursor: url("../../images/18/Artboard\ 66\ copy\ 7@6x.png"), pointer;
 }
 
+.cardP18 :hover {
+    cursor: url("../../images/18/Artboard\ 66\ copy\ 7@6x.png"), pointer;
+}
+
+.closeBtn:hover {
+    cursor: url("../../images/18/Artboard\ 66\ copy\ 7@6x.png"), pointer;
+}
+
 #cardWrapperP18 div:first-child div {
     padding-top: 6%;
 }
