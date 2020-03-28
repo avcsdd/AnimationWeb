@@ -25,7 +25,7 @@ class Page15nimation {
         this.note4P15.restart();
         this.note5P15.restart();
         this.note6P15.restart();
-        this.boxtexP15Shaking.restart()
+        // this.boxtexP15Shaking.restart()
     }
     reverse() {
 
