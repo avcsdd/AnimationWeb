@@ -20,7 +20,7 @@ class AnimationPage16 {
     leftTextBoxP16 = ani.appearDelay("#leftTextBoxP16", 1000, 2000)
     bottomTextBoxP16 = ani.appearDelay("#bottomTextBoxP16", 1000, 2500)
         // rightTextBoxP16UD0 = ani.moveHorizontalDelay("#rightTextBoxP16", 3000, 0, 70)
-    rightTextBoxP16UD = ani.moveEasingUD(["#rightTextBoxP16", "#leftTextBoxP16", "#bottomTextBoxP16"], 5000, 10)
+        // rightTextBoxP16UD = ani.moveEasingUD(["#rightTextBoxP16", "#leftTextBoxP16", "#bottomTextBoxP16"], 5000, 10)
     run() {
         this.policeP16.restart();
         // this.policeP16Shaking.restart();
@@ -28,7 +28,7 @@ class AnimationPage16 {
         this.rightTextBoxP16.restart();
         this.bottomTextBoxP16.restart();
         // this.rightTextBoxP16UD0.restart()
-        this.rightTextBoxP16UD.restart();
+        // this.rightTextBoxP16UD.restart();
 
     }
     reverse() {}
