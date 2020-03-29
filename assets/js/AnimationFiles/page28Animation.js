@@ -62,9 +62,9 @@
      lession03ContentPage28 = this.appearWithDelay("#lession03ContentPage28", 1000, 2400);
      lession04ContentPage28 = this.appearWithDelay("#lession04ContentPage28", 1000, 3200);
      smallObjPage28UD = ani.moveEasingUD(".smallObjPage28", 3000, 20);
-     back01 = ani.off(["#peopleGroupPage28", "#lession01ContentPage28", "#lession02ContentPage28", "#lession03ContentPage28", "#lession04ContentPage28"]);
-     back02 = ani.returnY(["#ipLessionPage28", "#lessionsTitlePage28", ".smallObjPage28"], 30)
-     back03 = ani.returnX(["#hand01Page28", "#hand02Page28", "#hand03Page28", "#hand04Page28"], -40)
+     //  back01 = ani.off(["#peopleGroupPage28", "#lession01ContentPage28", "#lession02ContentPage28", "#lession03ContentPage28", "#lession04ContentPage28"]);
+     //  back02 = ani.returnY(["#ipLessionPage28", "#lessionsTitlePage28", ".smallObjPage28"], 30)
+     //  back03 = ani.returnX(["#hand01Page28", "#hand02Page28", "#hand03Page28", "#hand04Page28"], -40)
      run() {
          this.peopleGroupPage28.restart();
          this.smallObjPage28.restart();
