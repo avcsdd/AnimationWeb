@@ -114,3 +114,55 @@ $('#page30 #submit-image').click(function () {
         rightWrongAnswer.play();
     }
 })
+
+class AnimationPage30 {
+    leftQuestionWrapper = anime({
+        targets: '#left-question-wrapper',
+        opacity: [
+            { value: 0 },
+            { value: 1, delay: 1, duration: 500, easing: 'easeInCubic' },
+        ],
+        autoplay: false,
+    })
+    
+    centerQuestionWrapper = anime({
+        targets: '#center-question-wrapper',
+        opacity: [
+            { value: 0 },
+            { value: 1, duration: 500, delay: 500, easing: 'easeInCubic' },
+        ],
+        autoplay: false,
+    })
+
+    rightQuestionWrapper = anime({
+        targets: '#right-question-wrapper',
+        opacity: [
+            { value: 0 },
+            { value: 1, duration: 500, delay: 1000, easing: 'easeInCubic' },
+        ],
+        autoplay: false,
+    })
+    
+    submitButton = anime({
+        targets: '#submit-image',
+        translateX: [
+            { value: -10, duration: 500, easing: 'easeInCubic' },
+            { value: 0, duration: 500, easing: 'easeInCubic' },
+        ],
+        loop: true,
+        autoplay: false,
+    })
+
+    run() {
+        this.leftQuestionWrapper.restart();
+        this.centerQuestionWrapper.restart();
+        this.rightQuestionWrapper.restart();
+        this.submitButton.restart();
+    }
+
+    reverse() {
+
+    }
+}
+var animationPage30 = new AnimationPage30();
+export default animationPage30
