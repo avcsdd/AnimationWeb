@@ -64,8 +64,16 @@
     margin-top: 40px;
 }
 
+#leftBalance > p:first-child{
+    margin-left: 30px;
+}
+
+#rightBalance > p:first-child {
+    margin-right: 35px;
+}
+
 #topBalance {
-    margin-top: 235px;
+    margin-top: 275px;
 }
 
 #bottomBalance {
@@ -76,7 +84,7 @@
     position: relative;
     width: 61%;
     height: 347px;
-    margin-top: 20px;
+    margin-top: 60px;
     margin-left: 145px;
 }
 

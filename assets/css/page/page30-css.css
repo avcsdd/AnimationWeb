@@ -99,8 +99,12 @@
 }
 
 #page30 #submit-image {
-    margin-top: 50px;
-    margin-left: 180px;
+    margin-left: 103px;
+    height: 90px;
+}
+
+#page30 #submit-image:hover {
+    cursor: pointer;
 }
 
 #page30 #bottom-wrapper {
