@@ -60,12 +60,20 @@
     src: url('../../font/RobotoCondensed-Bold.woff') format("woff");
 }
 
+#LeftPros * {
+    opacity: 0;
+}
+
+#RightCons * {
+    opacity: 0;
+}
+
 #page2 #LeftPros {
     margin-left: 200px;
 }
 
 #page2 #RightCons {
-    margin-left: -200px;
+    margin-left: 30px;
 }
 
 #page2 #LeftPros>p,
@@ -78,27 +86,27 @@
 
 #page2 #LeftPros>img:first-child {
     margin-top: -1350px;
-    margin-left: -125px;
+    margin-left: -80px;
     opacity: 0;
 }
 
 #page2 #LeftPros>img:nth-child(3) {
-    margin-top: -300px;
-    margin-left: -88px;
+    margin-top: -15px;
+    margin-left: 0px;
     opacity: 0;
 }
 
 #page2 #LeftPros>p:nth-child(2) {
-    margin-top: -682px;
-    margin-left: 167px;
+    margin-top: -720px;
+    margin-left: -20px;
     font-size: 50px;
     cursor: pointer;
     opacity: 0;
 }
 
 #page2 #LeftPros>p:nth-child(4) {
-    margin-top: -330px;
-    margin-left: 204px;
+    margin-top: -25px;
+    margin-left: 15px;
     font-size: 12px;
     cursor: pointer;
     opacity: 0;
@@ -106,27 +114,27 @@
 
 #page2 #RightCons>img:first-child {
     margin-top: -1388px;
-    margin-left: 686px;
+    margin-left: 886px;
     opacity: 0;
 }
 
 #page2 #RightCons>img:nth-child(3) {
-    margin-top: -301px;
-    margin-left: 670px;
+    margin-top: -10px;
+    margin-left: 910px;
     opacity: 0;
 }
 
 #page2 #RightCons>p:nth-child(2) {
-    margin-top: -698px;
-    margin-left: 944px;
+    margin-top: -740px;
+    margin-left: 920px;
     font-size: 50px;
     cursor: pointer;
     opacity: 0;
 }
 
 #page2 #RightCons>p:nth-child(4) {
-    margin-top: -331px;
-    margin-left: 963px;
+    margin-top: -24px;
+    margin-left: 925px;
     font-size: 12px;
     cursor: pointer;
     opacity: 0;
