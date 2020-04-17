@@ -24,7 +24,7 @@ class AnimationPage03 {
         targets: ['#leftBalance #blueBall'],
         scale: [
             { value: 0, duration: 0, easing: 'easeInCubic' },
-            { value: 1.1, duration: 500, delay: 500, easing: 'easeOutCubic' },
+            { value: 1.1, duration: 500, delay: 1000, easing: 'easeOutCubic' },
             { value: 1, duration: 500, easing: 'easeInCubic' }
         ],
         translateY: [
@@ -45,7 +45,7 @@ class AnimationPage03 {
         targets: ['#leftBalance #yellowBall'],
         scale: [
             { value: 0, duration: 0, easing: 'easeInCubic' },
-            { value: 1.1, duration: 500, delay: 500, easing: 'easeOutCubic' },
+            { value: 1.1, duration: 500, delay: 1500, easing: 'easeOutCubic' },
             { value: 1, duration: 500, easing: 'easeInCubic' }
         ],
         translateY: [
@@ -102,7 +102,7 @@ class AnimationPage03 {
         ],
         scale: [
             { value: 0, duration: 0, easing: 'easeInCubic' },
-            { value: 1.1, duration: 500, delay: 1500, easing: 'easeOutCubic' },
+            { value: 1.1, duration: 500, delay: 2000, easing: 'easeOutCubic' },
             { value: 1, duration: 500, easing: 'easeInCubic' }
         ],
         autoplay: false,
@@ -118,7 +118,7 @@ class AnimationPage03 {
         targets: ['#rightBalance #yellowBall'],
         scale: [
             { value: 0, duration: 0, easing: 'easeInCubic' },
-            { value: 1.1, duration: 500, delay: 1500, easing: 'easeOutCubic' },
+            { value: 1.1, duration: 500, delay: 2500, easing: 'easeOutCubic' },
             { value: 1, duration: 500, easing: 'easeInCubic' },
         ],
         translateY: [
