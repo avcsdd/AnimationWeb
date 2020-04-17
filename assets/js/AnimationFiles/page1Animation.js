@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    var path = anime.path('#airplane-svg path');
+
     class AnimationPage01 {
         // animation showup of desk 1
         zoomEffectValue = 0.5
@@ -214,12 +216,32 @@ $(document).ready(function() {
             opacity: 0,
             autoplay: false,
         });
+
+        airplaneAnimation = anime({
+            targets: '#page1 #air-plane',
+            translateX: path('x'),
+            translateY: path('y'),
+            rotate: path('angle'),
+            easing: 'linear',
+            duration: 2000,
+            // autoplay: false
+        });
+
+        airplaneAnimationBack = anime({
+            targets: '#page1 #air-plane',
+            translateX: 0,
+            translateY: 0,
+            rotate: 0,
+            duration: 0,
+            autoplay: false
+        });
     }
     var animationP1 = new AnimationPage01();
     $('#carouselExampleControls').bind('slid.bs.carousel', function(e) {
         var ele = $('#carouselExampleControls .carousel-indicators li.active');
         var pageIndex = ele.data('value');
         if (pageIndex == 0) {
+            animationP1.airplaneAnimation.restart()
             animationP1.desk1Animation.play()
             animationP1.desk2Animation.play()
             animationP1.desk3Animation.play()
@@ -245,6 +267,8 @@ $(document).ready(function() {
             animationP1.person3AnimationBack.play()
             animationP1.person4AnimationBack.play()
             animationP1.textAnimationBack.play()
+            animationP1.airplaneAnimation.pause()
+            animationP1.airplaneAnimationBack.play()
         }
     });
 })
