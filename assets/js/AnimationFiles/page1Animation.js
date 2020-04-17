@@ -217,6 +217,19 @@ $(document).ready(function() {
             autoplay: false,
         });
 
+        mapAnimation = anime({
+            targets: ["#big-map", "#eu-flag", "#air-plane", "#air-line", "#eu-flag-circle"],
+            opacity: [{ value: 1, duration: 1000 }],
+            easing: 'easeInOutQuad',
+        })
+
+        mapAnimationReturn = anime({
+            targets: ["#big-map", "#eu-flag", "#air-plane", "#air-line", "#eu-flag-circle"],
+            opacity: [{ value: 0, duration: 0 }],
+            easing: 'easeInOutQuad',
+            autoplay: false
+        })
+
         airplaneAnimation = anime({
             targets: '#page1 #air-plane',
             translateX: path('x'),
@@ -236,6 +249,61 @@ $(document).ready(function() {
             autoplay: false
         });
     }
+    xP1 = 405 // x of asean flag
+    yP1 = 300 // y of asean flag
+    rP1 = 80 // radius
+    mP1 = [0]
+    arrAnimeP1 = [];
+    for (let i = 0; i < 9; i++) {
+        mP1[i + 1] = mP1[i] + 0.628;
+    }
+
+    function rotateP1(a, ele) {
+        var px = xP1 + rP1 * Math.cos(a);
+        var py = yP1 + rP1 * Math.sin(a);
+        document.querySelector(ele).style.left = px + "px";
+        document.querySelector(ele).style.top = py + "px";
+    }
+
+    function startFlagsP1() {
+        for (let i = 0; i < mP1.length; i++) {
+            var intervalID = null;
+            myvar = setInterval(function() {
+                mP1[i] = (mP1[i] + Math.PI / 360) % (Math.PI * 2);
+                rotateP1(mP1[i], "#flag" + i + "Page1");
+            }, 10);
+            arrAnimeP1.push(myvar)
+        }
+    }
+
+    function stopFlagsP1() {
+        for (var i = 0; i < arrAnimeP1.length; i++) { clearInterval(arrAnimeP1[i]) }
+        arrAnimeP1 = []
+    }
+
+    function scaleTo0(def) {
+        return anime({
+            targets: [def],
+            scale: [
+                { value: 0, duration: 0, easing: 'easeInCubic' },
+            ],
+            autoplay: false,
+        });
+    }
+    var scaleFlagsTo0P1 = scaleTo0('#flagsPage1 *');
+
+    var zoomOutFlagsP1 = anime({
+        targets: ['#flagsPage1 *'],
+        scale: [
+            { value: 0, duration: 0, easing: 'easeInCubic' },
+            { value: 1.1, duration: 1000, easing: 'easeOutCubic' },
+            { value: 1, duration: 1000, easing: 'easeInCubic' }
+        ],
+        autoplay: false,
+    });
+    zoomOutFlagsP1.restart()
+    startFlagsP1();
+
     var animationP1 = new AnimationPage01();
     $('#carouselExampleControls').bind('slid.bs.carousel', function(e) {
         var ele = $('#carouselExampleControls .carousel-indicators li.active');
@@ -254,6 +322,9 @@ $(document).ready(function() {
             animationP1.person3Animation.play()
             animationP1.person4Animation.play()
             animationP1.textAnimation.play()
+            animationP1.mapAnimation.play();
+            zoomOutFlagsP1.restart()
+            startFlagsP1();
         } else {
             animationP1.desk1AnimationBack.play()
             animationP1.desk2AnimationBack.play()
@@ -269,6 +340,9 @@ $(document).ready(function() {
             animationP1.textAnimationBack.play()
             animationP1.airplaneAnimation.pause()
             animationP1.airplaneAnimationBack.play()
+            animationP1.mapAnimationReturn.play()
+            scaleFlagsTo0P1.restart();
+            stopFlagsP1();
         }
     });
 })

@@ -147,9 +147,6 @@ $(document).ready(function() {
         autoplay: false,
     });
 
-
-
-
     var animationP5 = new AnimationPage05();
     $('#carouselExampleControls').bind('slid.bs.carousel', function(e) {
         var ele = $('#carouselExampleControls .carousel-indicators li.active');
