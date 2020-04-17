@@ -96,3 +96,31 @@
   .textPage1{
       opacity: 0;
   }
+
+#page1 #big-map {
+    position: absolute;
+    top: 250px;
+    height: 450px;
+    left: -203px;
+}
+
+#page1 #eu-flag {
+    position: absolute;
+    height: 85px;
+    top: 268px;
+    left: 134px;
+}
+
+#page1 #air-plane {
+    position: absolute;
+    height: 50px;
+    top: 346px;
+    left: 236px;
+}
+
+#page1 #air-line {
+    position: absolute;
+    top: 402px;
+    height: 70px;
+    left: 233px;
+}

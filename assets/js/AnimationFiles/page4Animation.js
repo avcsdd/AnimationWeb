@@ -1,6 +1,6 @@
 class AnimationPage04 {
     hourglass = anime({
-        targets: ['#section3P4 #sandClockP4'],
+        targets: ['#section3P4 #leftSandClock', '#section3P4 #centerSandClock', '#section3P4 #rightSandClock'],
         scale: [
             { value: 0, duration: 0, easing: 'easeInCubic' },
             { value: 1.1, duration: 1000, delay: 500, easing: 'easeOutCubic' },
@@ -64,7 +64,7 @@ class AnimationPage04 {
     }
     scaleFlagsTo0 = this.scaleTo0('#flags *');
     scaleAseanFlagTo0 = this.scaleTo0('#flagStaffP4');
-    scaleHourGlassTo0 = this.scaleTo0('#section3P4 #sandClockP4');
+    scaleHourGlassTo0 = this.scaleTo0('#section3P4 #leftSandClock', '#section3P4 #centerSandClock', '#section3P4 #rightSandClock');
 
     zoomOutFlags = anime({
         targets: ['#flags *'],

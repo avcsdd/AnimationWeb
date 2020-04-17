@@ -214,19 +214,6 @@ $(document).ready(function() {
             opacity: 0,
             autoplay: false,
         });
-        // 
-        text2Animation = anime({
-            targets: document.querySelectorAll("#leftCornerText"),
-            opacity: [{ value: 1, duration: 3600 }],
-            easing: 'easeInOutQuad',
-        });
-
-        // animation back to initial place of person 2
-        text2AnimationBack = anime({
-            targets: document.querySelectorAll("#leftCornerText"),
-            opacity: 0,
-            autoplay: false,
-        });
     }
     var animationP1 = new AnimationPage01();
     $('#carouselExampleControls').bind('slid.bs.carousel', function(e) {
@@ -245,7 +232,6 @@ $(document).ready(function() {
             animationP1.person3Animation.play()
             animationP1.person4Animation.play()
             animationP1.textAnimation.play()
-            animationP1.text2Animation.play()
         } else {
             animationP1.desk1AnimationBack.play()
             animationP1.desk2AnimationBack.play()
@@ -259,7 +245,6 @@ $(document).ready(function() {
             animationP1.person3AnimationBack.play()
             animationP1.person4AnimationBack.play()
             animationP1.textAnimationBack.play()
-            animationP1.text2AnimationBack.play()
         }
     });
 })
