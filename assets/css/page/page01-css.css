@@ -124,3 +124,9 @@
     height: 70px;
     left: 233px;
 }
+
+#page1 #airplane-svg {
+    position: absolute;
+    top: 370px;
+    left: 232px;
+}
