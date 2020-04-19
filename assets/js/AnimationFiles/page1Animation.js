@@ -6,8 +6,8 @@ $(document).ready(function() {
         zoomEffectValue = 0.5
         desk1Animation = anime({
                 targets: document.querySelectorAll("#desk-1"),
-                translateY: [{ value: 410, duration: 1500 }],
-                opacity: [{ value: 1, duration: 1500 }],
+                translateY: [{ value: 410, duration: 1500, delay: 2000 }],
+                opacity: [{ value: 1, duration: 1500, delay: 2000 }],
                 // translateX: [{value:250,duration:2000},{value:0,duration:1000}],
                 easing: 'easeInOutQuad',
             })
@@ -28,8 +28,8 @@ $(document).ready(function() {
         // animation showup of desk 2
         desk2Animation = anime({
             targets: document.querySelectorAll("#desk-2"),
-            translateY: [{ value: -280, duration: 1500 }],
-            opacity: [{ value: 1, duration: 1500 }],
+            translateY: [{ value: -280, duration: 1500, delay: 2000 }],
+            opacity: [{ value: 1, duration: 1500, delay: 2000 }],
             easing: 'easeInOutQuad',
         });
         // animation back to initial place of desk 2
@@ -41,8 +41,8 @@ $(document).ready(function() {
         //  animation back to initial place of desk 3
         desk3Animation = anime({
             targets: document.querySelectorAll("#desk-3"),
-            translateX: [{ value: -400, duration: 1500 }],
-            opacity: [{ value: 1, duration: 1500 }],
+            translateX: [{ value: -400, duration: 1500, delay: 2000 }],
+            opacity: [{ value: 1, duration: 1500, delay: 2000 }],
             easing: 'easeInOutQuad',
         });
         //
@@ -54,8 +54,8 @@ $(document).ready(function() {
         // animation back to initial place of desk 4
         desk4Animation = anime({
             targets: document.querySelectorAll("#desk-4"),
-            translateY: [{ value: -200, duration: 1500 }],
-            opacity: [{ value: 1, duration: 1500 }],
+            translateY: [{ value: -200, duration: 1500, delay: 2000 }],
+            opacity: [{ value: 1, duration: 1500, delay: 2000 }],
             easing: 'easeInOutQuad',
         });
         //
@@ -75,9 +75,9 @@ $(document).ready(function() {
         //   
         person1Animation = anime({
             targets: document.querySelectorAll("#person-1"),
-            translateY: [{ value: 250, duration: 1500 }],
-            translateX: [{ value: 155, duration: 1500 }],
-            opacity: [{ value: 1, duration: 1500 }],
+            translateY: [{ value: 250, duration: 1500, delay: 2000 }],
+            translateX: [{ value: 155, duration: 1500, delay: 2000 }],
+            opacity: [{ value: 1, duration: 1500, delay: 2000 }],
             easing: 'easeInOutQuad',
         });
         // animation back to initial place of floor
@@ -91,7 +91,7 @@ $(document).ready(function() {
             targets: document.querySelectorAll("#floor"),
             opacity: [{
                 value: 1,
-                duration: 1500
+                duration: 1500, delay: 2000
             }],
             easing: 'easeInOutQuad',
         });
@@ -106,7 +106,7 @@ $(document).ready(function() {
             targets: document.querySelectorAll("#way"),
             opacity: [{
                 value: 1,
-                duration: 1500
+                duration: 1500, delay: 2000
             }],
             easing: 'easeInOutQuad',
         });
@@ -121,9 +121,9 @@ $(document).ready(function() {
         //   
         person1Animation = anime({
             targets: document.querySelectorAll("#person-1"),
-            translateY: [{ value: 250, duration: 1500 }],
-            translateX: [{ value: 155, duration: 1500 }],
-            opacity: [{ value: 1, duration: 1500 }],
+            translateY: [{ value: 250, duration: 1500, delay: 2000 }],
+            translateX: [{ value: 155, duration: 1500, delay: 2000 }],
+            opacity: [{ value: 1, duration: 1500, delay: 2000 }],
             easing: 'easeInOutQuad',
         });
         // animation back to initial place of person 2
@@ -137,9 +137,9 @@ $(document).ready(function() {
         //   
         person2Animation = anime({
             targets: document.querySelectorAll("#person-2"),
-            translateY: [{ value: -200, duration: 1500 }],
-            translateX: [{ value: -100, duration: 1500 }],
-            opacity: [{ value: 1, duration: 1500 }],
+            translateY: [{ value: -200, duration: 1500, delay: 2000 }],
+            translateX: [{ value: -100, duration: 1500, delay: 2000 }],
+            opacity: [{ value: 1, duration: 1500, delay: 2000 }],
             easing: 'easeInOutQuad',
         });
         //
@@ -153,8 +153,8 @@ $(document).ready(function() {
         //   
         carAnimation = anime({
             targets: document.querySelectorAll("#cars"),
-            translateX: [{ value: 200, duration: 3000 }],
-            opacity: [{ value: 1, duration: 3000 }],
+            translateX: [{ value: 200, duration: 3000, delay: 2000 }],
+            opacity: [{ value: 1, duration: 3000, delay: 2000 }],
             easing: 'easeInOutQuad',
             rotate: {
                 value: '3turn',
@@ -166,9 +166,9 @@ $(document).ready(function() {
         //   
         person1Animation = anime({
             targets: document.querySelectorAll("#person-1"),
-            translateY: [{ value: 250, duration: 1500 }],
-            translateX: [{ value: 155, duration: 1500 }],
-            opacity: [{ value: 1, duration: 1500 }],
+            translateY: [{ value: 250, duration: 1500, delay: 2000 }],
+            translateX: [{ value: 155, duration: 1500, delay: 2000 }],
+            opacity: [{ value: 1, duration: 1500, delay: 2000 }],
             easing: 'easeInOutQuad',
         });
         // animation back to initial place of person 2
@@ -182,7 +182,7 @@ $(document).ready(function() {
         // 
         person3Animation = anime({
             targets: document.querySelectorAll("#person-3"),
-            opacity: [{ value: 1, duration: 1500 }],
+            opacity: [{ value: 1, duration: 1500, delay: 2000 }],
             easing: 'easeInOutQuad',
         });
         // animation back to initial place of person 2
@@ -194,7 +194,7 @@ $(document).ready(function() {
         // 
         person4Animation = anime({
             targets: document.querySelectorAll("#person-4"),
-            opacity: [{ value: 1, duration: 1500 }],
+            opacity: [{ value: 1, duration: 1500, delay: 2000 }],
             easing: 'easeInOutQuad',
         });
         // animation back to initial place of person 2
