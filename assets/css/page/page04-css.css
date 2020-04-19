@@ -10,7 +10,23 @@
     width: 33%;
 }
 
-#section2P4 {}
+#page4 #section3P4 {
+    padding-top: 160px;
+    padding-left: 62px;
+}
+
+#page4 #leftSandClock, #page4 #rightSandClock {
+    height: 120px;
+    margin-top: 29px;
+}
+
+#page4 #centerSandClock {
+    height: 160px;
+}
+
+#page4 #centerSandClock, #page4 #rightSandClock {
+    margin-left: -50px;
+}
 
 #aseanCountryFlagsP4 {
     margin-top: -72% !important;
