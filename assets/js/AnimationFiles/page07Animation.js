@@ -1,6 +1,8 @@
 ////////////////////////////////////FOR PAGE 07/////////////////////////////////////////
 // $("#objectLeftPage7-whenclick").fadeOut();
 var ani = new MyAnimation();
+var temp;
+
 const selectedMapImage = new Map([
     ["Small12CirclePage7", ["Artboard 65 copy 9@6x.png", "selectedCircle12Page7.png"]],
     ["Small03CirclePage7", ["Artboard 65 copy 7@6x.png", "selectedCircle03Page7.png"]],
@@ -25,6 +27,7 @@ $(".CirclePage7").click(async function() {
     $(".CirclePage7").each(function() { $(this).removeClass('selected-circle') })
     $(this).addClass('selected-circle');
     let selected = $(this).find("img")[0];
+    temp = selected;
     for (let [key, value] of selectedMapImage.entries()) {
         $("#" + key).attr("src", "../assets/images/07/" + value[0])
     }
@@ -52,6 +55,8 @@ $(".CirclePage7").children().hover(function() {
 $(".CirclePage7").not(".selected-circle").children().mouseout(function() {
     let selected = $(this).parent().find('img').first();
     $("#" + $(selected).attr("id")).attr("src", "../assets/images/07/" + selectedMapImage.get($(selected).attr("id"))[0])
+    if (temp === selected[0])
+        $("#" + $(temp).attr("id")).attr("src", "../assets/images/07/" + selectedMapImage.get($(selected).attr('id'))[1])
 })
 class AnimationPage07 {
     zoomInAppear(targets, turn, duration, loop, autoplay) {

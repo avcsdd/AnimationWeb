@@ -95,7 +95,7 @@ $(document).ready(function() {
         });
     }
     xP5 = 500 // x of asean flag
-    yP5 = 170 // y of asean flag
+    yP5 = 180 // y of asean flag
     rP5 = 120 // radius
     mP5 = [0]
     arrAnimeP5 = [];
