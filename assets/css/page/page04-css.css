@@ -15,7 +15,8 @@
     padding-left: 62px;
 }
 
-#page4 #leftSandClock, #page4 #rightSandClock {
+#page4 #leftSandClock,
+#page4 #rightSandClock {
     height: 120px;
     margin-top: 29px;
 }
@@ -24,7 +25,8 @@
     height: 160px;
 }
 
-#page4 #centerSandClock, #page4 #rightSandClock {
+#page4 #centerSandClock,
+#page4 #rightSandClock {
     margin-left: -50px;
 }
 

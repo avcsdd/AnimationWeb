@@ -19,7 +19,7 @@ class AnimationPage04 {
     });
 
     //////////////////////////////////////////////////
-    x = 160 // x of asean flag
+    x = 180 // x of asean flag
     y = 200 // y of asean flag
     r = 90 // radius
         // m = [0]

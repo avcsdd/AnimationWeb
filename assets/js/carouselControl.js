@@ -7,6 +7,7 @@ import page14Animation from "./AnimationFiles/page14Animation.js"
 import page15Animation from "./AnimationFiles/page15Animation.js"
 import page16Animation from "./AnimationFiles/page16Animation.js"
 import page17Animation from "./AnimationFiles/page17Animation.js"
+import page18Animation from "./AnimationFiles/page18Animation.js"
 import page25Animation from "./AnimationFiles/page25Animation.js"
 import page26Animation from "./AnimationFiles/page26Animation.js"
 import page27Animation from "./AnimationFiles/page27Animation.js"
@@ -44,6 +45,9 @@ function PreloadPageSelected(pageIndex) {
                 break;
             case 11:
                 page17Animation.reverse();
+                break;
+            case 12:
+                page18Animation.reverse();
                 break;
             case 19:
                 page25Animation.reverse();
@@ -95,6 +99,9 @@ function LoadPageSelected(pageIndex) {
                 break;
             case 11:
                 page17Animation.run();
+                break;
+            case 12:
+                page18Animation.run();
                 break;
             case 19:
                 page25Animation.run();

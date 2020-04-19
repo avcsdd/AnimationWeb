@@ -43,33 +43,33 @@
 }
 
 #bigCirclePage7 {
-    left: 670px;
+    left: 640px;
     bottom: 330px;
     opacity: 0;
 }
 
 #Small12CirclePage7 {
-    left: 810px;
+    left: 780px;
     bottom: 670px;
 }
 
 #Small03CirclePage7 {
-    left: 1000px;
+    left: 970px;
     bottom: 520px;
 }
 
 #Small09CirclePage7 {
-    left: 620px;
+    left: 590px;
     bottom: 520px;
 }
 
 #Small05CirclePage7 {
-    left: 930px;
+    left: 900px;
     bottom: 300px;
 }
 
 #Small07CirclePage7 {
-    left: 690px;
+    left: 660px;
     bottom: 300px;
 }
 
@@ -81,32 +81,34 @@
     font-size: 23px;
     font-weight: bold;
     color: #185fa9;
-    left: 700px;
+    left: 750px;
     top: 250px;
+    display: inline-block;
+    width: fit-content;
 }
 
 #tmPage7 {
-    left: 865px;
+    left: 835px;
     bottom: 725px;
 }
 
 #cPage7 {
-    left: 1055px;
+    left: 1025px;
     bottom: 575px;
 }
 
 #rPage7 {
-    left: 675px;
+    left: 645px;
     bottom: 575px;
 }
 
 #pdPage7 {
-    left: 980px;
+    left: 950px;
     bottom: 360px;
 }
 
 #patenPage7 {
-    left: 740px;
+    left: 710px;
     bottom: 368px;
 }
 
@@ -127,7 +129,7 @@
 #selectedContent {
     text-align: center;
     position: absolute;
-    margin-left: 692px;
+    margin-left: 662px;
     margin-top: 117px;
     clear: both;
     opacity: 0;
