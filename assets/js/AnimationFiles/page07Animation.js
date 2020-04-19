@@ -18,10 +18,12 @@ const selectedMapContent = new Map([
 var messageArrow = ani.toXDelay(["#arrowPage7", "#messageArrowPage7"], 200, 70);
 var contentShow = ani.appear("#selectedContent", 1200);
 var objectLeftPage7WhenclickShow = ani.appear("#objectLeftPage7_click", 1200);
-var objectLeftPage7 = ani.appear("#objectLeftPage7_click", 1200);
+// var objectLeftPage7 = ani.appear("#objectLeftPage7_click", 1200);
 // var selectedContent = ani.fadeShowUp("#selectedContent");
 var firstClickCirclePage7 = false;
 $(".CirclePage7").click(async function() {
+    $(".CirclePage7").each(function() { $(this).removeClass('selected-circle') })
+    $(this).addClass('selected-circle');
     let selected = $(this).find("img")[0];
     for (let [key, value] of selectedMapImage.entries()) {
         $("#" + key).attr("src", "../assets/images/07/" + value[0])
@@ -43,6 +45,14 @@ $(".CirclePage7").click(async function() {
         firstClickCirclePage7 = true;
     }
 });
+$(".CirclePage7").children().hover(function() {
+    let selected = $(this).parent().find('img').first();
+    $("#" + $(selected).attr("id")).attr("src", "../assets/images/07/" + selectedMapImage.get($(selected).attr('id'))[1]).fadeIn();
+})
+$(".CirclePage7").not(".selected-circle").children().mouseout(function() {
+    let selected = $(this).parent().find('img').first();
+    $("#" + $(selected).attr("id")).attr("src", "../assets/images/07/" + selectedMapImage.get($(selected).attr("id"))[0])
+})
 class AnimationPage07 {
     zoomInAppear(targets, turn, duration, loop, autoplay) {
         return anime({
@@ -110,7 +120,7 @@ class AnimationPage07 {
         this.reverseBalloonsPage7.restart();
         this.reverseObjectLeftPage7Click.restart();
         this.reverseCirclesPage07.restart();
-        this.messageCirclePage7Zoom.restart();
+        // this.messageCirclePage7Zoom.restart();
         firstClickCirclePage7 = false;
         $("#objectLeftPage7").show();
         // $("#objectLeftPage7_click").css("opacity", "0");
@@ -123,7 +133,8 @@ class AnimationPage07 {
     run() {
         this.backgroundGirlPage7.restart();
         this.girlPage7.restart();
-        this.messageCirclePage7.restart();
+        this.messageCirclePage7.restart()
+            // this.messageCirclePage7.restart();
         this.tablePage7.restart();
         this.laptopPage7.restart();
         this.balloonsPage7.restart();
