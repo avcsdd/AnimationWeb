@@ -19,9 +19,9 @@ class AnimationPage04 {
     });
 
     //////////////////////////////////////////////////
-    x = 160 // x of asean flag
+    x = 180 // x of asean flag
     y = 200 // y of asean flag
-    r = 120 // radius
+    r = 100 // radius
         // m = [0]
     arrAnime = [];
     // for (let i = 0; i < 9; i++) {

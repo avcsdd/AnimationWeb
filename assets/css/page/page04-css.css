@@ -15,7 +15,8 @@
     padding-left: 62px;
 }
 
-#page4 #leftSandClock, #page4 #rightSandClock {
+#page4 #leftSandClock,
+#page4 #rightSandClock {
     height: 120px;
     margin-top: 29px;
 }
@@ -24,7 +25,8 @@
     height: 160px;
 }
 
-#page4 #centerSandClock, #page4 #rightSandClock {
+#page4 #centerSandClock,
+#page4 #rightSandClock {
     margin-left: -50px;
 }
 
@@ -34,8 +36,9 @@
 }
 
 #flagStaffP4 {
-    margin-top: 28% !important;
-    margin-left: 12% !important;
+    margin-top: 30% !important;
+    margin-left: 22% !important;
+    width: 55%;
 }
 
 #tableP4 {
@@ -106,7 +109,7 @@
 } */
 
 .flag img {
-    width: 25%;
+    width: 20%;
 }
 
 .flag {
