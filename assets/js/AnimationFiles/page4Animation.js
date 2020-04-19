@@ -21,7 +21,7 @@ class AnimationPage04 {
     //////////////////////////////////////////////////
     x = 160 // x of asean flag
     y = 200 // y of asean flag
-    r = 120 // radius
+    r = 90 // radius
         // m = [0]
     arrAnime = [];
     // for (let i = 0; i < 9; i++) {

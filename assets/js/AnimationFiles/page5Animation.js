@@ -96,7 +96,7 @@ $(document).ready(function() {
     }
     xP5 = 500 // x of asean flag
     yP5 = 170 // y of asean flag
-    rP5 = 120 // radius
+    rP5 = 100 // radius
     mP5 = [0]
     arrAnimeP5 = [];
     for (let i = 0; i < 9; i++) {
