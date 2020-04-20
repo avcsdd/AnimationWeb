@@ -25,6 +25,9 @@
 }
 
 #cardImageP21 img{
-    width: 80%;
-    height: 40%;
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    left: 15%;
+    top:20%;
 }
