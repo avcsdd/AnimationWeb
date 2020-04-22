@@ -115,6 +115,10 @@
 #boxTextP15 {
     margin-left: -20px !important;
     margin-top: 5px;
+    /* opacity: 0; */
+}
+
+#boxTextP15 p {
     opacity: 0;
 }
 
