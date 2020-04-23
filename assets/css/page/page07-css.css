@@ -1,4 +1,4 @@
-#page7 .page-content-wrapper {
+.sub-page07 .page-content-wrapper {
     background-image: url('../../images/logo/shutterstock_182632013.jpg') !important;
     width: 100%;
     height: 100%;
@@ -42,33 +42,33 @@
     opacity: 0;
 }
 
-#bigCirclePage7 {
+.bigCirclePage7 {
     left: 640px;
     bottom: 330px;
-    opacity: 0;
+    /* opacity: 0; */
 }
 
-#Small12CirclePage7 {
+.Small12CirclePage7 {
     left: 780px;
     bottom: 670px;
 }
 
-#Small03CirclePage7 {
+.Small03CirclePage7 {
     left: 970px;
     bottom: 520px;
 }
 
-#Small09CirclePage7 {
+.Small09CirclePage7 {
     left: 590px;
     bottom: 520px;
 }
 
-#Small05CirclePage7 {
+.Small05CirclePage7 {
     left: 900px;
     bottom: 300px;
 }
 
-#Small07CirclePage7 {
+.Small07CirclePage7 {
     left: 660px;
     bottom: 300px;
 }
@@ -87,27 +87,27 @@
     width: fit-content;
 }
 
-#tmPage7 {
+.tmPage7 {
     left: 835px;
     bottom: 725px;
 }
 
-#cPage7 {
+.cPage7 {
     left: 1025px;
     bottom: 575px;
 }
 
-#rPage7 {
+.rPage7 {
     left: 645px;
     bottom: 575px;
 }
 
-#pdPage7 {
+.pdPage7 {
     left: 950px;
     bottom: 360px;
 }
 
-#patenPage7 {
+.patenPage7 {
     left: 710px;
     bottom: 368px;
 }
@@ -124,6 +124,10 @@
 
 #objectLeftPage7_click {
     opacity: 0;
+}
+
+.sub-page07-items {
+    opacity: 1 !important;
 }
 
 #selectedContent {
@@ -168,18 +172,18 @@ div#selectedContent p {
     left: 120px;
 }
 
-#arrowPage7 {
+.arrowPage7 {
     top: 80px;
     left: 250px;
-    opacity: 0;
+    /* opacity: 0; */
 }
 
-#messageArrowPage7 {
+.messageArrowPage7 {
     color: white;
     font-size: 21px;
     top: 120px;
     left: 270px;
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 #messageCirclePage7 {

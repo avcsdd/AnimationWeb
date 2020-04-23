@@ -72,6 +72,7 @@ function PreloadPageSelected(pageIndex) {
 
 function LoadPageSelected(pageIndex) {
     return new Promise(resolve => {
+        console.log(pageIndex)
         switch (pageIndex) {
             case 1:
                 page02Animation.run();
@@ -86,39 +87,49 @@ function LoadPageSelected(pageIndex) {
                 page07Animation.run();
                 break;
             case 7:
-                page13Animation.run();
                 break;
             case 8:
-                page14Animation.run();
                 break;
             case 9:
-                page15Animation.run();
                 break;
             case 10:
-                page16Animation.run();
                 break;
             case 11:
-                page17Animation.run();
                 break;
             case 12:
+                page13Animation.run();
+                break;
+            case 13:
+                page14Animation.run();
+                break;
+            case 14:
+                page15Animation.run();
+                break;
+            case 15:
+                page16Animation.run();
+                break;
+            case 16:
+                page17Animation.run();
+                break;
+            case 17:
                 page18Animation.run();
                 break;
-            case 19:
+            case 24:
                 page25Animation.run();
                 break;
-            case 20:
+            case 25:
                 page26Animation.run();
                 break;
-            case 21:
+            case 26:
                 page27Animation.run();
                 break;
-            case 22:
+            case 27:
                 page28Animation.run();
                 break;
-            case 24:
+            case 28:
                 page30Animation.run();
                 break;
-            case 25:
+            case 29:
                 page47Animation.run();
                 break;
         }
@@ -130,8 +141,8 @@ export function prepareLoading(indicator) {
     var ele = $('#carouselExampleControls .carousel-indicators li.active');
     var pageIndex = ele.data('pageindex') + indicator;
     if (pageIndex < 0) {
-        pageIndex = 25;
-    } else if (pageIndex > 25) {
+        pageIndex = 30;
+    } else if (pageIndex > 30) {
         pageIndex = 0;
     }
     return carouselJumpTo(pageIndex)
