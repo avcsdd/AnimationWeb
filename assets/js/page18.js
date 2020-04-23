@@ -1,7 +1,7 @@
 $(".cardP18").click(function(){
-    carouselJumpTo(parseInt(this.dataset.id) + 12)
+    carouselJumpTo(parseInt(this.dataset.id) + 17)
 })
 
 $(".closeBtn").click(function(){
-    carouselJumpTo(12)
+    carouselJumpTo(17)
 })
