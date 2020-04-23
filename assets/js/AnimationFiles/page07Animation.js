@@ -24,39 +24,55 @@ var objectLeftPage7WhenclickShow = ani.appear("#objectLeftPage7_click", 1200);
 // var selectedContent = ani.fadeShowUp("#selectedContent");
 var firstClickCirclePage7 = false;
 $(".CirclePage7").click(async function() {
-    $(".CirclePage7").each(function() { $(this).removeClass('selected-circle') })
-    $(this).addClass('selected-circle');
-    let selected = $(this).find("img")[0];
-    temp = selected;
-    for (let [key, value] of selectedMapImage.entries()) {
-        $("#" + key).attr("src", "../assets/images/07/" + value[0])
+    // $(".CirclePage7").each(function() { $(this).removeClass('selected-circle') })
+    // $(this).addClass('selected-circle');
+    // let selected = $(this).find("img")[0];
+    // temp = selected;
+    // for (let [key, value] of selectedMapImage.entries()) {
+    //     $("#" + key).attr("src", "../assets/images/07/" + value[0])
+    // }
+    // $("#selectedContent #content").empty()
+    // $("#selectedContent #content").append(selectedMapContent.get($(this).attr("id"))[1])
+    // $("#selectedContent").css("background-image", "url(../assets/images/07/" + selectedMapContent.get($(this).attr("id"))[0] + ")")
+    // $("#messageCirclePage7").fadeOut("slow");
+    // $("#selectedContent").attr("hidden", false);
+    // $("#" + $(selected).attr("id")).attr("src", "../assets/images/07/" + selectedMapImage.get($(selected).attr('id'))[1])
+    //     // $("#selectedContent").fadeOut("slow");
+    // contentShow.restart();
+    // if (firstClickCirclePage7 == false) {
+    //     $("#objectLeftPage7").fadeOut("slow");
+    //     objectLeftPage7WhenclickShow.restart();
+    //     // await new Promise(r => setTimeout(r, 500))
+    //     // await new Promise(r => setTimeout(r, 100));
+    //     messageArrow.restart();
+    //     firstClickCirclePage7 = true;
+    // }
+    if ($(this).hasClass('Circle12Page7') == true) {
+        carouselJumpTo(7)
+    } else if ($(this).hasClass('Circle03Page7') == true) {
+        carouselJumpTo(8)
+    } else if ($(this).hasClass('Circle05Page7') == true) {
+        carouselJumpTo(9)
+    } else if ($(this).hasClass('Circle07Page7') == true) {
+        carouselJumpTo(10)
+    } else if ($(this).hasClass('Circle09Page7') == true) {
+        carouselJumpTo(11)
     }
-    $("#selectedContent #content").empty()
-    $("#selectedContent #content").append(selectedMapContent.get($(this).attr("id"))[1])
-    $("#selectedContent").css("background-image", "url(../assets/images/07/" + selectedMapContent.get($(this).attr("id"))[0] + ")")
-    $("#messageCirclePage7").fadeOut("slow");
-    $("#selectedContent").attr("hidden", false);
-    $("#" + $(selected).attr("id")).attr("src", "../assets/images/07/" + selectedMapImage.get($(selected).attr('id'))[1])
-        // $("#selectedContent").fadeOut("slow");
-    contentShow.restart();
-    if (firstClickCirclePage7 == false) {
-        $("#objectLeftPage7").fadeOut("slow");
-        objectLeftPage7WhenclickShow.restart();
-        // await new Promise(r => setTimeout(r, 500))
-        // await new Promise(r => setTimeout(r, 100));
-        messageArrow.restart();
-        firstClickCirclePage7 = true;
-    }
+
 });
 $(".CirclePage7").children().hover(function() {
-    let selected = $(this).parent().find('img').first();
-    $("#" + $(selected).attr("id")).attr("src", "../assets/images/07/" + selectedMapImage.get($(selected).attr('id'))[1]).fadeIn();
+    var selected = $(this).parent()
+    if ($(selected).hasClass('selected-circle') == false) {
+        var select = $(selected).children()[0]
+        $(select).attr("src", "../assets/images/07/" + selectedMapImage.get($(select).attr('c-number'))[1]);
+    }
 })
-$(".CirclePage7").not(".selected-circle").children().mouseout(function() {
-    let selected = $(this).parent().find('img').first();
-    $("#" + $(selected).attr("id")).attr("src", "../assets/images/07/" + selectedMapImage.get($(selected).attr("id"))[0])
-    if (temp === selected[0])
-        $("#" + $(temp).attr("id")).attr("src", "../assets/images/07/" + selectedMapImage.get($(selected).attr('id'))[1])
+$(".CirclePage7").children().mouseout(function() {
+    var selected = $(this).parent()
+    if ($(selected).hasClass('selected-circle') == false) {
+        var select = $(selected).children()[0]
+        $(select).attr("src", "../assets/images/07/" + selectedMapImage.get($(select).attr('c-number'))[0]);
+    }
 })
 class AnimationPage07 {
     zoomInAppear(targets, turn, duration, loop, autoplay) {
