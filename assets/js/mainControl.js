@@ -27,7 +27,7 @@ const mapPage = new Map([
     [24, 'page05'],
     [25, 'page05'],
     [26, 'page05'],
-    [27, 'page06'],
+    [27, 'page05'],
     [28, 'page06'],
     [29, 'page07'],
     [30, 'page08'],
