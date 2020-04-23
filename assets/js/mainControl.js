@@ -7,6 +7,11 @@ const mapPage = new Map([
     [4, 'page02'],
     [5, 'page02'],
     [6, 'page02'],
+    [7, 'page02'],
+    [8, 'page02'],
+    [9, 'page02'],
+    [10, 'page02'],
+    [11, 'page02'],
     [12, 'page02'],
     [13, 'page02'],
     [14, 'page03'],
@@ -28,7 +33,7 @@ const mapPage = new Map([
     [30, 'page08'],
 ]);
 
-$(document).ready(function(){
+$(document).ready(function() {
     $('#carouselExampleControls').on('slid.bs.carousel', function(e) {
         var ele = $('#carouselExampleControls .carousel-indicators li.active');
         var pageIndex = ele.data('value');
