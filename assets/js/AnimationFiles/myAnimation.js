@@ -114,6 +114,17 @@ class MyAnimation {
             delay: delay
         });
     }
+
+    appearDelay(obj, duration, delay, isLoop) {
+        return anime({
+            targets: obj,
+            opacity: [{ value: 1, duration: duration }],
+            easing: 'easeInOutQuad',
+            delay: delay,
+            autoplay:isLoop
+        });
+    }
+
     moveEasingLR(targets, delay, value) {
         return anime({
             targets: targets,
