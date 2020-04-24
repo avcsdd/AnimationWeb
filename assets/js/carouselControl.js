@@ -15,6 +15,8 @@ import page28Animation from "./AnimationFiles/page28Animation.js"
 import page30Animation from "./AnimationFiles/page30Animation.js"
 import page47Animation from "./AnimationFiles/page47Animation.js"
 
+var isP15Running = false
+
 function PreloadPageSelected(pageIndex) {
     return new Promise(resolve => {
         console.log(pageIndex)
@@ -103,7 +105,8 @@ function LoadPageSelected(pageIndex) {
                 page14Animation.run();
                 break;
             case 14:
-                page15Animation.run();
+                page15Animation.run(isP15Running);
+                isP15Running = true
                 break;
             case 15:
                 page16Animation.run();
@@ -133,6 +136,11 @@ function LoadPageSelected(pageIndex) {
                 page47Animation.run();
                 break;
         }
+
+        if (pageIndex != 14) {
+
+        }
+
         resolve(pageIndex)
     })
 }
