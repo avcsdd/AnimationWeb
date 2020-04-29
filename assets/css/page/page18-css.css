@@ -59,18 +59,52 @@
     background-image: url('../../images/18/01@6x2.png');
 }
 
-#cardWrapperP18 #card3 {
+/* #cardWrapperP18 #card3 {
     background-image: url('../../images/18/Artboard 66 copy 5@6x.png');
-}
+} */
 
-#cardWrapperP18 #card4 {
+/* #cardWrapperP18 #card4 {
     background-image: url('../../images/18/Artboard 66 copy 6@6x.png');
-}
+} */
 
 #cardWrapperP18 #card5 {
     background-image: url('../../images/18/01_1@6x2.png');
 }
 
-#cardWrapperP18 #card6 {
-    background-image: url('../../images/18/Artboard 66 copy 2@6x.png');
+#cardWrapperP18 #card6 , #card4 , #card3 {
+    background-image: url('../../images/18/box.png');
+}
+
+#imgLetterP18{
+    opacity: 0;
+}
+
+.bubbleTextP18{
+    width: 6%;
+    position: absolute;
+    opacity: 0;
+}
+
+#bubbleTextP182{
+    left: 12%; 
+    top: 37%;
+}
+
+#bubbleTextP183{
+    left: 17%; 
+    top: 39%;
+}
+
+#bubbleTextP184{
+    left: 23%; 
+    top: 37%;
+}
+
+#bubbleTextP185{
+    left: 30%; 
+    top: 37%;
+}
+
+#img3Bubble, #dotP181, #dotP182, #dotP183{
+    opacity: 0;
 }
