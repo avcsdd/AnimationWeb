@@ -117,8 +117,10 @@ function LoadPageSelected(pageIndex) {
             case 17:
                 page18Animation.run();
                 break;
-            case 24:
+            case 23:
                 page18Animation.run();
+                break;
+            case 24:
                 page25Animation.run();
                 break;
             case 25:
