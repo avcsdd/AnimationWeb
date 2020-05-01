@@ -7,24 +7,13 @@
     padding-top: 7%;
 }
 
-#cardImageP23{
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 10%;
-}
-#cardTextP23{
-    width: 60%;
-    text-align: justify;
-    padding-top: 10%;
-    padding-right: 6%;
-    font-size: 17px;
-    color: rgb(5, 8, 124) !important;
-    font-weight: 500;
+#page23 .cardWrapper {
+    background-image: url('../../images/23/Artboard\ 66\ copy\ 7@6x.png');
 }
 
-#cardImageP23 img{
-    width: 80%;
-    height: 40%;
+#page23 #hammerP18 {
+    position: absolute;
+    width: 27%;
+    top: 46%;
+    left: 21%;
 }

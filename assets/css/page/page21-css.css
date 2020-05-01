@@ -7,27 +7,43 @@
     padding-top: 7%;
 }
 
-#cardImageP21{
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 4%;
-}
-#cardTextP21{
-    width: 60%;
-    text-align: justify;
-    padding-top: 6%;
-    padding-right: 6%;
-    font-size: 17px;
-    color: rgb(5, 8, 124) !important;
-    font-weight: 500;
+#page21 .cardWrapper {
+    height: 535px;
+    background-image: url('../../images/21/Artboard\ 66\ copy\ 7@6x.png');
 }
 
-#cardImageP21 img{
-    width: 30%;
-    height: 30%;
+#page21 .text-content {
+    line-height: 24px;
+}
+
+#page21 #stopP18 {
     position: absolute;
-    left: 15%;
-    top:20%;
+    width: 13%;
+    top: 58%;
+    left: 242px;
+}
+
+#page21 img {
+    opacity: 1;
+    position: absolute;
+    top: 188px;
+    width: 15px;
+}
+
+#page21 #img3Bubble {
+    width: 100px;
+    top: 170px;
+    left: 280px;
+}
+
+#page21 #dotP181 {
+    left: 295px;
+}
+
+#page21 #dotP182 {
+    left: 325px;
+}
+
+#page21 #dotP183 {
+    left: 355px;
 }
