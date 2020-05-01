@@ -7,23 +7,34 @@
     padding-top: 7%;
 }
 
-#cardImageP24{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#cardTextP24{
-    width: 50%;
-    text-align: justify;
-    padding-top: 10%;
-    padding-right: 6%;
-    font-size: 17px;
-    color: rgb(5, 8, 124) !important;
-    font-weight: 500;
+#page24 .cardWrapper {
+    background-image: url('../../images/24/Artboard\ 66\ copy\ 7@6x.png');
 }
 
-#cardImageP24 img{
-    width: 80%;
-    height: 60%;
+#page24 .bubbleTextP18 {
+    width: 3%;
+}
+
+#page24 #bubbleTextP181 {
+    top: 130px;
+}
+
+#page24 #bubbleTextP182 {
+    top: 130px;
+    left: 41px;
+}
+
+#page24 #bubbleTextP183 {
+    top: 138px;
+    left: 62px;
+}
+
+#page24 #bubbleTextP184 {
+    top: 125px;
+    left: 100px;
+}
+
+#page24 #bubbleTextP185 {
+    top: 130px;
+    left: 132px;
 }
