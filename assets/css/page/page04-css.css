@@ -115,3 +115,22 @@
 .flag {
     position: absolute;
 }
+
+.p4-symbols {
+    font-weight: bold;
+    font-size: 60px;
+    color: #0f7cb9;
+}
+
+#question-p4 {
+    left: 450px !important;
+    top: 300px !important;
+    transform: rotate(-40deg);
+    position: absolute;
+}
+
+#dots-p4 {
+    left: 670px !important;
+    top: 300px !important;
+    position: absolute;
+}
