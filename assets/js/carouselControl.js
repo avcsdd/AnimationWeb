@@ -123,19 +123,19 @@ function LoadPageSelected(pageIndex) {
             case 24:
                 page25Animation.run();
                 break;
-            case 25:
+            case 26:
                 page26Animation.run();
                 break;
-            case 26:
+            case 27:
                 page27Animation.run();
                 break;
-            case 27:
+            case 28:
                 page28Animation.run();
                 break;
-            case 28:
+            case 29:
                 page30Animation.run();
                 break;
-            case 29:
+            case 30:
                 page47Animation.run();
                 break;
         }

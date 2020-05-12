@@ -139,7 +139,7 @@ class AnimationPage18 {
         // .add(this.dot2)
         // .add(this.dot3)
 
-        animation =anime.timeline({
+        var animation =anime.timeline({
             loop:true,
             easing:'linear',
         })
