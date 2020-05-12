@@ -70,42 +70,43 @@
 }
 
 #girlOnDeskP13 {
-    left: 58%;
-    top: 11%;
+    left: 62%;
+    top: 17%;
     opacity: 0;
+    width: 15%;
 }
 
 #threeDotsP13 {
-    left: 720px;
-    top: 12%;
+    left: 750px;
+    top: 17%;
     opacity: 0;
 }
 
 #checkedP13 {
-    left: 900px;
-    top: 22%;
+    left: 930px;
+    top: 25%;
     opacity: 0;
 }
 
 #textBubleInCardP13 {
     background-image: url("../../images/13/Artboard\ 65\ copy\ 13@6x.png");
     background-size: 100% 100%;
-    left: 73%;
-    top: 12%;
-    height: 8%;
-    width: 18%;
+    left: 76%;
+    top: 15%;
+    height: 7%;
+    width: 16%;
     text-align: center;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
     opacity: 0;
 }
 
 #card1TitleP13 {
     color: white;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 800;
-    left: 59%;
-    top: 5%;
+    left: 62%;
+    top: 9.5%;
 }
 
 #rightSectionP13 .cardP13:nth-child(2) {
@@ -115,12 +116,15 @@
 }
 
 #cardBackgoundAboveP13 {
-    width: 37%;
+    width: 33%;
+    margin-left: 40px;
+    top: 70px;
 }
 
 #cardBackgoundBellowP13 {
-    width: 37%;
-    top: 300px
+    width: 33%;
+    top: 350px;
+    margin-left: 40px;
 }
 
 #rightSectionP13 .cardP13:nth-child(2)>* {
@@ -129,42 +133,42 @@
 
 #card2TitleP13 {
     color: white;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 800;
-    left: 59%;
-    top: 37%;
+    left: 62%;
+    top: 42%;
 }
 
 #askQuestionP13 {
     color: white;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 600;
-    left: 65%;
-    top: 44%;
+    left: 67%;
+    top: 50%;
 }
 
 #emailCardP13 {
     color: white;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
-    left: 59%;
-    top: 50%;
+    left: 62%;
+    top: 55%;
 }
 
 #phoneNumber1P13 {
     color: white;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
-    left: 59%;
-    top: 55%;
+    left: 62%;
+    top: 62%;
     letter-spacing: 1px;
 }
 
 #phoneNumber2P13 {
     color: white;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
-    left: 59%;
+    left: 62%;
     top: 59%;
     letter-spacing: 1px;
 }
@@ -179,20 +183,20 @@
 }
 
 #dot1P13 {
-    left: 735px;
-    top: 125px;
+    left: 765px;
+    top: 167px;
     opacity: 0;
 }
 
 #dot2P13 {
-    left: 745px;
-    top: 125px;
+    left: 775px;
+    top: 167px;
     opacity: 0;
 }
 
 #dot3P13 {
-    left: 755px;
-    top: 125px;
+    left: 785px;
+    top: 167px;
     opacity: 0;
 }
 
