@@ -97,8 +97,33 @@
     padding-right: 5%;
 }
 
-.noteContentP15 {
+#noteContent1P15 {
     top: 22px;
+    font-weight: bold;
+}
+
+#noteContent2P15 {
+    top: 30px;
+    font-weight: bold;
+}
+
+#noteContent3P15 {
+    top: 25px;
+    font-weight: bold;
+}
+
+#noteContent4P15 {
+    top: 16px;
+    font-weight: bold;
+}
+
+#noteContent5P15 {
+    top: 22px;
+    font-weight: bold;
+}
+
+#noteContent6P15 {
+    top: 25px;
     font-weight: bold;
 }
 
