@@ -6,9 +6,10 @@
 
 img#peopleGroupPage28 {
     left: 100px;
-    top: 250px;
+    top: 210px;
     position: absolute;
     opacity: 0;
+    width: 38%;
 }
 
 .smallObjPage28 {
@@ -18,53 +19,54 @@ img#peopleGroupPage28 {
 }
 
 #smallCheckListPage28 {
-    top: 120px;
+    top: 70px;
     left: 95px;
-    width: 11%
+    width: 14%
 }
 
 #smallCirclePage28 {
-    width: 7%;
-    top: 80px;
-    left: 250px;
+    width: 8%;
+    top: 50px;
+    left: 260px;
 }
 
 #smallCertificatePage28 {
-    width: 6%;
-    top: 150px;
+    width: 7%;
+    top: 120px;
     left: 380px;
 }
 
 #smallCheckList2Page28 {
-    width: 10%;
-    top: 210px;
+    width: 11%;
+    top: 190px;
     left: 360px;
 }
 
 #smallBarChartPage28 {
-    width: 10%;
-    top: 70px;
-    left: 480px;
+    width: 13%;
+    top: 0px;
+    left: 460px;
 }
 
 #smallPieChartPage28 {
-    width: 10%;
-    top: 185px;
-    left: 475px;
+    width: 12%;
+    top: 140px;
+    left: 465px;
 }
 
 #ipLessionPage28 {
     position: absolute;
     width: 43%;
+    height: 62%;
     left: 630px;
-    top: 100px;
+    top: 90px;
     opacity: 0;
 }
 
 h4#lessionsTitlePage28 {
     position: absolute;
     left: 660px;
-    top: 100px;
+    top: 90px;
     color: white;
     opacity: 0;
 }
