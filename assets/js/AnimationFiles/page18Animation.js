@@ -102,6 +102,7 @@ class AnimationPage18 {
     }
 
     doNext(animation) {
+        console.log("hihi ")
         animation.play()
         return (animation.finished)
     }
