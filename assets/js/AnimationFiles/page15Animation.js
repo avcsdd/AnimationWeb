@@ -37,7 +37,6 @@ class Page15nimation {
     isRotated = false
     
     getRotation = () => {
-        console.log('GET: ' + this.isRotated)
         if (!this.isRotated) {
             return {
                 value: '0turn',
@@ -52,13 +51,11 @@ class Page15nimation {
     }
 
     loopComplete() {
-        console.log(this.isRotated)
         this.isRotated = true
     }
 
     update(){
         this.isRotated = true
-        console.log(this.isRotated)
     }
     
     note1P15PicShowUp = anime({
@@ -133,6 +130,7 @@ class Page15nimation {
             }).then(() => {
                 return self.doNext(self.note1P15)
             }).then(() => {
+                console.log("OK HERE")
                 return self.doNext(self.note2P15)
             }).then(() => {
                 return self.doNext(self.note3P15)
