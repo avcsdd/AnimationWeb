@@ -48,4 +48,7 @@ $(document).ready(function() {
         }
         //
     })
+    $('.close-card').click(function(){
+        carouselJumpTo(17)
+    })
 })
