@@ -7,6 +7,14 @@
     padding-top: 7%;
 }
 
+span.close-card {
+    background: green;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
 #page19 .cardWrapper, #page20 .cardWrapper, #page21 .cardWrapper, #page22 .cardWrapper, #page23 .cardWrapper, #page24 .cardWrapper {
     background-size: contain;
     height: 454px;
