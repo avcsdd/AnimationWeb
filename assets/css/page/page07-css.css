@@ -76,15 +76,15 @@
 #messageCirclePage7 {
     text-align: center;
     z-index: 99999999999;
-    position: absolute;
+    position: relative;
     width: 30%;
     font-size: 23px;
     font-weight: bold;
     color: #185fa9;
-    left: 750px;
-    top: 250px;
+    margin-left: 55%;
+    margin-top: 21%;
     display: inline-block;
-    width: fit-content;
+    /* width: fit-content; */
 }
 
 .tmPage7 {
