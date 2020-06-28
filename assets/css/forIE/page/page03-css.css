@@ -45,7 +45,7 @@
     width: 50%;
     height: 100%;
 }
-#leftBalance #redBall{
+/* #leftBalance #redBall{
     top:200px
 }
 #leftBalance #blueBall{
@@ -64,7 +64,7 @@
 #rightBalance #yellowBall{
     top:-35px;
     right: 35px;
-}
+} */
 #rightBalance {
     position: absolute;
     left: 50%;
@@ -93,7 +93,7 @@
 
 #topBalance {
     margin-top: 275px;
-    transform: rotate(-7deg);
+    /* transform: rotate(-7deg); */
 }
 
 #bottomBalance {
