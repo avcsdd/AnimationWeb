@@ -1,0 +1,60 @@
+#page19 .page-content-wrapper {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../images/logo/shutterstock_182632013.jpg') !important;
+    display: flex;
+    justify-content: center;
+    padding-top: 7%;
+}
+
+span.close-card {
+    background: green;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    opacity: 0; 
+    cursor: pointer;
+}
+#page19 .cardWrapper, #page20 .cardWrapper, #page21 .cardWrapper, #page22 .cardWrapper, #page23 .cardWrapper, #page24 .cardWrapper {
+    background-size: contain;
+    height: 454px;
+    width: 898px;
+    position: relative;
+}
+
+#page19 .cardWrapper {
+    background-image: url('../../../images/19/Artboard\ 66\ copy\ 7@6x.png');
+}
+
+#page19 .text-banner, #page20 .text-banner, #page21 .text-banner, #page22 .text-banner, #page23 .text-banner, #page24 .text-banner {
+    position: relative;
+    font-size: 35px;
+    color: white;
+    float: left;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+}
+
+#page19 .text-content, #page20 .text-content, #page21 .text-content, #page22 .text-content, #page23 .text-content, #page24 .text-content {
+    margin-left: 405px;
+    margin-top: 110px;
+    margin-right: 58px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: justify;
+    color: #1a4693;
+}
+
+#page22 .text-content, #page23 .text-content, #page24 .text-content {
+    margin-left: 435px;
+}
+
+#page19 #speakerP18 {
+    position: absolute;
+    width: 24%;
+    top: 53%;
+    left: 0;
+}

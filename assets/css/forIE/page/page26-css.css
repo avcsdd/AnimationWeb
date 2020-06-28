@@ -1,0 +1,104 @@
+#page26 .page-content-wrapper {
+    background-image: url(../../../images/logo/shutterstock_182632013.jpg) !important;
+}
+
+#documenntPage26 {
+    left: 100px;
+    top: 300px;
+    position: absolute;
+    width: 25%
+}
+
+img#cardPage26 {
+    width: 60%;
+    left: 430px;
+    top: 320px;
+    position: absolute;
+}
+
+img#bikeLeftPage26 {
+    position: absolute;
+    width: 14%;
+    left: 400px;
+    top: 30px;
+    /* opacity: 0; */
+}
+
+img#bikeRightPage26 {
+    position: absolute;
+    width: 14%;
+    left: 780px;
+    top: 30px;
+    /* opacity: 0; */
+}
+
+#vsPage26 {
+    position: absolute;
+    font-size: 50px;
+    font-weight: bolder;
+    left: 650px;
+    top: 100px;
+    width: 7%;
+    color: #2067a4;
+    /* opacity: 0; */
+}
+
+#leftBallonsPage26 {
+    position: absolute;
+    left: 200px;
+    top: 60px;
+    width: 16%;
+    /* opacity: 0; */
+}
+
+#rightBallonsPage26 {
+    position: absolute;
+    left: 960px;
+    top: 60px;
+    width: 16%;
+    /* opacity: 0; */
+}
+
+.BallonsTextPage26 {
+    position: absolute;
+    text-align: center;
+    color: #000077;
+    /* opacity: 0; */
+}
+
+#leftBallonsTextPage26 {
+    left: 220px;
+    top: 90px;
+}
+
+#rightBallonsTextPage26 {
+    left: 1000px;
+    top: 90px;
+}
+
+#cardTitlePage26 {
+    /* opacity: 0; */ 
+    position: absolute;
+    left: 460px;
+    top: 320px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    z-index: 99999;
+}
+
+p#cardContentPage26 {
+    text-align: justify;
+    width: 55%;
+    position: relative;
+    left: 460px;
+    top: 370px;
+    color: white;
+    font-size: 19px;
+    line-height: 25px;
+    /* opacity: 0; */ 
+}
+
+#cardPage26-container {
+    /* opacity: 0; */
+}

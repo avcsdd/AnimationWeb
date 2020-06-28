@@ -1,0 +1,19 @@
+#page20 .page-content-wrapper {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../images/logo/shutterstock_182632013.jpg') !important;
+    display: flex;
+    justify-content: center;
+    padding-top: 7%;
+}
+
+#page20 .cardWrapper {
+    background-image: url('../../../images/20/Artboard\ 66\ copy\ 7@6x.png');
+}
+
+#page20 #stopP18 {
+    position: absolute;
+    width: 13%;
+    top: 58%;
+    left: 242px;
+}

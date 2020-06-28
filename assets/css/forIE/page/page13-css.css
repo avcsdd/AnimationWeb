@@ -1,0 +1,208 @@
+#page13 .page-content-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../images/logo/shutterstock_182632013.jpg') !important;
+    display: flex;
+}
+
+#leftSectionP13 {
+    height: 100%;
+    width: 55%;
+    flex-direction: column;
+}
+
+#rightSectionP13 {
+    height: 100%;
+    width: 45%;
+}
+
+#textBubleP13 {
+    height: 40% !important;
+    padding-top: 5%;
+    padding-left: 8%;
+    padding-right: 3%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#textBubleP13 #bubbleP13 {
+    height: 75%;
+    width: 100%;
+    background-image: url('../../../images/13/Artboard\ 65\ copy\ 6@6x.png');
+    background-size: 100% 100%;
+    /* opacity: 0; */
+}
+
+#textBubleP13 #bubbleP13 p {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    color: white;
+    font-size: 19.5px;
+    letter-spacing: 0.2px;
+}
+
+#leftSectionP13 #imageContainerP13 img {
+    position: absolute;
+    left: 15%;
+    bottom: 35%;
+}
+
+#rightSectionP13 {
+    padding-left: 2%;
+    padding-right: 5%;
+}
+
+#rightSectionP13 .cardP13 {
+    height: 28%;
+    /* opacity: 0; */
+}
+
+#rightSectionP13 .cardP13:first-child {
+    margin-top: 7%;
+    /* background-image: url("../../../images/13/Artboard\ 65\ copy\ 15@6x.png"); */
+    /* background-size: 100% 100%; */
+}
+
+#rightSectionP13 .cardP13:first-child>* {
+    position: absolute;
+}
+
+#girlOnDeskP13 {
+    left: 62%;
+    top: 17%;
+    /* opacity: 0; */
+    width: 15%;
+}
+
+#threeDotsP13 {
+    left: 750px;
+    top: 17%;
+    /* opacity: 0; */
+}
+
+#checkedP13 {
+    left: 930px;
+    top: 25%;
+    /* opacity: 0; */
+}
+
+#textBubleInCardP13 {
+    background-image: url("../../../images/13/Artboard\ 65\ copy\ 13@6x.png");
+    background-size: 100% 100%;
+    left: 76%;
+    top: 15%;
+    height: 7%;
+    width: 16%;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    /* opacity: 0; */
+    padding-top: 4px;
+}
+
+#card1TitleP13 {
+    color: white;
+    font-size: 22px;
+    font-weight: 800;
+    left: 62%;
+    top: 9.5%;
+}
+
+#rightSectionP13 .cardP13:nth-child(2) {
+    margin-top: 7%;
+    /* background-image: url("../../../images/13/Artboard\ 65\ copy\ 18@6x.png"); */
+    /* background-size: 100% 100%; */
+}
+
+#cardBackgoundAboveP13 {
+    width: 33%;
+    margin-left: 40px;
+    top: 70px;
+}
+
+#cardBackgoundBellowP13 {
+    width: 33%;
+    top: 350px;
+    margin-left: 40px;
+}
+
+#rightSectionP13 .cardP13:nth-child(2)>* {
+    position: absolute;
+}
+
+#card2TitleP13 {
+    color: white;
+    font-size: 22px;
+    font-weight: 800;
+    left: 62%;
+    top: 42%;
+}
+
+#askQuestionP13 {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    left: 67%;
+    top: 50%;
+}
+
+#emailCardP13 {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    left: 62%;
+    top: 55%;
+}
+
+#phoneNumber1P13 {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    left: 62%;
+    top: 62%;
+    letter-spacing: 1px;
+}
+
+#phoneNumber2P13 {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    left: 62%;
+    top: 59%;
+    letter-spacing: 1px;
+}
+
+#twoPeople {
+    top: 300px;
+    /* opacity: 0; */
+}
+
+#cardP13Bellow {
+    /* opacity: 0; */
+}
+
+#dot1P13 {
+    left: 765px;
+    top: 167px;
+    /* opacity: 0; */
+}
+
+#dot2P13 {
+    left: 775px;
+    top: 167px;
+    /* opacity: 0; */
+}
+
+#dot3P13 {
+    left: 785px;
+    top: 167px;
+    /* opacity: 0; */
+}
+
+#folderngankeo {
+    width: 8%;
+    left: 750px;
+    top: 460px;
+}

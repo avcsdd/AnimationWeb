@@ -1,0 +1,149 @@
+  #desk-1 {
+      /* top: -90px; */
+      top: -90px;
+      left: 450px;
+      /* opacity: 0; */
+      width: 45%;
+  }
+  
+  #desk-2 {
+      top: 130px;
+      left: 400px;
+      /* opacity: 0; */
+      width: 45%;
+  }
+  
+  #desk-3 {
+      left: 800px;
+      bottom: 400px;
+      /* opacity: 0; */
+      width: 45%;
+  }
+  
+  #desk-4 {
+      left: 720px;
+      top: 200px;
+      /* opacity: 0; */
+      width: 45%;
+  }
+  
+  #person-1 {
+      top: 178px;
+      left: 250px;
+      /* opacity: 0; */
+  }
+  
+  #person-2 {
+      /* top: 252px;
+      left: 835px; */
+      top: 418px;
+      left: 870px;
+      /* opacity: 0; */
+  }
+  
+  #person-3 {
+      top: -10px;
+      left: 350px;
+      /* opacity: 0; */
+  }
+  
+  #person-4 {
+      top: -70px;
+      left: 400px;
+      /* opacity: 0; */
+  }
+  
+  #cars {
+      bottom: 140px;
+      left: 360px;
+      /* opacity: 0; */
+      width: 50%;
+  }
+  
+  .object {
+      position: absolute;
+  }
+  
+  #way {
+      left: 450px;
+      top: 2px;
+      /* opacity: 0; */
+  }
+  
+  #floor {
+      top: 60px;
+      left: 285px;
+      /* opacity: 0; */
+  }
+  
+  #big-slogan {
+      font-family: 'Roboto-Black', Fallback, sans-serif;
+      font-size: 35px;
+      color: white;
+      letter-spacing: 3px;
+      padding-left: 70px;
+      padding-top: 50px;
+      height: 65%;
+  }
+  
+  #leftCornerText {
+      font-family: 'Roboto-Black', Fallback, sans-serif;
+      font-size: 14px;
+      color: white;
+      letter-spacing: 3px;
+      padding-left: 70px;
+      margin-bottom: 0px;
+      -webkit-text-decoration-line: overline;
+      /* Safari */
+      text-decoration-line: overline;
+  }
+  
+  .textPage1 {
+      /* opacity: 0; */
+  }
+  
+  #page1 #big-map {
+      position: absolute;
+      top: 250px;
+      height: 450px;
+      left: -203px;
+      /* opacity: 0; */
+  }
+  
+  #page1 #eu-flag {
+      position: absolute;
+      height: 85px;
+      top: 268px;
+      left: 134px;
+      /* opacity: 0; */
+  }
+  
+  #page1 #air-plane {
+      position: absolute;
+      height: 50px;
+      top: 346px;
+      left: 236px;
+      /* opacity: 0; */
+  }
+  
+  #page1 #air-line {
+      position: absolute;
+      top: 402px;
+      height: 70px;
+      left: 233px;
+      /* opacity: 0; */
+  }
+  
+  #page1 #airplane-svg {
+      position: absolute;
+      top: 370px;
+      left: 232px;
+  }
+  
+  #eu-flag-circle {
+      position: absolute;
+      height: 70px;
+      top: 280px;
+      left: 400px;
+      /* opacity: 0; */
+  }

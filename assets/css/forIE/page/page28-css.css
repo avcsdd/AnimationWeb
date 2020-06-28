@@ -1,0 +1,128 @@
+#page28 .page-content-wrapper {
+    background-image: url('../../../images/logo/shutterstock_182632013.jpg') !important;
+    width: 100%;
+    height: 100%;
+}
+
+img#peopleGroupPage28 {
+    left: 100px;
+    top: 210px;
+    position: absolute;
+    /* opacity: 0; */
+    width: 38%;
+}
+
+.smallObjPage28 {
+    position: absolute;
+    width: 5%;
+    /* opacity: 0; */
+}
+
+#smallCheckListPage28 {
+    top: 70px;
+    left: 95px;
+    width: 14%
+}
+
+#smallCirclePage28 {
+    width: 8%;
+    top: 50px;
+    left: 260px;
+}
+
+#smallCertificatePage28 {
+    width: 7%;
+    top: 120px;
+    left: 380px;
+}
+
+#smallCheckList2Page28 {
+    width: 11%;
+    top: 190px;
+    left: 360px;
+}
+
+#smallBarChartPage28 {
+    width: 13%;
+    top: 0px;
+    left: 460px;
+}
+
+#smallPieChartPage28 {
+    width: 12%;
+    top: 140px;
+    left: 465px;
+}
+
+#ipLessionPage28 {
+    position: absolute;
+    width: 43%;
+    height: 62%;
+    left: 630px;
+    top: 90px;
+    /* opacity: 0; */
+}
+
+h4#lessionsTitlePage28 {
+    position: absolute;
+    left: 660px;
+    top: 90px;
+    color: white;
+    /* opacity: 0; */
+}
+
+.lessionPage28 {
+    position: relative;
+    width: 36%;
+    text-align: justify;
+    /* color: rgb(32, 103, 164); */
+    color: white;
+    font-size: 20px;
+    line-height: 25px;
+    left: 680px;
+    top: 130px;
+    letter-spacing: 0.2px;
+}
+
+#lession01ContentPage28 {
+    /* opacity: 0; */
+}
+
+#lession02ContentPage28 {
+    /* opacity: 0; */
+}
+
+#lession03ContentPage28 {
+    /* opacity: 0; */
+}
+
+#lession04ContentPage28 {
+    /* opacity: 0; */
+}
+
+.handsPage28 {
+    position: relative;
+    display: block;
+    left: 320px;
+    bottom: 135px;
+    width: 17%;
+}
+
+#hand01Page28 {
+    margin-bottom: 120px;
+    /* opacity: 0; */
+}
+
+#hand02Page28 {
+    margin-bottom: 75px;
+    /* opacity: 0; */
+}
+
+#hand03Page28 {
+    margin-bottom: 78px;
+    /* opacity: 0; */
+}
+
+#hand04Page28 {
+    /* opacity: 0; */
+}

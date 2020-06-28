@@ -1,0 +1,108 @@
+#page17 .page-content-wrapper {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../images/logo/shutterstock_182632013.jpg') !important;
+    display: flex;
+}
+
+#leftSectionP17 {
+    width: 65%;
+}
+
+#leftSectionP17>* {
+    position: absolute;
+}
+
+#rightSectionP17 {
+    width: 35%;
+    background-image: url("../../../images/17/background_cyan.jpg");
+    background-size: 100% 100%;
+    /* opacity: 0; */
+}
+
+#imageBackgroundLeftP17 {
+    height: 35%;
+    width: 40%;
+    top: 350px;
+    left: 12%;
+    /* opacity: 0; */
+}
+
+#imagePeopleLeftP17 {
+    height: 35%;
+    width: 25%;
+    left: 19%;
+    top: 350px;
+    /* opacity: 0; */
+}
+
+#leftSectionP17 div {
+    height: 13%;
+    width: 55%;
+    background-image: url("../../../images/17/Artboard\ 68\ copy\ 2@6x.png");
+    background-size: 100% 100%;
+    color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+    font-size: 20px;
+}
+
+#upperTextBoxP17 {
+    left: 70px;
+    top: 5%;
+    /* opacity: 0; */
+}
+
+#lowerTextBoxP17 {
+    left: 70px;
+    top: 21%;
+    /* opacity: 0; */
+}
+
+#rightSectionP17>div {
+    height: 10%;
+    width: 100%;
+    padding-left: 17%;
+    padding-right: 2%;
+    color: white;
+    /* opacity: 0; */
+}
+
+.textBoxWrapperP17>div {
+    width: 80%;
+    height: 100%;
+}
+
+#rightSectionP17>div:first-child {
+    margin-top: 5%;
+    padding-left: 5%;
+    width: 120%;
+    height: 8%;
+}
+
+#rightSectionP17>div:first-child>div {
+    font-size: 22px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.textBoxP17 {
+    background-image: url("../../../images/17/Artboard\ 68\ copy\ 4@6x.png");
+    background-size: 100% 100%;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    padding-left: 8%;
+    align-items: center;
+}
+
+.textBoxWrapperP17 {
+    transition: transform .5s;
+    /* Animation */
+}
+
+.textBoxWrapperP17:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}

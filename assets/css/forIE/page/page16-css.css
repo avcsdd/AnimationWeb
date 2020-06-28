@@ -1,0 +1,69 @@
+#page16 .page-content-wrapper {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../images/logo/shutterstock_182632013.jpg') !important;
+}
+
+#page16 .page-content-wrapper>* {
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    padding-left: 2%;
+    padding-right: 3%;
+    padding-top: 2%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#leftTextBoxP16,
+#rightTextBoxP16 {
+    height: 35%;
+    width: 27%;
+    background-image: url("../../../images/16/Artboard\ 68\ copy\ 5@6x.png");
+    background-size: 100% 100%;
+}
+
+#bottomTextBoxP16 {
+    height: 17%;
+    width: 89%;
+    background-image: url("../../../images/16/Artboard\ 68\ copy\ 7@6x.png");
+    background-size: 100% 100%;
+}
+
+#policeP16 {
+    height: 48%;
+}
+
+#leftTextBoxP16 {
+    top: 8%;
+    left: 75px;
+    /* opacity: 0; */
+}
+
+#rightTextBoxP16 {
+    top: 8%;
+    left: 828px;
+    /* opacity: 0; */
+}
+
+
+ #policeP16 {
+    position: absolute;
+    top: -70px;
+    left: 36%;
+    /* opacity: 0; */
+    top: 10px;
+} 
+
+#policeP16_shaking {
+    height: 410px;
+    left: 440.5px;
+    top: -20px;
+    /* opacity: 0; */
+}
+
+#bottomTextBoxP16 {
+    top: 440px;
+    left: 6%;
+    /* opacity: 0; */
+}

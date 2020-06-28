@@ -1,0 +1,141 @@
+#page2 .page-content-wrapper {
+    background-image: url('../../../images/logo/shutterstock_182632013.jpg') !important;
+    width: 100%;
+    height: 100%;
+}
+
+#page2 #upper-text-wrapper {
+    background-image: url('../../../images/02/Artboard\ 65\ copy\ 7.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 115%;
+    height: 0;
+    padding-top: 53.42%;
+    margin-top: -180px;
+    margin-left: -53px;
+    /* opacity: 0; */ 
+}
+
+#page2 #upper-text-wrapper>p:first-child {
+    margin-top: -370px;
+    margin-left: 210px;
+}
+
+#page2 #upper-text-wrapper>p:nth-child(2) {
+    margin-top: -21px;
+    margin-left: 215px;
+}
+
+#page2 #upper-text-wrapper>p {
+    font-size: 25px;
+    color: white;
+}
+
+#page2 #background-behind-girl>img {
+    margin-top: -377px;
+    margin-left: 140px;
+    width: 80%;
+    /* opacity: 0; */
+}
+
+#page2 #girl-center>img {
+    margin-top: -630px;
+    margin-left: 260px;
+    /* opacity: 0; */
+}
+
+#page2 #table>img {
+    margin-top: -475px;
+    margin-left: 255px;
+    width: 60%;
+}
+
+#page2 #stuff-on-table>img {
+    margin-top: -700px;
+    margin-left: 300px;
+}
+
+@font-face {
+    font-family: RobotoCondensed-Bold;
+    src: url('../../font/RobotoCondensed-Bold.woff') format("woff");
+}
+
+#LeftPros * {
+    /* opacity: 0; */
+}
+
+#RightCons * {
+    /* opacity: 0; */
+}
+
+#page2 #LeftPros {
+    margin-left: 200px;
+}
+
+#page2 #RightCons {
+    margin-left: 30px;
+}
+
+#page2 #LeftPros>p,
+#page2 #RightCons>p {
+    color: white;
+    width: fit-content;
+    font-family: RobotoCondensed-Bold;
+    /* opacity: 0; */
+}
+
+#page2 #LeftPros>img:first-child {
+    margin-top: -1350px;
+    margin-left: -80px;
+    /* opacity: 0; */
+}
+
+#page2 #LeftPros>img:nth-child(3) {
+    margin-top: -15px;
+    margin-left: 0px;
+    /* opacity: 0; */
+}
+
+#page2 #LeftPros>p:nth-child(2) {
+    margin-top: -720px;
+    margin-left: -20px;
+    font-size: 50px;
+    cursor: pointer;
+    /* opacity: 0; */
+}
+
+#page2 #LeftPros>p:nth-child(4) {
+    margin-top: -25px;
+    margin-left: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    /* opacity: 0; */
+}
+
+#page2 #RightCons>img:first-child {
+    margin-top: -1388px;
+    margin-left: 886px;
+    /* opacity: 0; */
+}
+
+#page2 #RightCons>img:nth-child(3) {
+    margin-top: -10px;
+    margin-left: 910px;
+    /* opacity: 0; */
+}
+
+#page2 #RightCons>p:nth-child(2) {
+    margin-top: -740px;
+    margin-left: 920px;
+    font-size: 50px;
+    cursor: pointer;
+    /* opacity: 0; */
+}
+
+#page2 #RightCons>p:nth-child(4) {
+    margin-top: -24px;
+    margin-left: 925px;
+    font-size: 12px;
+    cursor: pointer;
+    /* opacity: 0; */
+}

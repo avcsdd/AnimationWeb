@@ -1,0 +1,161 @@
+#page15 .page-content-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../images/logo/shutterstock_182632013.jpg') !important;
+}
+
+#leftSectionP15 {
+    padding-top: 2%;
+    padding-left: 6%;
+    width: 50%;
+}
+
+#rightSectionP15 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1%;
+    padding-left: 5%;
+}
+
+#boxTextP15 {
+    height: 72%;
+    width: 100%;
+    background-image: url("../../../images/15/Artboard\ 68\ copy\ 5@6x.png");
+    background-size: 100% 100%;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 4%;
+     /* opacity: 0; */ 
+}
+
+#boxTextP15>* {
+    color: white;
+    font-size: 20px;
+}
+
+#rightSectionP15>div {
+    height: 10%;
+    width: 90%;
+    margin-bottom: 4%;
+}
+
+.noteContentP15 {
+    color: rgb(108, 111, 110);
+    font-weight: 600;
+    font-size: 14px;
+    position: relative;
+}
+
+#note1P15 {
+    /* opacity: 0; */
+    /* background-image: url("../../images/15/Artboard\ 68\ copy\ 3@6x.png"); */
+    background-size: 100% 100%;
+    padding-left: 18%;
+    /* padding-top: 3%; */
+    padding-right: 5%;
+}
+
+#note2P15 {
+    /* opacity: 0; */
+    /* background-image: url("../../images/15/Artboard\ 68\ copy\ 2@6x.png"); */
+    background-size: 100% 100%;
+    padding-left: 18%;
+    /* padding-top: 5%; */
+    padding-right: 5%;
+}
+
+#note3P15 {
+    /* opacity: 0; */
+    /* background-image: url("../../images/15/Artboard\ 68\ copy\ 4@6x.png"); */
+    background-size: 100% 100%;
+    padding-left: 18%;
+    /* padding-top: 3%; */
+    padding-right: 5%;
+}
+
+#note4P15 {
+    /* opacity: 0; */
+    /* background-image: url("../../images/15/Artboard\ 68\ copy@6x.png"); */
+    background-size: 100% 100%;
+    padding-left: 18%;
+    /* padding-top: 3%; */
+    padding-right: 5%;
+    /* height: 12% !important; */
+    font-size: 14px !important;
+}
+
+#note5P15 {
+    /* opacity: 0; */
+    /* background-image: url("../../images/15/Artboard\ 68@6x.png"); */
+    background-size: 100% 100%;
+    padding-left: 18%;
+    /* padding-top: 3%; */
+    padding-right: 5%;
+}
+
+.noteContentP15 {
+    top: 22px;
+    font-weight: bold;
+}
+
+#note6P15 {
+    /* opacity: 0; */
+    /* background-image:
+     url("../../images/15/Artboard\ 68\ copy\ 6@6x.png"); */
+    background-size: 100% 100%;
+    padding-left: 18%;
+    /* padding-top: 3%; */
+    padding-right: 5%;
+}
+
+#boxTextP15 {
+    margin-left: -20px !important;
+    margin-top: 5px;
+ /* opacity: 0; */ 
+}
+
+#boxTextP15 p {
+    /* opacity: 0; */
+}
+
+.noteImgP15 {
+    position: absolute;
+    width: 43%;
+    right: 50px;
+}
+
+#note1ImgP15 {
+    top: 5px;
+}
+
+#note2ImgP15 {
+    top: 110px;
+}
+
+#note3ImgP15 {
+    top: 220px;
+}
+
+#note4ImgP15 {
+    top: 325px;
+}
+
+#note5ImgP15 {
+    top: 430px;
+}
+
+#note6ImgP15 {
+    top: 540px;
+}
+
+#noteContent4P15 {
+    top: 17px;
+}
+
+#noteContent2P15{
+    top:28px;
+}

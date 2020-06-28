@@ -1,0 +1,48 @@
+#page21 .page-content-wrapper {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../images/logo/shutterstock_182632013.jpg') !important;
+    display: flex;
+    justify-content: center;
+    padding-top: 7%;
+}
+
+#page21 .cardWrapper {
+    height: 535px;
+    background-image: url('../../../images/21/Artboard\ 66\ copy\ 7@6x.png');
+}
+
+#page21 .text-content {
+    line-height: 24px;
+}
+
+#page21 #stopP18 {
+    position: absolute;
+    width: 13%;
+    top: 58%;
+    left: 242px;
+}
+
+#page21 img {
+    position: absolute;
+    top: 188px;
+    width: 15px;
+}
+
+#page21 #img3Bubble {
+    width: 100px;
+    top: 170px;
+    left: 280px;
+}
+
+#page21 #dotP181 {
+    left: 295px;
+}
+
+#page21 #dotP182 {
+    left: 325px;
+}
+
+#page21 #dotP183 {
+    left: 355px;
+}
