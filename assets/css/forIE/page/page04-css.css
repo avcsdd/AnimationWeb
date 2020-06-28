@@ -134,3 +134,9 @@
     top: 300px !important;
     position: absolute;
 }
+#flagsPage4 img{
+    width: 20%;
+    position: absolute;
+    left: 7%;
+    bottom: 57%;
+}

@@ -96,3 +96,9 @@
     left: 28px;
     margin-top: -10px;
 }
+#flagsPage5 img{
+    width: 20%;
+    position: absolute;
+    left: 40%;
+    top: 100%;
+}
