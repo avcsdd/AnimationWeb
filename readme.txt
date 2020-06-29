@@ -12,7 +12,5 @@ HOW TO DEPLOY:
 
 Any tech-related problem exists you can contact with me through my personal email.
 
-This is a copyright of Eurochamp Corp.
-
 
 DUY NGUYEN - duynguyen@trangia.com.vn.
