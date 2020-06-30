@@ -13,4 +13,4 @@ HOW TO DEPLOY:
 Any tech-related problem exists you can contact with me through my personal email.
 
 
-DUY NGUYEN - duynguyen@trangia.com.vn.
+DUY NGUYEN - duynguyen@trangia.vn.
